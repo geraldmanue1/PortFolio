@@ -310,6 +310,8 @@ nav {
         /* top: -75px; */
         left: 295px;
         color: #4d114f;
+        
+        
       
       }
     
@@ -320,6 +322,8 @@ nav {
         height: 8rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         margin-left: -160px; /* marge écran à gauche */
+        font-size: 20px;
+        
     }
     .nav-list {
         /* display: none;
@@ -346,6 +350,9 @@ nav {
         margin-right: -150px;
         padding-top: 35px;
         z-index: 1000;
+        font-size: 20px;
+        
+        
         
     
     }
@@ -359,8 +366,11 @@ nav {
         transition: color 650ms;
         line-height: 15px;
         height: 100px;
-        height: 30px;
+        height: 55px;
+        font-size: 20px;
         padding-left:98px;
+
+
     }
 
     .sub-menu {
@@ -375,6 +385,8 @@ nav {
         visibility: hidden;
         margin-top: 0px;
         transition: all 650ms ease-in-out;
+        font-size: 20px;
+
     
        
     }
@@ -384,10 +396,13 @@ nav {
         top: 0;
         left: 160%;
         margin-top: 0px;
+        font-size: 20px;
+        
            
     }
     .nav-list > li {
-        line-height: 40px;
+        line-height: 50px;
+
     }
 
     .sub-menu {
@@ -396,6 +411,8 @@ nav {
         border-left-color: #eb3007;
         margin-left: 1rem;
         max-height: 0;
+        
+        
       
     }
 
