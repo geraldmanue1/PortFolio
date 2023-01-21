@@ -1,0 +1,320 @@
+#logo {
+  /*height: 100%;*/
+  width: 100%;
+  max-width: 100%;
+  /* background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.7) 0%, skyblue 100%); */
+}
+
+/*
+ body {
+     height: 100vh;
+     background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.7) 0%, skyblue 100%);
+     }*/
+.moom {
+  max-width: 100%;
+  max-height: 100%;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.7) 0%, skyblue 100%);
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 720px;
+}
+
+#logocontainer {
+  background: transparent;
+  top: 480%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  height: 390px;
+  max-width: 100%;
+  margin-left: 50%;
+  margin-top: 20%;
+}
+
+#html5 {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#css3 {
+  margin: 0;
+  position: absolute;
+  top: 73%;
+  padding-top: 46px;
+  left: 18%;
+  width: 15%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+#sass {
+  margin: 0;
+  position: absolute;
+  /* margin-left:-20px; */
+  margin-top: 20px;
+  top: 5%;
+  left: 50%;
+  width: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#js {
+  margin: 0;
+  position: absolute;
+  top: 38%;
+  left: 78%;
+  width: 18%;
+  transform: translate(-50%, -50%);
+}
+
+#php {
+  margin: 0;
+  position: absolute;
+  padding-top: 80px;
+  margin-left: 20px;
+  top: 64%;
+  left: 80%;
+  width: 18%;
+  transform: translate(-50%, -50%);
+}
+
+#Retina1,
+#Retina2 {
+  animation-name: blink;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  transform-origin: 50%;
+}
+
+#adobe_photoshop {
+  margin: 0;
+  position: absolute;
+  margin-left: -35px;
+  top: 35%;
+  left: 3%;
+  width: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#adobe_inDesign {
+  margin: 0;
+  position: absolute;
+  padding-top: 8px;
+  margin-left: -25px;
+  top: 73%;
+  left: 0%;
+  width: 15%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+#WordPress {
+  margin: 0;
+  position: absolute;
+  /* margin-left:-20px; */
+  top: -10%;
+  left: 50%;
+  width: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#adobe_premier_pro {
+  margin: 0;
+  position: absolute;
+  margin-left: 30px;
+  top: 30%;
+  left: 96%;
+  width: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#adobe_illustrator {
+  margin: 0;
+  position: absolute;
+  padding-top: 40px;
+  margin-left: 50px;
+  top: 64%;
+  left: 98%;
+  width: 15%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@keyframes blink {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+  1% {
+    transform: scaleX(1.3) scaleY(0.1);
+  }
+
+  2% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+  60% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+  61% {
+    transform: scaleX(1.3) scaleY(0.1);
+  }
+
+  62% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+}
+
+#sanky {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+}
+
+#retina {
+  width: 50%;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 50%;
+  z-index: -4;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1300px) {
+  #moom {
+    height:600px
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  #logocontainer {
+    background: transparent;
+    top: 480%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 390px;
+    max-width: 100%;
+    margin-left: 50%;
+    margin-top: 20%
+  }
+
+  #WordPress {
+    margin: 0;
+    margin-top: 100px;
+    margin-left: -5px;
+    width: 24%;
+    transform: translate(-50%, -50%);
+  }
+
+  #sass {
+    margin: 0;
+    margin-top: 130px;
+    margin-left: -5px;
+    width: 24%;
+    transform: translate(-50%, -50%);
+  }
+
+  #html5 {
+    margin: 0;
+    margin-top: 100px;
+    margin-left: -0px;
+    width: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  #css3 {
+    margin: 0;
+    margin-top: 60px;
+    margin-left: -0px;
+    width: 20%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+  }
+
+  #js {
+    margin: 0;
+    margin-top: 108px;
+    margin-left: -0px;
+    width: 22%;
+    transform: translate(-50%, -50%);
+  }
+
+  #php {
+    margin: 0;
+    margin-top: 62px;
+    margin-left: 12px;
+    width: 21%;
+    transform: translate(-50%, -50%);
+  }
+
+  #adobe_photoshop {
+    margin: 0;
+    margin-top: 100px;
+    margin-left: -35px;
+    width: 18%;
+    transform: translate(-50%, -50%);
+  }
+
+  #adobe_inDesign {
+    margin: 0;
+    margin-top: 80px;
+    margin-left: -35px;
+    width: 18%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+  }
+
+  #adobe_premier_pro {
+    margin: 0;
+    margin-top: 119px;
+    margin-left: 32px;
+    width: 18%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  #adobe_illustrator {
+    margin: 0;
+    margin-top: 80px;
+    margin-left: 40px;
+    width: 18%;
+    transform: translate(-50%, -50%);
+  }
+
+  #sanky {
+    margin: 0;
+    margin-top: 100px;
+    width: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+  }
+
+  #retina {
+    margin: 0;
+    margin-top: 100px;
+    width: 50%;
+    z-index: -4;
+    transform: translate(-50%, -50%);
+  }
+}

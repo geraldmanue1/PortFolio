@@ -1,0 +1,668 @@
+/*  */
+
+.photo-accueil-cv {
+  padding-top: 35px;
+  /* padding-bottom:100px; */
+  /* margin: 80px; */
+  height: 618px;
+  color: #ffffff;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  /* --fill-layer-background-media-position: fixed; */
+  background-image: url("../images/reseaux-sociaux-2-1920x832.jpeg"), url("/images/reseaux-sociaux-2-1920x832.jpeg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment:fixed; */
+  background-size: cover;
+  /* width: 1500px; */
+  width: 100%;
+  max-width: 100%;
+}
+
+/* .photo-accueil-profil-cv { 
+        padding-top:35px;
+        padding-bottom:100px;
+        margin: 80px;
+        height: 250px;
+        width: 25%;
+        color:#ffffff;
+        font-family:Helvetica, serif;
+        font-weight:100;
+        width: 80%;
+        max-width: 400px;
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+        background-image:url("../images/Photo-profil.png"), url("/images/Photo-profil.png");
+        background-repeat:no-repeat;
+        background-position:right center;
+        background-size:cover;
+        max-width: 100%;
+      }  */
+/* */
+.containeur-profil-text-cv {
+  max-width: 100%;
+  color: #182154;
+  line-height: 26px;
+
+
+}
+
+
+
+
+/* fin */
+
+.containeur-photo-text-profil {
+  margin: 400px;
+  margin-top: 350px;
+  margin-bottom: 0px;
+}
+
+/* deux block signifie image profil + texte */
+.flex-container-cv {
+  display: flex;
+
+  /* margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 350px; */
+  /*margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 35%; 
+    max-width: 100%;*/
+  max-width: 100%;
+
+
+
+
+  /*background-color: DodgerBlue;*/
+}
+
+
+
+.flex-container-cv>div {
+  background-color: #eeeeee;
+  margin: 0px;
+  padding: 15px;
+  /*padding-left: -450px;*/
+  font-size: 18px;
+  margin-top: -800px;
+
+  width: 100%;
+  height: 448px;
+  /* larger conteneur image + conteneur */
+  max-width: 100%;
+
+}
+
+/* fin deux block signifie SLAM et Numérique */
+
+.flex-container-media-sociaux {
+
+  display: flex;
+  height: 8px;
+  margin: 2%;
+  /* margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 350px; */
+  /*margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 35%; 
+            max-width: 100%;*/
+  width: 100%;
+  margin: 0px;
+  margin-right: 10px;
+  max-width: 100%;
+}
+
+.flex-container-media-sociaux>div {
+  background-color: #eeeeee;
+  margin: 0px;
+  /* padding: 15px; */
+  font-size: 18px;
+  margin-top: -380px;
+  padding-top: 55px;
+  width: 100%;
+  height: 175px;
+  max-width: 100%;
+  /* margin-left: 250px; /* largeur gauche icon reseaux sociaux */
+  /*  margin-right: 250px; /* largeur droite icon reseaux sociaux */
+
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  /*width: 315px;*/
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  max-width: 100%;
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* image réseaux sociaux */
+#accueil-symbole-media-sociaux a:hover {
+  background-color: none;
+  box-shadow: none;
+  border: none;
+  color: none;
+  background: none;
+}
+
+/*.social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;} 
+      .list-inline li {
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-bottom: 10px;
+      }
+      /*---- Genral classes end -------
+      
+      /*Change icons size here
+      .social-icons .fa {
+        font-size: 1.5em;
+      }
+      /*Change icons circle size and color here
+      .social-icons .fa {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: white;
+        color: white;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .social-icons.icon-circle .fa{ 
+        border-radius: 100%;
+      }
+      .social-icons.icon-rounded .fa{
+        border-radius:50px;
+      }
+      .social-icons.icon-flat .fa{
+        border-radius: 0;
+      }
+      
+      .social-icons .fa:hover, .social-icons .fa:active {
+        color: #FFF;
+        -webkit-box-shadow: 1px 1px 3px #333;
+        -moz-box-shadow: 1px 1px 3px #333;
+        box-shadow: 1px 1px 3px #333; 
+      }*/
+
+/* arriere image réseaux sociaux */
+
+
+.images-total img:hover {
+  background-color: #0085AE;
+  -webkit-box-shadow: 5px 5px 7px #333;
+  -moz-box-shadow: 5px 5px 7px #333;
+  box-shadow: 5px 5px 7px #333;
+}
+
+
+
+.images {
+  -webkit-box-shadow: 1px 1px 3px #333;
+  -moz-box-shadow: 1px 1px 3px #333;
+  box-shadow: 1px 1px 3px #333;
+  ;
+}
+
+/* la marge image réseaux sociaux */
+.images-total {
+  margin: 15px;
+
+}
+
+/* fin image réseaux sociaux */
+
+/* deux block */
+.flex-container-page-2-cv {
+  display: flex;
+
+  /*background-color: DodgerBlue;*/
+}
+
+.flex-container-page-2-cv>div {
+  background-color: #ffff;
+  margin-top: 200px;
+  padding: 15px;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 18px;
+  width: 100%;
+}
+
+/* fin deux block */
+
+.experience {
+  text-align: center;
+
+}
+
+.experience-point-1 {
+  position: relative;
+  bottom: 3px;
+
+}
+
+.education-point-2 {
+  position: relative;
+  bottom: 30px;
+}
+
+.education {
+  text-align: center;
+
+}
+
+.education-point-1 {
+  position: relative;
+  top: 105px;
+
+}
+
+.education-point-2 {
+  position: relative;
+  top: 10px;
+
+}
+
+.education-point-3 {
+  position: relative;
+  top: 70px;
+}
+
+
+.education-point-4 {
+  position: relative;
+  top: 50px;
+
+}
+
+.education-point-4-1 {
+  position: relative;
+  top: 110px;
+}
+
+.education-point-5 {
+  position: relative;
+  top: 25px;
+
+}
+
+.education-point-5-1 {
+  position: relative;
+  top: 55px;
+
+}
+
+.education-point-6 {
+  position: relative;
+  top: 20px;
+
+}
+
+
+.education-point-6-1 {
+  position: relative;
+  top: 20px;
+
+}
+
+
+/* competence */
+
+.flex-container-competences-titre {
+  display: flex;
+  /* background-color: DodgerBlue; */
+  text-align: center;
+}
+
+.flex-container-competences-titre>div {
+  background-color: #f1f1f1;
+  margin: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 400px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+
+
+}
+
+.photo-cv-competences-titre {
+  text-align: center;
+  padding-top: 35px;
+  /* padding-bottom: 100px; */
+  /* margin: 80px; */
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 100px;
+  color: #ffffff;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  /* --fill-layer-background-media-position: fixed; */
+  /* background-image: url(../images/reseaux-sociaux-2-1920x832.jpeg), url(/images/reseaux-sociaux-2-1920x832.jpeg); */
+  background-color: #182153;
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  /* width: 1500px; */
+  /* width: 100%; */
+  max-width: 100%;
+}
+
+.flex-container-competences {
+  display: flex;
+  /* background-color: DodgerBlue; */
+}
+
+.flex-container-competences>div {
+  background-color: #f1f1f1;
+  /* margin: 50px; */
+  /* margin-left: 0px; */
+  /* margin-right: 0px; */
+  margin-top: 0px;
+  margin-bottom: 50px;
+  height: 722px;
+  font-size: 18px;
+  border-top: 2px solid #546eff;
+  width: 100%;
+}
+
+.photo-cv-competences {
+  padding-top: 35px;
+  /* padding-bottom:100px; */
+  /* margin: 80px; */
+  height: 618px;
+  color: #ffffff;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  /* --fill-layer-background-media-position: fixed; */
+  background-image: url("../images/Comment-diffuser-vos-contenus-de-blog-sur-vos-réseaux-sociaux.jpg"), url("/images/Comment-diffuser-vos-contenus-de-blog-sur-vos-réseaux-sociaux.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment:fixed; */
+  background-size: cover;
+  /* width: 1500px; */
+  width: 100%;
+  max-width: 100%;
+}
+
+.flex-container-competence-1 {
+  display: flex;
+  margin-right: 90px;
+  padding-left: 90px;
+
+  margin-left: 90px;
+
+
+
+  /*background-color: DodgerBlue;*/
+}
+
+.flex-container-competence-1>div {
+  background-color: rgba(29, 31, 40, 0.5);
+  color: rgb(255, 255, 255, 1);
+  margin: 8px;
+  margin-right: 90px;
+  padding-left: 90px;
+  padding: 19px;
+  font-size: 20px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+
+}
+
+/* .flex-container-competence-image-1 {
+      padding-top:35px;
+      padding-bottom:100px;
+      margin: 80px;
+      height: 250px;
+      width: 25%;
+      color:#ffffff;
+      font-family:Helvetica, serif;
+      font-weight:100;
+     
+      width: 80%;
+      max-width: 400px;
+      box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+      background-image:url("../images/formation-partage-pratiques-experience.jpg"), url("/images/formation-partage-pratiques-experience.jpg");
+      background-repeat:no-repeat;
+      background-position:right center;
+    
+      background-size:cover;
+      max-width: 100%;
+    
+    }*/
+.flex-container-competences-plus {
+  display: flex;
+  /* background-color: DodgerBlue; */
+  text-align: center;
+}
+
+.flex-container-competences-plus>div {
+  background-color: #f1f1f1;
+  margin: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 400px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+
+
+}
+
+.photo-cv-competences-plus {
+  text-align: left;
+  padding-top: 20px;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  /* padding-bottom: 100px; */
+  /* margin: 80px; */
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 100px;
+  /* color: #ffffff; */
+  /* font-family: Helvetica, serif; */
+  font-weight: 100;
+  /* --fill-layer-background-media-position: fixed; */
+  /* background-image: url(../images/reseaux-sociaux-2-1920x832.jpeg), url(/images/reseaux-sociaux-2-1920x832.jpeg); */
+  background-color: #4bdeb499;
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  /* width: 1500px; */
+  /* width: 100%; */
+  max-width: 100%;
+}
+
+.porfolio-devellopeur-web a:hover {
+  background: none;
+  text-shadow: none;
+  box-shadow: none;
+  color: red;
+  text-decoration: underline;
+
+}
+
+.porfolio-devellopeur-web a:visited {
+  background: none;
+  text-shadow: none;
+  box-shadow: none;
+  color: purple;
+
+}
+
+
+
+/* fin competence *
+
+      /* sur téléphone */
+@media screen and (max-width: 1300px) {
+  #container-width {
+   /* height: 130px; */
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #menu {
+    padding-left: 5px;
+    max-width: 100%;
+  }
+
+  #photo-accueil-cv {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #overlay {
+    margin-top: -20px;
+    max-width: 100%;
+
+  }
+
+  #containeur-photo-text-profil {
+    margin-left: 200PX;
+    margin-right: 200px;
+    max-width: 100%;
+
+  }
+
+  #experience {
+    text-align: center;
+
+  }
+
+  #experience-point-1 {
+    position: relative;
+    top: -65px;
+
+  }
+
+  #experience-point-2 {
+    position: relative;
+    top: -50px;
+
+  }
+
+
+
+  #education {
+    text-align: center;
+
+  }
+
+  #education-point-1 {
+    position: relative;
+    top: 105px;
+
+  }
+
+  #education-point-2 {
+    position: relative;
+    top: 30px;
+  }
+
+  #education-point-3 {
+    position: relative;
+    top: 29px;
+  }
+
+
+  #education-point-4 {
+    position: relative;
+    top: 50px;
+
+  }
+
+  #education-point-4-1 {
+    position: relative;
+    top: 50px;
+  }
+
+  #education-point-5 {
+    position: relative;
+    top: 23px;
+
+  }
+
+  #education-point-5-1 {
+    position: relative;
+    top: 55px;
+
+  }
+
+
+
+  #education-point-6 {
+    position: relative;
+    top: -10px;
+  }
+
+  #flex-container-competences {
+    display: flex;
+        height: 100%;
+
+    /* background-color: DodgerBlue; */
+  }
+
+  #flex-container-competences>div {
+    background-color: #f1f1f1;
+    margin: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    /*height: 558px;*/
+
+    padding-bottom: 3.5%;
+    height: 100%;
+    font-size: 18px;
+    border-top: 2px solid #546eff;
+    width: 100%;
+  }
+
+
+
+
+}
