@@ -30,7 +30,7 @@ body {
   padding-top: 35px;
   padding-bottom: 100px;
   margin: 80px;
-  margin-top: 130px;
+  margin-top: 0px;
   height: 648px;
   color: #ffffff;
   font-family: Helvetica, serif;
@@ -392,7 +392,7 @@ footer {
     padding-top: 35px;
     padding-bottom: 100px;
     margin: 80px;
-    margin-top: 130px;
+    margin-top: 0px;
     height: 530px;
     color: #ffffff;
     font-family: Helvetica, serif;
