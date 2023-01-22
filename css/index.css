@@ -252,6 +252,7 @@ body {
   margin: 50px;
   margin-top: 0px;
   font-size: 18px;
+
 }
 
 .espace-tirer-module {
@@ -279,6 +280,7 @@ body {
   margin-right: 0px;
   padding-left: 0px;
   margin-left: 90px;
+  
 
 
 
@@ -289,13 +291,14 @@ body {
   background-color: rgb(15 16 24 / 8%);
   color: rgb(0, 0, 0, 1);
   margin: 8px;
-  margin-right: 90px;
-  padding-left: 90px;
+  margin-right: 80px;
+  padding-left: 80px;
   padding: 13px;
   font-size: 11px;
   width: 100%;
   font-size: 12px;
   font-weight: 700;
+  font-size: 17px;
 
 }
 
@@ -511,6 +514,22 @@ footer {
     padding-top: 20px;
 
   }
+  .flex-container>div {
+    background-color: #f1f1f1;
+    margin: 50px;
+    padding: 15px;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .flex-container-image-1>div {
+    background-color: #f1f1f1;
+    margin: 60px;
+    padding: 15px;
+    font-size: 25px;
+    width: 50%;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+}
 }
 
 /* #Progres {
