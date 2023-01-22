@@ -263,7 +263,7 @@ iframe {
 
 .flex-contact-map {
   display: flex;
-  padding-top: 140px;
+  padding-top: 10px;
   padding-left: 100px;
   margin-left: 20px;
   margin-right: 20px;
@@ -322,29 +322,29 @@ a:active {
 
   }
 
-@media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1100px) {
 
-  #container-width {
-    height: 130px;
-    max-width: 100%;
-  }
+    #container-width {
+      height: 130px;
+      max-width: 100%;
+    }
 
-  #menu {
-    padding-left: 5px;
-    max-width: 100%;
-  }
+    #menu {
+      padding-left: 5px;
+      max-width: 100%;
+    }
 
-  #container-width {
-    height: 130px;
-    max-width: 100%;
-  }
+    #container-width {
+      height: 130px;
+      max-width: 100%;
+    }
 
-  #menu {
-    padding-left: 5px;
-    max-width: 100%;
-  }
+    #menu {
+      padding-left: 5px;
+      max-width: 100%;
+    }
 
-  /* #nom {
+    /* #nom {
           padding-right: 228px;
           
       }
@@ -359,160 +359,160 @@ a:active {
          } */
 
 
- #nom label {
-    float: left;
-    /*padding-right: 383px;*/
-    font-size: 20px;
-}
+    #nom label {
+      float: left;
+      /*padding-right: 383px;*/
+      font-size: 20px;
+    }
 
-#prenom label {
-    float: left;
-    /* padding-right: 407px;*/
-    font-size: 20px;
-}
+    #prenom label {
+      float: left;
+      /* padding-right: 407px;*/
+      font-size: 20px;
+    }
 
-#text-email label {
-    float: left;
-    /*  padding-right: 457px;*/
-    font-size: 20px;
-}
+    #text-email label {
+      float: left;
+      /*  padding-right: 457px;*/
+      font-size: 20px;
+    }
 
-#text-sujet label {
-    float: left;
-    /* padding-right: 475px;*/
-    font-size: 20px;
-}
+    #text-sujet label {
+      float: left;
+      /* padding-right: 475px;*/
+      font-size: 20px;
+    }
 
-#text-message label {
-    float: left;
-    /* padding-right: 440px; */
-    font-size: 20px;
-}
+    #text-message label {
+      float: left;
+      /* padding-right: 440px; */
+      font-size: 20px;
+    }
 
-  #nom,
-  #prenom,
-  #text-email,
-  #text-sujet,
-  #text-message {
-    font-size: 20px;
-  }
+    #nom,
+    #prenom,
+    #text-email,
+    #text-sujet,
+    #text-message {
+      font-size: 20px;
+    }
 
-  /*  input[id="emails"], input[id="sujet"], textarea[id="message"], button[id="submit"]{
+    /*  input[id="emails"], input[id="sujet"], textarea[id="message"], button[id="submit"]{
           width: 450px;
         } */
 
-  input[id="Prenom"],
-  input[id="Nom"],
-  input[id="email"],
-  input[id="sujet"],
-  textarea[id="message"],
-  button[id="submit"] {
-    width: 550px;
+    input[id="Prenom"],
+    input[id="Nom"],
+    input[id="email"],
+    input[id="sujet"],
+    textarea[id="message"],
+    button[id="submit"] {
+      width: 550px;
+    }
+
+    #flex-contact-map {
+
+      flex-direction: column;
+      margin-left: 20px;
+      margin-right: 40px;
+      justify-content: center;
+      text-align: center;
+      margin-top: 50px;
+
+
+    }
+
+    #flex-contact-map>div {
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 30px;
+      width: 100%;
+
+    }
+
+    #flex-contact-icon {
+      flex-direction: column;
+      text-align: center;
+
+
+    }
+
+    #flex-contact-icon>div {
+      flex-direction: column;
+      text-align: center;
+
+    }
+
+    #icon-contact {
+      flex-direction: column;
+      text-align: left;
+      text-align: center;
+      color: #fff;
+      background-color: #337ab7;
+
+    }
+
+    #containeur-icon-tel {
+      padding-top: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-top: 10px;
+      text-align: center;
+      width: 720px;
+
+    }
+
+    #text-contact {
+      text-align: center;
+
+    }
+
+    a:hover,
+    a:visited,
+    a:link,
+    a:active {
+      text-decoration: none;
+    }
+
+    #text-contact a:hover,
+    #text-contact a:visited,
+    #text-contact a:link,
+    #text-contact a:active {
+      text-align: center;
+      text-decoration: underline;
+      background-color: none;
+      background: none;
+      border: none;
+      box-shadow: none;
+
+    }
+
+    #text-contact a:hover {
+      color: cornflowerblue
+    }
+
+    #containeur-c {
+      display: flex;
+      background-color: #060707;
+      padding-left: 102px;
+
+    }
+
+    #containeur-c>div {
+      background-color: none;
+      padding-right: 0px;
+
+
+    }
+
+    iframe {
+      width: 100%;
+      text-align: center;
+      padding-right: 0%;
+      padding-left: 0%;
+      margin-left: 0%;
+
+      max-width: 100%;
+    }
+
   }
-
-  #flex-contact-map {
-
-    flex-direction: column;
-    margin-left: 20px;
-    margin-right: 40px;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-
-
-  }
-
-  #flex-contact-map>div {
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 30px;
-    width: 100%;
-
-  }
-
-  #flex-contact-icon {
-    flex-direction: column;
-    text-align: center;
-
-
-  }
-
-  #flex-contact-icon>div {
-    flex-direction: column;
-    text-align: center;
-
-  }
-
-  #icon-contact {
-    flex-direction: column;
-    text-align: left;
-    text-align: center;
-    color: #fff;
-    background-color: #337ab7;
-
-  }
-
-  #containeur-icon-tel {
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-    text-align: center;
-    width: 720px;
-
-  }
-
-  #text-contact {
-    text-align: center;
-
-  }
-
-  a:hover,
-  a:visited,
-  a:link,
-  a:active {
-    text-decoration: none;
-  }
-
-  #text-contact a:hover,
-  #text-contact a:visited,
-  #text-contact a:link,
-  #text-contact a:active {
-    text-align: center;
-    text-decoration: underline;
-    background-color: none;
-    background: none;
-    border: none;
-    box-shadow: none;
-
-  }
-
-  #text-contact a:hover {
-    color: cornflowerblue
-  }
-
-  #containeur-c {
-    display: flex;
-    background-color: #060707;
-    padding-left: 102px;
-
-  }
-
-  #containeur-c>div {
-    background-color: none;
-    padding-right: 0px;
-
-
-  }
-
-  iframe {
-    width: 100%;
-    text-align: center;
-    padding-right: 0%;
-    padding-left: 0%;
-    margin-left: 0%;
-
-    max-width: 100%;
-  }
-
-}

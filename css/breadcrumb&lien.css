@@ -1,0 +1,152 @@
+ul.breadcrumb {
+  padding: 20px 46px;
+  list-style: none;
+
+  /* background-color: #eee; */
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  margin-right: 0px;
+
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  padding-left: 8px;
+  padding-right: 15px;
+  margin-left: -5px;
+  margin-right: -8px;
+
+  color: black;
+  content: "\276F";
+}
+
+li.breadcrum-espace {
+  margin-left: 0px;
+}
+
+ul.breadcrumb li a {
+  color: blue;
+
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: rgb(182, 200, 232);
+  text-decoration: underline;
+
+}
+
+.lien a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+.lien a:link {
+  color: blue;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.lien a:visited {
+  color: none;
+
+}
+
+.lien a:focus,
+.lien a:hover {
+
+  padding: 0px;
+  margin: 0px;
+  background-color: none;
+  color: rgb(182, 200, 232);
+  text-decoration: none;
+  box-shadow: none;
+  text-decoration: underline;
+
+
+
+
+}
+
+.lien a:active {
+  color: red;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .breadcrum-espace-mention-legale {
+    margin-top: 50px;
+
+  }
+
+  .breadcrum-espace-Poltitique-config-use {
+    margin-top: 50px;
+
+  }
+
+  .breadcrum-espace-contact {
+    margin-top: 50px;
+  }
+
+  ul.breadcrumb {
+    padding: 20px 46px;
+    list-style: none;
+
+    /* background-color: #eee; */
+  }
+
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    margin-right: 0px;
+
+  }
+
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    padding-left: 8px;
+    padding-right: 15px;
+    margin-left: -5px;
+    margin-right: -8px;
+
+    color: black;
+    content: "\276F";
+  }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  ul.breadcrumb {
+    padding: 50px 46px;
+    list-style: none;
+    top: 55px
+      /* background-color: #eee; */
+  }
+
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    margin-right: 0px;
+
+  }
+
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    padding-left: 8px;
+    padding-right: 15px;
+    margin-left: -5px;
+    margin-right: -8px;
+
+    color: black;
+    content: "\276F";
+  }
+
+
+}

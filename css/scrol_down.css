@@ -1,0 +1,20 @@
+#myBtn-down {
+  display: none;
+  position: fixed;
+  bottom: 67px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 100%;
+  background: none;
+  border: 1px solid grey;
+}
+
+#myBtn-down:hover {
+  background-color: rgba(85, 85, 85, 0.1);
+}

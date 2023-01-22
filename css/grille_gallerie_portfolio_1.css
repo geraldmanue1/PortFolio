@@ -26,9 +26,9 @@ h1 {}
     float: left;
     width: 33.33%;
 
-
-    /* display: none; */
-    /* Masquer tous les éléments par déf */
+    padding: 10px
+        /* display: none; */
+        /* Masquer tous les éléments par déf */
 }
 
 /* Effacer les flotteurs après les lignes */
@@ -56,6 +56,12 @@ h1 {}
 
 
 }
+
+.myBtn button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 
 /* La classe "show" est ajoutée aux éléments filtrés */
 .show-1 {
