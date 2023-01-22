@@ -40,7 +40,9 @@ a {
 ul {
     list-style: none;
 }
-
+.hydrated {
+    visibility: none;
+}
 .menuTextGauche {
     /* MANUEL Gérald */
     position: absolute;
@@ -520,8 +522,9 @@ li.move-right {
         justify-content: space-evenly;
         align-items: stretch;
         margin-left: -270px;
-        /* menu téléphone large marge à droite */
-        width: 1200px;
+        width: 1200px;         /* menu téléphone large marge à droite */
+        height: 800px;
+       
     }
 }
 
