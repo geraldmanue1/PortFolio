@@ -7,6 +7,8 @@
   <meta name="author" content="MANUEL Gérald">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/breadcrumb&lien.css">
+  <link rel="stylesheet" href="css/scrol_down.css">
   <link rel="stylesheet" href="css/CV.css">
   <link rel="stylesheet" href="css/experience-barre.css">
   <link rel="icon" type="image/x-icon" href="images/Logo_Gérald_2022-07-01_124502.png">
@@ -17,42 +19,170 @@
 </style>
 
 <body>
-  <header class="header-banner" id="ia7k">
-    <div class="container-width" id="container-width">
-      <div class="logo-container">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <div class="taille-menu" id="taille-menu">
+    <header>
+      <div class="menu-bare" id="menu-bare">
 
-        <div class="logo">
+        <div class="containerr">
+          <nav>
+            <a href="index.html" class="logo">
+              <img id="image-ecran" src="images/Ecran.png" alt="Ecran.png" width="85" height="70">
+              <div class="menuTextGauche" id="menuTextGauche">
+                <b style="text-align: left; font-size: 20px;">MANUEL Gérald</b> <br> <b
+                  style="font-size: 14px;">Assistant
+                  Numérique</b>
+              </div>
+            </a>
+            <div class="menu-icons">
+              <i class="icon ion-md-menu" id="icon"></i>
+              <i class="icon ion-md-close" id="icon"></i>
+            </div>
 
-          <!-- <b style="position:relative; text-align: center; font-size: 20px; position: absolute; right: -85px; top:30px;">MANUEL Gérald</b> <br>
-            <b style="position:relative; font-size: 14px; margin-left: 138px; top:30px;">Assistant Numérique</b>
-            <center style="position:relative; text-align : 130px; top: -30px; right: 60px;">   <a href="#Accueil"><img src="/images/Ecran.png" alt="Ecran.png" width="85" height="70"></a> </center>    
-            -->
-          <center id="accueil"> <a href="index.html"><img id="image-ecran" src="images/Ecran.png" alt="Ecran.png"
-                width="85" height="70" style="position: absolute;
-    right: -105px;"></a> </center>
+            <ul class="nav-list" id="nav-list">
+              <li>
+                <a href="index.html" target="_self">Accueil</a>
+              </li>
+              <li>
+                <a href="CV.html" target="_self">Currculuvitae (CV)</a>
+              </li>
+
+              <li>
+                <a href="presentation.html" target="_self">Présentation
+                  <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon>
+                </a>
+                <ul class="sub-menu">
+                  <!-- <li><a href="#">BTS SIO</a></li> -->
+                  <li>
+                    <div class="menu-espace" id="menu-espace"><a href="https://geraldmanue1.github.io/index.html"
+                        target="_self" style="height: 50px; line-height: 14px; padding-top:15px; ">Présentation
+                        BTS SIO
+                        <!-- <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon> -->
+                      </a></div>
+                    <!-- <ul class="sub-menu">
+                                    <li><a href="#" style="line-height: 14px; padding-top:15px; margin-bottom:10px;height: 64px;">Application Mobile</a></li> -->
+                    <!-- <li><a href="#"style="line-height: 14px; padding-top:17px">Food</a></li>
+                                    <li>
+                                        <a href="#">More...
+                                            <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Food</a></li>
+                                            <li><a href="#">Food</a></li>
+                                            <li><a href="#">Food</a></li>
+                                        </ul>
+                                    </li> 
+                                </ul> -->
+                  </li>
+                  <li>
+                    <div class="menu-espace" id="menu-espace"><a href="Assistant_Numerique.html" target="_self"
+                        style="height: 57px; line-height: 14px;  padding-top:15px">Présentation
+                        Assistant Numérique
+                        <!-- <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon> -->
+                      </a>
+                  </li>
+                  <!-- <li><a href="#">Dinner</a></li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="projet.html" target="_self">Projet
+                  <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon>
+                </a>
+                <ul class="sub-menu">
+                  <!-- <li><a href="#">BTS SIO</a></li> -->
+                  <li>
+                    <div class="menu-espace" id="menu-espace"><a href="https://geraldmanue1.github.io/PPE.html"
+                        target="_self" style="height: 50px; padding-top:5px; ">BTS SIO (PPE)
+                        <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon>
+                      </a></div>
+                    <ul class="sub-menu">
+                      <li>
+                        <div class="menu-espace" id="menu-espace"><a
+                            href="https://geraldmanue1.github.io/Application-Mobile.html" target="_self"
+                            style="line-height: 14px; padding-top:15px; height: 64px;">Application
+                            Mobile</a></div>
+                      </li>
+                      <!-- <li><a href="#"style="line-height: 14px; padding-top:17px">Food</a></li>
+                                    <li>
+                                        <a href="#">More...
+                                            <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Food</a></li>
+                                            <li><a href="#">Food</a></li>
+                                            <li><a href="#">Food</a></li>
+                                        </ul>
+                                    </li> -->
+                    </ul>
+                  </li>
+                  <!-- <li><a href="#">Dinner</a></li> -->
+                </ul>
+              </li>
+
+              <li>
+                <a href="stage.html" target="_self">Stage
+                  <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon>
+                </a>
+                <ul class="sub-menu">
+                  <!-- <li><a href="#">BTS SIO</a></li> -->
+                  <li>
+                    <div class="menu-espace" id="menu-espace"><a
+                        href="https://geraldmanue1.github.io/Stage-BTS-SIO.html" target="_self"
+                        style="height: 50px; line-height: 14px; padding-top:15px;">Stage BTS SIO
+                        <!-- <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon> -->
+                      </a></div>
+                    <!-- <ul class="sub-menu">
+                                    <li><a href="#" style="line-height: 14px; padding-top:15px; margin-bottom:10px;height: 64px;">Application Mobile</a></li> -->
+                    <!-- <li><a href="#"style="line-height: 14px; padding-top:17px">Food</a></li>
+                                    <li>
+                                        <a href="#">More...
+                                            <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Food</a></li>
+                                            <li><a href="#">Food</a></li>
+                                            <li><a href="#">Food</a></li>
+                                        </ul>
+                                    </li> 
+                                </ul> -->
+                  </li>
+                  <li>
+                    <div class="menu-espace" id="menu-espace"><a href="stage_assistant_num.html" target="_self"
+                        style="height: 50px; line-height: 14px;">Stage Assistant
+                        Numérique
+                        <!-- <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon> -->
+                      </a></div>
+                  </li>
+                  <!-- <li><a href="#">Dinner</a></li> -->
+                </ul>
+              </li>
+
+
+              <li>
+                <a href="Info.html">Pourquoi Nous ?</a>
+              </li>
+              <li>
+                <a href="Contact.html">Contact</a>
+              </li>
+              <!--
+                    <li class="move-right btn">
+                        <a href="#">Book a table</a>
+                    </li> -->
+            </ul>
+          </nav>
         </div>
+    </header>
+  </div>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="js/menu.js"></script>
 
-        <div class="menuTextGauche" id="menuTextGauche">
-          <b style="text-align: left; font-size: 20px;">MANUEL Gérald</b> <br> <b style="font-size: 14px;">Assistant
-            Numérique</b>
-        </div>
+  <div style=" padding-bottom: 100px; max-width: 100%; max-height: 100%; border:none"></div>
 
-      </div>
 
-      <nav class="menu" id="menu">
-
-        <div class="menu-item" id="menu-item"><a href="index.html">Accueil</a>
-        </div>
-        <div class="menu-item" id="menu-item"><a href="CV.html">Curriculum vitae (CV)</a>
-        </div>
-        <div class="menu-item" id="menu-item"><a href="Info.html">Pourquoi Nous ?</a>
-        </div>
-        <div class="menu-item" id="menu-item"><a href="Contact.html">Contact</a>
-        </div>
-      </nav>
-
-    </div>
-  </header>
+  <ul class="breadcrumb" style="position: absolute; border:none">
+    <li><span class="lien"><a href="#">Accueil</span></a></li>
+    <li class="breadcrum-espace">Curriculum vitae (CV)</li>
+  </ul>
 
   <div class="photo-accueil-cv" id="ia7k"></div>
   <div class="containeur-photo-text-profil" id="containeur-photo-text-profil">
@@ -409,7 +539,8 @@
           <div class="titre-competence-blog-2" id="titre-competence-blog-2">Utilisation de recherche et de formation
           </div>
           <div class="titre-competence-blog-2" id="titre-competence-blog-2">Utilisation du logiciel PAO (Adobe :
-            PhotoShop <!--| Lightroom --> | Premier Pro | <!-- Acrobat DC, inDesign | PhotoDirector--> Photopea), Canva)</div>
+            PhotoShop <!--| Lightroom --> | Premier Pro | <!-- Acrobat DC, inDesign | PhotoDirector--> Photopea), Canva)
+          </div>
         </div>
 
         <div class="flex-container-competence-1">
@@ -463,64 +594,67 @@
     </div>
   </div>
 
-    <div class="moom" id="moom" style="margin-bottom: 60px; margin-top:50px; margin-left:50px; margin-right:50px; max-width:100%;
+  <div class="moom" id="moom" style="margin-bottom: 60px; margin-top:50px; margin-left:50px; margin-right:50px; max-width:100%;
           background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.7) 0%, skyblue 100%);">
 
-    <div class="flex-container-competences-plus photo-cv-competences-plus" style="background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 100%, skyblue 100%);"><b>
+    <div class="flex-container-competences-plus photo-cv-competences-plus"
+      style="background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 100%, skyblue 100%);"><b>
       </b><span> </span> </div>
-  
-        
-        <div id="logo" style="max-width:100%;">
-          <div id="logocontainer">
-            <img class="topics" id="html5" src="images/logo/html-rond.png" title="HTML7"/>
-                <img class="topics" id="css3" src="images/logo/css-rond.png" title="CSS3"/>
-            <img class="topics" id="sass" src="images/logo/1280px-Markdown-mark.svg.png" title="Markdown"/>
-            <img class="topics" id="js" src="images/logo/javascript_logo_rond.png" title="JavaScript">
-            <img class="topics" id="php" src="images/logo/php_mysql.png" title="PHP7 et MySQL">
-        
-                <img class="topics" id="adobe_photoshop" src="images/logo/adobe_photoshop-1.png" title="Adobe PhotoShop"/>
-                <!-- <img class="topics" id="adobe_inDesign" src="images/logo/adobe_inDesigner.png" title="Adobe inDesign"/> -->
-            <img class="topics" id="WordPress" src="images/logo/wordpress.png" title="WordPress"/>
-            <img class="topics" id="adobe_premier_pro" src="images/logo/adobe_premier_pro.png" title="Adobe Premier Pro">
-         <!-- <img class="topics" id="adobe_illustrator" src="images/logo/adobe_illustrator.png" title="Adobe illustrator"> -->
-        
-              
-            <svg id="retina" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-              <path id="Retina2" class="st9" d="M222,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
-              c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C224,189.2,223.3,187.5,222,186.3z"/>
-              <path id="Retina1" class="st9" d="M281.6,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
-              c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C283.5,189.2,282.8,187.5,281.6,186.3z"/>
-            </svg>
-            <img id="sanky" src="https://inf3cti0n95.github.io/img/sanky.svg">
-                <script src="js/logo_competences.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-        
-        
-          </div>
-        </div>
-        </div>
+
+
+    <div id="logo" style="max-width:100%;">
+      <div id="logocontainer">
+        <img class="topics" id="html5" src="images/logo/html-rond.png" title="HTML7" />
+        <img class="topics" id="css3" src="images/logo/css-rond.png" title="CSS3" />
+        <img class="topics" id="sass" src="images/logo/1280px-Markdown-mark.svg.png" title="Markdown" />
+        <img class="topics" id="js" src="images/logo/javascript_logo_rond.png" title="JavaScript">
+        <img class="topics" id="php" src="images/logo/php_mysql.png" title="PHP7 et MySQL">
+
+        <img class="topics" id="adobe_photoshop" src="images/logo/adobe_photoshop-1.png" title="Adobe PhotoShop" />
+        <!-- <img class="topics" id="adobe_inDesign" src="images/logo/adobe_inDesigner.png" title="Adobe inDesign"/> -->
+        <img class="topics" id="WordPress" src="images/logo/wordpress.png" title="WordPress" />
+        <img class="topics" id="adobe_premier_pro" src="images/logo/adobe_premier_pro.png" title="Adobe Premier Pro">
+        <!-- <img class="topics" id="adobe_illustrator" src="images/logo/adobe_illustrator.png" title="Adobe illustrator"> -->
+
+
+        <svg id="retina" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+          <path id="Retina2" class="st9" d="M222,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
+              c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C224,189.2,223.3,187.5,222,186.3z" />
+          <path id="Retina1" class="st9" d="M281.6,186.3l-5.1,4.9l2.1-6.7c-0.7-0.2-1.3-0.3-2.1-0.3c-3.9,0-7.1,3.2-7.1,7.1
+              c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C283.5,189.2,282.8,187.5,281.6,186.3z" />
+        </svg>
+        <img id="sanky" src="https://inf3cti0n95.github.io/img/sanky.svg">
+        <script src="js/logo_competences.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+
+
+      </div>
+    </div>
+  </div>
   <div class="flex-container-competences-plus photo-cv-competences-plus" style="margin-bottom: 100px;"><b
-    style="text-align:left; margin-left: 1%; font-size: 16px;"> Pour savoir plus :</b><span
-    style="padding-left: 20px;padding-top: 20px;" class="porfolio-devellopeur-web" id="porfolio-devellopeur-web">-
-    Portfolio quand j'ai été en BTS SIO Informatique<!-- à été mise à jour --> :<a href="https://geraldmanue1.github.io/"
-      alt="Portfolio quand j'ai été en BTS SIO Informatique" target="_blank"><!-- Pour les entreprises de développement Web dans le futur -->cliquez ici
-      
-    </a></span> </div>
+      style="text-align:left; margin-left: 1%; font-size: 16px;"> Pour savoir plus :</b><span
+      style="padding-left: 20px;padding-top: 20px;" class="porfolio-devellopeur-web" id="porfolio-devellopeur-web">-
+      Portfolio quand j'ai été en BTS SIO Informatique<!-- à été mise à jour --> : <span class="lien"><a
+          href="https://geraldmanue1.github.io/" alt="Portfolio quand j'ai été en BTS SIO Informatique"
+          target="_blank"><!-- Pour les entreprises de développement Web dans le futur -->cliquez ici
 
-      
+        </a></span></span> </div>
 
- 
+  <button onclick="topFunction()" id="myBtn-down" title="Aller en haut"><img src="images/haut.svg"
+      alt="Retourner en haut"></button>
+  <script src="js/scrol_down.js"> </script>
+
 
 
 
 
 
   <footer>
-    <div class="competences" style="box-shadow : 0px 0px 0px 0px black; line-height: 15px;">
+    <div class="competences" style="box-shadow : 0px 0px 0px 0px black; line-height: 20px;">
 
       <b> <span style="text-align:center; font-size: 16px; color: black;"> Copyright © 2022 Portfolio <a
-            href="https://github.com/geraldmanue1/AssistantNum" target="_blank"
+            href="https://github.com/geraldmanue1/PortFolio" target="_blank"
             Style="text-decoration:none; font-size: 16px; color:rgb(123, 123, 199)">MANUEL Gerald</a> - Tous droits
           réservés.
 
