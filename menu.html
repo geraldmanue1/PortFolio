@@ -1,457 +1,161 @@
-/*Nav css goes here*/
+<!DOCTYPE html>
+<html>
 
-/*Nav css goes here*/
+<head>
 
-
-
-body {
-    overflow-x: hidden;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-.taille-menu {
-    /* font-family: sans-serif; */
-    font-size: 15px;
-}
-
-.bare-croix .icon {
-    font-size: 65px;
-}
-
-.icon {
-    font-size: 15px;
-}
-
-/*  body {
-    overflow-x: hidden;
-}  */
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-.menuTextGauche {
-    /* MANUEL Gérald */
-    position: absolute;
-    /* background-color: #fff; */
-    border-radius: 5px;
-    width: 230px;
-    padding: 10px;
-    margin-left: 0px;
-    min-height: 30px;
-    text-align: center;
-    line-height: 15px;
-    /* top: -75px; */
-    left: 100px;
-    color: #4d114f;
-
-}
-
-header {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.containerr {
-    width: 100%;
-    max-width: 117rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    padding-left: 10px;
-}
-
-.menu-icons {
-    color: #182153;
-    font-size: 15px;
-    position: absolute;
-    top: 50%;
-    right: 2rem;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 1500;
-    display: none;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 8rem;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1);*/
-    margin-left: 40px;
-}
-
-.logo {
-    width: 5rem;
-    height: 5rem;
-    /* background-color: #eb3007; */
-    display: flex;
-    border-radius: 100%;
-    margin-right: 7rem;
-}
-
-.logo i {
-    margin: auto;
-    font-size: 15px;
-    color: #eee;
-}
-
-ion-icon {
-    font-size: 15px;
-}
-
-.nav-list {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-left: 0px;
-    /* decale à gauche menu à droite écriture */
-    margin-top: 45px;
-    /* desced nu vers bas */
-}
-
-.nav-list li {
-    line-height: 30px;
-    bottom: 10px;
-    /* monter sous-menu*/
-    position: relative;
-}
-
-.sub-menu li {
-    line-height: 40px;
-
-}
-
-.nav-list a {
-    display: block;
-    color: #182153;
-    padding-left: 50px;
-    font-size: 15px;
-    text-transform: uppercase;
-    transition: color 650ms;
-
-    height: 30px;
-}
-
-.nav-list ul.sub-menu {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    /* padding-top: 30px; */
-}
-
-
-
-.nav-list li a {
-    padding-left: 50px;
-    padding-right: 0px;
-    margin-left: 20px;
-    margin-right: 0px;
-    /* position: relative; */
-    /* margin-bottom: 20px; */
-    /* bottom: 60px; */
-}
-
-.nav-list li .menu-espace a {
-    padding-left: 20px;
-    padding-right: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-
-
-}
-
-
-
-
-.nav-list a:hover {
-    color: #eb3007;
-
-
-}
-
-.btn {
-    padding: 1.3rem;
-    display: inline-block;
-    /* background-color: #eb3007;
-    border: 2px solid #eb3007; */
-    border-radius: 5rem;
-    transition: background-color 650ms;
-
-}
-
-/* .btn:hover {
-    color: #eb3007;
-    background-color: rgba(0, 0, 0, 0.2);
-} */
-
-.sub-menu {
-    width: 200px;
-    display: block;
-    position: absolute;
-    border-top: 3px solid #eb3007;
-    background-color: #f1f1f1;
-    z-index: 100;
-    top: 16rem;
-    opacity: 0;
-    visibility: hidden;
-    margin-top: -52px;
-    transition: all 650ms ease;
-
-
-}
-
-/* Triangle au sommet du sous-menu (fait avec border-bottom) */
-.sub-menu::before {
-    content: "";
-    position: absolute;
-    top: -2.4rem;
-    left: 5rem;
-    border: 1.2rem solid transparent;
-    border-bottom-color: #eb3007;
-}
-
-/* Triangle sur la gauche */
-.sub-menu .sub-menu::before {
-    top: 0.9rem;
-    left: -2.5rem;
-    border: 1.2rem solid transparent;
-    border-right-color: #eb3007;
-
-}
-
-.sub-menu .sub-menu {
-    border-top: none;
-    border-left: 3px solid #eb3007;
-    top: 0;
-    left: 160%;
-    margin-top: -15px;
-
-}
-
-/* Premier sub-menu apparait quand hover du li dans la nav */
-.nav-list li:hover>.sub-menu {
-    top: 7.2rem;
-    /* modifier preer sous menu vers haut */
-    opacity: 1;
-    padding-top: 5px;
-    padding-bottom: 0px;
-    visibility: visible;
-
-}
-
-/* Positionnement du sous-menu par rapport à l'autre */
-.sub-menu li:hover>.sub-menu {
-    top: 0;
-    margin-top: -5px;
-    left: 100%;
-
-}
-
-li.move-right {
-    margin: auto 0 auto auto;
-    line-height: initial;
-
-}
-
-@media screen and (max-width: 1300px) {
-    .menuTextGauche {
-        /* MANUEL Gérald */
-        position: absolute;
-        /* background-color: #fff; */
-        border-radius: 5px;
-        width: 230px;
-        padding: 10px;
-        margin-left: -165px;
-        min-height: 30px;
-        text-align: center;
-        line-height: 15px;
-        /* top: -75px; */
-        left: 205px;
-        color: #4d114f;
-
+    <link rel="icon" type="image/x-icon" href="images/Logo_Gérald_2022-07-01_124502.png">
+</head>
+<style>
+    /*Nav css goes here*/
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    .containerr {
-        width: 2000px;
+    html {
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .container {
+        width: 100%;
         max-width: 117rem;
-        margin: 0px auto;
-        /* padding: 0px 1.5rem 0px 130px; */
-        padding-left: 0px;
-        padding-right: 1000px;
-        /* padding-right: 100px; */
-        margin-left: 145px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .menu-icons {
+        color: #eee;
+        font-size: 4rem;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1500;
+        display: none;
     }
 
     nav {
         display: flex;
         align-items: center;
-        width: 10000px;
+        width: 100%;
         height: 8rem;
-        /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
-        margin-left: -150px;
-        /* marge écran à gauche */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .sub-menu {
-        width: 160px;
-        display: block;
-        position: absolute;
-        border-top: 3px solid #eb3007;
-        background-color: #f1f1f1;
-        z-index: 100;
-
-        top: 16rem;
-        opacity: 0;
-        visibility: hidden;
-        margin-top: -52px;
-        transition: all 650ms ease;
+    .logo {
+        width: 5rem;
+        height: 5rem;
+        background-color: #eb3007;
+        display: flex;
+        border-radius: 100%;
+        margin-right: 5rem;
     }
 
-    .nav-list a {
-        display: block;
-        color: #182153;
-        padding: 0 1.5rem;
-        font-size: 10px;
-        text-transform: uppercase;
-        transition: color 650ms;
-        line-height: 15px;
-        height: 100px;
+    .logo i {
+        margin: auto;
+        font-size: 3rem;
+        color: #eee;
+    }
 
-        height: 30px;
+    ion-icon {
+        font-size: 1.4rem;
     }
 
     .nav-list {
         display: flex;
         width: 100%;
         align-items: center;
-        margin-left: -95px;
-        padding-left: 70px;
-    }
-
-
-}
-
-@media screen and (max-width: 1000px) {
-
-    .menuTextGauche {
-        /* MANUEL Gérald */
-        position: absolute;
-        /* background-color: #fff; */
-        border-radius: 5px;
-        width: 230px;
-        padding: 10px;
-        margin-left: -165px;
-        min-height: 30px;
-        text-align: center;
-        line-height: 15px;
-        /* top: -75px; */
-        left: 225px;
-        color: #4d114f;
-
-
-
-    }
-
-
-    .icon {
-        font-size: 26px;
     }
 
     .nav-list li {
-        line-height: 30px;
-        bottom: 0px;
-        /* monter sous-menu*/
-        /* position: relative; */
-    }
-
-    ul.sub-menu .menu-espace {
-        bottom: 28px;
-        margin-bottom: -5px;
+        line-height: 8rem;
         position: relative;
     }
 
-    nav {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 8rem;
-        /*  border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
-        margin-left: -130px;
-        /* marge écran à gauche */
-        font-size: 20px;
-    }
-
-    .nav-list {
-        /* display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        flex-direction: column;
-        align-items: initial;
-        background-color: #191919;
-        overflow-y: scroll;
-        z-index: 1000; */
-        display: none;
-        position: relative;
-        top: 300px;
-        left: 0;
-        height: 420px;
-        flex-direction: column;
-        align-items: initial;
-        background-color: #f1f1f1;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        /* padding-left: 10px; /* ecriture menu decale à gauche */
-        margin-right: -150px;
-        padding-top: 180px;
-        z-index: 1000;
-        font-size: 20px;
-
+    .sub-menu li {
+        line-height: 4rem;
     }
 
     .nav-list a {
         display: block;
-        color: #182153;
+        color: #eee;
         padding: 0 1.5rem;
-        font-size: 10px;
+        font-size: 1.4rem;
         text-transform: uppercase;
         transition: color 650ms;
-        line-height: 15px;
-        height: 60px;
-        font-size: 32px;
-        padding-left: 98px;
+    }
+
+    .nav-list a:hover {
+        color: #eb3007;
+    }
+
+    .btn {
+        padding: 1.3rem;
+        display: inline-block;
+        background-color: #eb3007;
+        border: 2px solid #eb3007;
+        border-radius: 5rem;
+        transition: background-color 650ms;
+    }
+
+    .btn:hover {
+        color: #eb3007;
+        background-color: rgba(0, 0, 0, 0.2);
     }
 
     .sub-menu {
-        width: 200rem;
+        width: 20rem;
         display: block;
         position: absolute;
         border-top: 3px solid #eb3007;
-        background-color: #f1f1f1;
+        background-color: #191919;
         z-index: 100;
         top: 16rem;
         opacity: 0;
         visibility: hidden;
-        margin-top: 0px;
         transition: all 650ms ease;
-        font-size: 20px;
+    }
+
+    /* Triangle au sommet du sous-menu (fait avec border-bottom) */
+    .sub-menu::before {
+        content: "";
+        position: absolute;
+        top: -2.5rem;
+        left: 3rem;
+        border: 1.2rem solid transparent;
+        border-bottom-color: #eb3007;
+    }
+
+    /* Triangle sur la gauche */
+    .sub-menu .sub-menu::before {
+        top: 0.9rem;
+        left: -2.5rem;
+        border: 1.2rem solid transparent;
+        border-right-color: #eb3007;
     }
 
     .sub-menu .sub-menu {
@@ -459,133 +163,237 @@ li.move-right {
         border-left: 3px solid #eb3007;
         top: 0;
         left: 160%;
-        margin-top: 0px;
-        font-size: 20px;
-
-
     }
 
-    .nav-list>li {
-        line-height: 50px;
-    }
-
-    .sub-menu {
-        position: initial;
-        /* margin-top: -20px; */
-        border: 3px solid transparent;
-        border-left-color: #eb3007;
-        margin-left: 1rem;
-        max-height: 0;
-    }
-
-    .sub-menu::before {
-        display: none;
-
-    }
-
+    /* Premier sub-menu apparait quand hover du li dans la nav */
     .nav-list li:hover>.sub-menu {
+        top: 8rem;
         opacity: 1;
         visibility: visible;
-        max-height: initial;
+    }
 
+    /* Positionnement du sous-menu par rapport à l'autre */
+    .sub-menu li:hover>.sub-menu {
+        top: 0;
+        left: 100%;
     }
 
     li.move-right {
-        margin: 0 auto 0 0;
+        margin: auto 0 auto auto;
         line-height: initial;
-
     }
 
-    .menu-icons {
-        display: block;
+    @media screen and (max-width: 850px) {
+        .nav-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            flex-direction: column;
+            align-items: initial;
+            background-color: #191919;
+            overflow-y: scroll;
+            z-index: 1000;
+        }
 
+        .nav-list>li {
+            line-height: 6rem;
+        }
+
+        .sub-menu {
+            position: initial;
+            border: 3px solid transparent;
+            border-left-color: #eb3007;
+            margin-left: 1rem;
+            max-height: 0;
+        }
+
+        .sub-menu::before {
+            display: none;
+        }
+
+        .nav-list li:hover>.sub-menu {
+            opacity: 1;
+            visibility: visible;
+            max-height: initial;
+        }
+
+        li.move-right {
+            margin: 0 auto 0 0;
+            line-height: initial;
+        }
+
+        .menu-icons {
+            display: block;
+        }
+
+        .ion-md-close {
+            display: none;
+        }
+
+        nav.active .ion-md-close {
+            display: block;
+        }
+
+        nav.active .ion-md-menu {
+            display: none;
+        }
+
+        nav.active .nav-list {
+            display: flex;
+        }
     }
 
-    .ion-md-close {
-        display: none;
+    /*End nav css*/
+
+    /*Hero*/
+    .hero {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.8)),
+            url("../images/bg.jpg") center no-repeat;
+        background-size: cover;
     }
 
-    nav.active .ion-md-close {
-        display: block;
+    .text {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #eee;
+        text-align: center;
     }
 
-    nav.active .ion-md-menu {
-        display: none;
+    .text h1 {
+        font-size: 8rem;
+        margin: 2rem 0;
+        font-family: "Gochi Hand", cursive;
     }
 
-    nav.active .nav-list {
-        display: flex;
-        position: relative;
-        top: 230px;
-        justify-content: space-evenly;
-        align-items: stretch;
-        margin-left: -270px;
-        width: 1200px;         /* menu téléphone large marge à droite */
-        height: 800px;
-       
+    .text h2 {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 300;
     }
-}
 
-.menu-bare {
-    position: fixed;
-    width: 100%;
-    max-width: 100%;
-    height: 100px;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    background-color: #f1f1f1;
-    opacity: 1;
-    z-index: 80000;
-    /* A adapter au besoin */
-}
-
-
-
-
-/*End nav css*/
-
-/*Hero*/
-.hero {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.8)),
-        url("../images/bg.jpg") center no-repeat;
-    background-size: cover;
-
-
-}
-
-
-.text .btn {
-    font-size: 15px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    color: #eee;
-    text-transform: uppercase;
-
-}
-
-@media screen and (max-width: 980px) {
-    #nav-list li #menu-espace a {
-        padding-left: 20px;
-        padding-right: 0px;
-        margin-left: 50px;
-        margin-right: 0px;
+    .text p {
+        font-size: 1.6rem;
+        margin-bottom: 5rem;
     }
-}
-
-
-
-@media screen and (max-width: 830px) {
 
     .text .btn {
-        font-size: 15px;
-
+        font-size: 1.6rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        color: #eee;
+        text-transform: uppercase;
     }
 
-}
+    @media screen and (max-width: 830px) {
+        .text h1 {
+            font-size: 4rem;
+        }
+
+        .text .btn {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+
+<body>
+
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                    <i class="icon ion-md-menu"></i>
+                    <i class="icon ion-md-close"></i>
+                </div>
+                <a href="index.html" class="logo">
+                    <i class="icon ion-md-restaurant"></i>
+                </a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu
+                            <ion-icon name="caret-down-outline"></ion-icon>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Breakfast</a></li>
+                            <li>
+                                <a href="#">Lunch
+                                    <ion-icon name="caret-down-outline"></ion-icon>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Food</a></li>
+                                    <li><a href="#">Food</a></li>
+                                    <li>
+                                        <a href="#">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Food</a></li>
+                                            <li><a href="#">Food</a></li>
+                                            <li><a href="#">Food</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dinner</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Our chefs</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="move-right btn">
+                        <a href="#">Book a table</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--End nav-->
+
+    <!--Hero-->
+    <section class="hero">
+        <div class="text">
+            <h2>Proudly serving</h2>
+            <h1>Delicious Food Daily</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href="#" class="btn">Learn more</a>
+        </div>
+    </section>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js">
+        //Create function to select elements
+
+        //Open and close nav on click
+        const menuIcon = document.querySelector(".menu-icons");
+        menuIcon.addEventListener("click", () => {
+            console.log("OK");
+            const nav = document.getElementsByTagName("nav")[0];
+            nav.classList.toggle("active");
+        });
+
+    </script>
+
+
+</body>
+
+</html>
