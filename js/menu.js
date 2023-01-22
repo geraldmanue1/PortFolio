@@ -1,6 +1,6 @@
-//Create function to select elements
+// Créer une fonction pour sélectionner des éléments
 
-//Open and close nav on click
+// Ouvrir et fermer la navigation au clic
 const menuIcon = document.querySelector(".menu-icons");
 menuIcon.addEventListener("click", () => {
     console.log("OK");
