@@ -444,7 +444,7 @@
   padding: 19px;
   font-size: 20px;
   width: 100%;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 18px;
   box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
@@ -662,7 +662,21 @@
     width: 100%;
   }
 
-
+  .flex-container-competence-1>div {
+    background-color: rgba(29, 31, 40, 0.5);
+    color: rgb(255, 255, 255, 1);
+    margin: 8px;
+    margin-right: 30px;
+    padding-left: 30px;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+  
+  }
 
 
 }

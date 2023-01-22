@@ -1,15 +1,15 @@
 #myBtn-down {
   display: none;
   position: fixed;
-  bottom: 80px;
-  right: 10px;
+  bottom: 100px;
+  right: 35px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 25px;
   border: none;
   outline: none;
   color: black;
   cursor: pointer;
-  padding: 3px;
+  padding: 15px;
   border-radius: 100%;
   background: none;
   border: 1px solid grey;
@@ -17,4 +17,27 @@
 
 #myBtn-down:hover {
   background-color: rgba(85, 85, 85, 0.1);
+}
+
+@media screen and (max-width: 1200px) {
+  #myBtn-down {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 35px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 100%;
+    background: none;
+    border: 1px solid grey;
+  }
+  
+  #myBtn-down:hover {
+    background-color: rgba(85, 85, 85, 0.1);
+  }
 }
