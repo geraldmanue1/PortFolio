@@ -166,6 +166,7 @@ ion-icon {
     /* position: relative; */
     /* margin-bottom: 20px; */
     /* bottom: 60px; */
+    line-height: 18px;
 }
 
 .nav-list li .menu-espace a {
