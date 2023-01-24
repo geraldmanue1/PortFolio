@@ -32,6 +32,8 @@ header {
     /* margin-bottom: 100px; */
     padding-bottom: 8px;
     background: #f1f1f1;
+    z-index: 80000; /* A adapter au besoin */
+
 }
 
 .containerr {
