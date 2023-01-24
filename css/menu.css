@@ -44,7 +44,7 @@ header {
 
 .menuTextGauche {
     /* MANUEL Gérald */
-    position: absolute;
+    /* position: fixed; */
     /* background-color: #fff; */
     border-radius: 5px;
     width: 230px;
@@ -60,7 +60,6 @@ header {
     /* top: -75px; */
     left: 200px;
     color: #4d114f;
-
 }
 
 .menu-icons {
@@ -270,7 +269,7 @@ ion-icon {
         display: block;
         color: #182153;
         padding: 0 1.5rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         /* ecriture à gauche menu baise la taille*/
         text-transform: uppercase;
         transition: color 650ms;
