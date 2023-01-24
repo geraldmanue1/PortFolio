@@ -175,7 +175,13 @@ h1 {}
 @media screen and (max-width: 1300px) {
 
     #top-left-1 {
-        width: 35%;
+        width: 42%;
+    }
+
+    @media screen and (max-width: 1000px) {
+
+    #top-left-1 {
+        width: 40%;
     }
 
 }
