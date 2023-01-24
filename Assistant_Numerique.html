@@ -15,165 +15,134 @@
 
 <body>
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-  <div class="taille-menu" id="taille-menu">
-    <header>
-      <div class="menu-bare" id="menu-bare">
+  <header>
+    <div class="containerr">
+      <nav>
+        <div class="menu-icons">
+          <i class="icon ion-md-menu"></i>
+          <i class="icon ion-md-close"></i>
+        </div>
+        <a href="index.html" class="logo"><span class="logo-1"><img id="image-ecran" src="images/Ecran.png"
+              alt="Ecran.png" width="85" height="70"></span>
 
-        <div class="containerr">
-          <nav class="">
-            <a href="index.html" class="logo">
-              <img id="image-ecran" src="images/Ecran.png" alt="Ecran.png" width="85" height="70">
-              <div class="menuTextGauche" id="menuTextGauche">
-                <b style="text-align: left; font-size: 20px;">MANUEL Gérald</b> <br> <b
-                  style="font-size: 14px;">Assistant
-                  Numérique</b>
-              </div>
+          <div class="menuTextGauche" id="menuTextGauche">
+            <b style="text-align: left; font-size: 20px;">MANUEL Gérald</b> <br> <b style="font-size: 14px;">Assistant
+              Numérique</b>
+          </div>
+        </a>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" target="self">Accueil</a>
+          </li>
+          <li>
+            <a href="CV.html" target="self">Curriculum Vitae</a>
+          </li>
+          <li>
+            <a href="presentation.html" target="self">Présentation
+              <ion-icon name="caret-down-outline"></ion-icon>
             </a>
-            <div class="menu-icons bare-croix">
-              <i class="icon ion-md-menu" id="icon"></i>
-              <i class="icon ion-md-close" id="icon"></i>
-            </div>
+            <ul class="sub-menu">
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"><a href="https://geraldmanue1.github.io/index.html"
+                  target="self">Présentation BTS SIO</a></li>
+              <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;"><a href="Assistant_Numerique.html" target="self">Présentation
+                  Assistant Numérique</a></li>
+            </ul>
+          </li>
 
-            <ul class="nav-list" id="nav-list">
-              <li>
-                <a href="index.html" target="_self">Accueil</a>
-              </li>
-              <li>
-                <a href="CV.html" target="_self">Currculuvitae (CV)</a>
-              </li>
 
-              <li>
-                <a href="presentation.html" target="_self">Présentation
-                  <ion-icon class="icon md hydrated" id="icon" name="caret-down-outline" role="img"
-                    aria-label="caret down outline"></ion-icon>
+          <li>
+            <a href="projet.html" target="self">Projet
+              <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul class="sub-menu">
+
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;">
+                <a href="https://geraldmanue1.github.io/PPE.html" target="self">BTS SIO (PPE)
+                  <ion-icon name="caret-down-outline"></ion-icon>
                 </a>
                 <ul class="sub-menu">
-                  <!-- <li><a href="#">BTS SIO</a></li> -->
-                  <li>
-                    <div class="menu-espace" id="menu-espace"><a href="https://geraldmanue1.github.io/index.html"
-                        target="_self" style="height: 50px; line-height: 14px; padding-top:15px; ">Présentation
-                        BTS SIO
-                        <!-- <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon> -->
-                      </a></div>
-                    <!-- <ul class="sub-menu">
-                                    <li><a href="#" style="line-height: 14px; padding-top:15px; margin-bottom:10px;height: 64px;">Application Mobile</a></li> -->
-                    <!-- <li><a href="#"style="line-height: 14px; padding-top:17px">Food</a></li>
-                                    <li>
+                  <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"><a
+                      href="https://geraldmanue1.github.io/Application-Mobile.html"" target=" self">Application
+                      Mobile</a></li>
+
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
                                         <a href="#">More...
-                                            <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon>
+                                            <ion-icon name="caret-down-outline"></ion-icon>
                                         </a>
                                         <ul class="sub-menu">
-                                            <li><a href="#">Food</a></li>
-                                            <li><a href="#">Food</a></li>
-                                            <li><a href="#">Food</a></li>
-                                        </ul>
-                                    </li> 
-                                </ul> -->
-                  </li>
-                  <li>
-                    <div class="menu-espace" id="menu-espace"><a href="Assistant_Numerique.html" target="_self"
-                        style="height: 57px; line-height: 14px;  padding-top:15px">Présentation
-                        Assistant Numérique
-                        <!-- <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon> -->
-                      </a>
-                    </div>
-                  </li>
-                  <!-- <li><a href="#">Dinner</a></li> -->
-                </ul>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#">Food</a></li>
+                                        </ul> -->
               </li>
-              <li>
-                <a href="projet.html" target="_self">Projet
-                  <ion-icon class="icon md hydrated" id="icon" name="caret-down-outline" role="img"
-                    aria-label="caret down outline"></ion-icon>
-                </a>
-                <ul class="sub-menu">
-                  <!-- <li><a href="#">BTS SIO</a></li> -->
-                  <li>
-                    <div class="menu-espace" id="menu-espace"><a href="https://geraldmanue1.github.io/PPE.html"
-                        target="_self" style="height: 50px; padding-top:5px; ">BTS SIO (PPE)
-                        <ion-icon class="icon md hydrated" id="icon" name="caret-down-outline" role="img"
-                          aria-label="caret down outline"></ion-icon>
-                      </a></div>
-                    <ul class="sub-menu">
-                      <li>
-                        <div class="menu-espace" id="menu-espace"><a
-                            href="https://geraldmanue1.github.io/Application-Mobile.html" target="_self"
-                            style="line-height: 14px; padding-top:15px; height: 64px;">Application
-                            Mobile</a></div>
-                      </li>
-                      <!-- <li><a href="#"style="line-height: 14px; padding-top:17px">Food</a></li>
-                                    <li>
-                                        <a href="#">More...
-                                            <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon>
-                                        </a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Food</a></li>
-                                            <li><a href="#">Food</a></li>
-                                            <li><a href="#">Food</a></li>
-                                        </ul>
-                                    </li> -->
-                    </ul>
-                  </li>
-                  <!-- <li><a href="#">Dinner</a></li> -->
-                </ul>
-              </li>
+            </ul>
+          </li>
+          <!-- <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"> <a href="#">BTS Gestion</a></li> -->
+        </ul>
+        </li>
 
-              <li>
-                <a href="stage.html" target="_self">Stage
-                  <ion-icon class="icon md hydrated" id="icon" name="caret-down-outline" role="img"
-                    aria-label="caret down outline"></ion-icon>
-                </a>
-                <ul class="sub-menu">
-                  <!-- <li><a href="#">BTS SIO</a></li> -->
-                  <li>
-                    <div class="menu-espace" id="menu-espace"><a
-                        href="https://geraldmanue1.github.io/Stage-BTS-SIO.html" target="_self"
-                        style="height: 50px; line-height: 14px; padding-top:15px;">Stage BTS SIO
-                        <!-- <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon> -->
-                      </a></div>
-                    <!-- <ul class="sub-menu">
-                                    <li><a href="#" style="line-height: 14px; padding-top:15px; margin-bottom:10px;height: 64px;">Application Mobile</a></li> -->
-                    <!-- <li><a href="#"style="line-height: 14px; padding-top:17px">Food</a></li>
-                                    <li>
-                                        <a href="#">More...
-                                            <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon>
-                                        </a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Food</a></li>
-                                            <li><a href="#">Food</a></li>
-                                            <li><a href="#">Food</a></li>
-                                        </ul>
-                                    </li> 
-                                </ul> -->
-                  </li>
-                  <li>
-                    <div class="menu-espace" id="menu-espace"><a href="stage_assistant_num.html" target="_self"
-                        style="height: 50px; line-height: 14px;">Stage Assistant
-                        Numérique
-                        <!-- <ion-icon class="icon" id="icon" name="caret-down-outline"></ion-icon> -->
-                      </a></div>
-                  </li>
-                  <!-- <li><a href="#">Dinner</a></li> -->
-                </ul>
-              </li>
-
-
-              <li>
-                <a href="Info.html">Pourquoi Nous ?</a>
-              </li>
-              <li>
-                <a href="Contact.html">Contact</a>
-              </li>
-              <!--
-                    <li class="move-right btn">
+        <li>
+          <a href="stage.html" target="self">Stage
+            <ion-icon name="caret-down-outline"></ion-icon>
+          </a>
+          <ul class="sub-menu">
+            <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"><a href="https://geraldmanue1.github.io/Stage-BTS-SIO.html"
+                target="self">Stage BTS SIO</a></li>
+            <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;"><a href="stage_assistant_num.html" target="self">Stage Assistant
+                Numérique</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="Info.html" target="self">Pourquoi Nous ?</a>
+        </li>
+        <li>
+          <a href="Contact.html" target="self">Contact</a>
+        </li>
+        <!-- <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li> -->
+        <!-- <li class="move-right btn">
                         <a href="#">Book a table</a>
                     </li> -->
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-  </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--End nav-->
+
+  <!--Hero-->
+  <!-- <section class="hero">
+        
+    </section> -->
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   <script src="js/menu.js"></script>
 
@@ -481,8 +450,8 @@
   </div>
 
   <button onclick="topFunction()" id="myBtn-down" title="Aller en haut"><img src="images/haut.svg"
-            alt="Retourner en haut" height="32px"></button>
-    <script src="js/scrol_down.js"> </script>
+      alt="Retourner en haut" height="32px"></button>
+  <script src="js/scrol_down.js"> </script>
 
   <br><br><br> <br><br>
 
