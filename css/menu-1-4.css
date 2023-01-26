@@ -213,14 +213,14 @@
     position: absolute;
     top: 50%;
     margin-top: -25px;
+    padding-top: 5px;
     margin-right: 5px;
     left: auto;
     right: 4px;
-    width: 45px;
-    height: 47px;
+    width: 55px;
+    height: 60px;
     overflow: hidden;
     font: bold 80px/40px monospace !important;
-    /* aggrandir le + et - */
     text-align: center;
     text-shadow: none;
     background: rgba(255, 255, 255, 0.5);
@@ -237,7 +237,7 @@
   .sm-clean a.highlighted span.sub-arrow:before {
     display: block;
     content: '-';
-    margin-top: 0px;
+    margin-top: 3px;
     height: 200px;
 
   }
