@@ -1,0 +1,88 @@
+/*Nav css goes here*/
+
+
+.menu-icons {
+    color: black;
+    font-size: 4rem;
+    position: absolute;
+    top: 20%;
+    right: 2px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1500;
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+   
+
+    .menu-icons {
+        color: black;
+        font-size: 4rem;
+        position: absolute;
+        top: 20%;
+        right: 2px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1500;
+        display: none;
+    }
+
+    /*.sous-menu-espace li {
+    
+     padding-top:15px;
+     padding-bottom :5px;
+    }*/
+
+
+   
+    
+
+}
+
+@media screen and (max-width: 1000px) {
+
+
+
+
+    /* li.move-right {
+        margin: 0 auto 0 0;
+        line-height: initial;
+    } */
+
+    .menu-icons {
+        display: block;
+    }
+
+    .ion-md-close {
+        display: none;
+    }
+
+    nav.active .ion-md-close {
+        display: block;
+    }
+
+    nav.active .ion-md-menu {
+        display: none;
+    }
+
+ 
+    .menu-icons {
+        color: black;
+        font-size: 80px;
+        padding-right: 0px;
+        top:9px;
+     
+      width: 90px;
+      height:  10px;
+      z-index: 10000000;
+
+
+    }
+}
+
+/*End nav css*/
+
