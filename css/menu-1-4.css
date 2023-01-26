@@ -313,7 +313,8 @@
 }
 
 .sm-clean ul {
-  background: rgba(162, 162, 162, 0.1);
+  background: rgba(162, 162, 162, 0.1); /* couleur sous-menu téléphone */
+  margin-right:-20px;
 }
 
 .sm-clean ul a,
