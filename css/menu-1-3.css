@@ -17,7 +17,7 @@
 
 
 @media screen and (max-width: 1300px) {
-   
+
 
     .menu-icons {
         color: black;
@@ -38,8 +38,8 @@
     }*/
 
 
-   
-    
+
+
 
 }
 
@@ -69,20 +69,19 @@
         display: none;
     }
 
- 
+
     .menu-icons {
         color: black;
         font-size: 95px;
         padding-right: 0px;
-        top:3px;
-     
-      width: 100px;
-      height:  10px;
-      z-index: 10000000;
+        top: 15px;
+
+        width: 120px;
+        height: 10px;
+        z-index: 10000000;
 
 
     }
 }
 
 /*End nav css*/
-
