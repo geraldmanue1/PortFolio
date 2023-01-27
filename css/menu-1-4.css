@@ -1,7 +1,23 @@
 /* Mobile first layout SmartMenus Core CSS (il n'est pas recommandé de modifier ces règles)
    Vous en avez besoin une fois par page, quel que soit le nombre d'arborescences de menus ou de thèmes différents que vous utilisez.
 -------------------------------------------------- ------------------------------------------*/
+.menu-bare {
+  position: fixed;
+  width: 1546px;
+  z-index: 10000; 
+}
 
+.espace-haut-dessous-menu {
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  #espace-haut-dessous-menu {
+      padding-top: 80px;
+  }
+
+}
 .sm {
   position: relative;
   z-index: 9999;
@@ -732,7 +748,7 @@
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     /* border-radius: 50px; */
-    margin-top: -8px;
+    margin-top: -24px;
     margin-left: -8px;
     margin-right: -8px;
 
@@ -1047,42 +1063,27 @@
 @media screen and (max-width: 1000px) {
   .menu-icons {
     color: black;
-    font-size: 8rem;
+    font-size: 4rem;
     padding-right: 15px;
     padding-top: 20px;
+    left: 800px;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1500;
+    display: none;
+
   }
 
 
   .menu-icons {
     display: block;
+
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .menu-icons {
-    color: black;
-    font-size: 4rem;
-    position: absolute;
-    top: 50%;
-    right: 2rem;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 1500;
-    display: none;
-  }
-
-  .menu-icons {
-    color: black;
-    font-size: 4rem;
-    position: absolute;
-    top: 50%;
-    right: 2rem;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 1500;
-    display: none;
-  }
-}
 
 /* taille écriture menu sur téléphone */
 .sm-clean a,

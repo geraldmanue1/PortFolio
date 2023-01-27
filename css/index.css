@@ -530,6 +530,14 @@ footer {
     width: 50%;
     box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+  #espace-haut {
+    padding-top:160px;
+    }
 }
 
 /* #Progres {
