@@ -760,18 +760,16 @@
   padding: 10px;
   padding-left: 0px;
   padding-right: 0px;
-  top: 45px;
+  top: 35px;
   margin-right: 0px;
   margin-left: 0px;
   min-height: 30px;
   text-align: center;
   line-height: 15px;
   /* top: -75px; */
-  left: 190px;
+  left: 90px;
   color: #4d114f;
   font-size: 24px;
-
-
 }
 
 
@@ -785,7 +783,7 @@
 }
 
 .image-ecran {
-  margin-left: 90px;
+  margin-left: 0px;
   height: 85px;
 }
 
@@ -863,10 +861,9 @@
 .main-menu-1 {
   float: right;
   clear: none;
-  margin-right: 200px;
+  margin-right: 80px;
   margin-top: -60px;
   background: none;
-  ;
 }
 
 @media (min-width: 1000px) {}
@@ -876,9 +873,8 @@
     float: right;
     clear: none;
     margin-right: 20px;
-    margin-top: -50px;
+    margin-top: 0px;
     background: none;
-    ;
   }
 }
 
