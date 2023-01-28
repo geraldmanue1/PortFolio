@@ -108,7 +108,7 @@ textarea:hover {
 }
 
 .alt-send-button {
-  width: 400px;
+  /* width: 400px; */
   height: 34px;
   transition: all .2s ease-in-out;
 }
@@ -285,7 +285,7 @@ iframe {
 }
 
 
-.text-contact a:hover,
+/*.text-contact a:hover,
 .text-contact a:visited,
 .text-contact a:link,
 .text-contact a:active {
@@ -308,7 +308,7 @@ a:active {
 
 .text-contact a:hover {
   color: cornflowerblue
-}
+} */
 
 @media screen and (max-width: 1500px) {
 
