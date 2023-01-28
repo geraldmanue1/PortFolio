@@ -38,7 +38,6 @@
   padding-right: 8px;
 }
 
-.main-menu-1 {}
 
 .sm-rtl,
 .sm-rtl ul,
@@ -877,7 +876,7 @@
 .main-menu-1 {
   float: right;
   clear: none;
-  margin-right: 80px;
+  margin-right: 165px;
   margin-top: -60px;
   background: none;
 }
