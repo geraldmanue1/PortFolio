@@ -6,253 +6,283 @@
   <meta charset="UTF-8">
   <meta name="author" content="MANUEL Gérald">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/menu-1-4.css">
-  <link rel="stylesheet" href="css/menu-1-3.css">
-
+  <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/breadcrumb&lien.css">
   <link rel="stylesheet" href="css/scrol_down.css">
   <link rel="stylesheet" href="css/info.css">
   <link rel="icon" type="image/x-icon" href="images/Logo_Gérald_2022-07-01_124502.png">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.0.1/jquery.smartmenus.min.js"></script>
-  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-
-
-
-  <link rel="icon" type="image/x-icon" href="images/Logo_Gérald_2022-07-01_124502.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
 </head>
 
+</style>
+
 <body>
-  <nav class="main-nav menu-bare" role="navigation">
-
-
-    <!-- Mobile menu toggle button (hamburger/x icon) -->
-    <input id="main-menu-state" type="checkbox" />
-
-    <!-- <label class="main-menu-btn" for="main-menu-state"> -->
-    <label for="main-menu-state">
-      <div class="menu-icons">
-        <i class="icon ion-md-menu"></i>
-        <i class="icon ion-md-close"></i>
-      </div>
-      <!--<span class="main-menu-btn-icon"></span> Toggle main menu visibility-->
-    </label>
-
-    <h2 class="nav-brand"><a href="index.html"><img class="image-ecran" id="image-ecran" src="images/Ecran.png" alt="Ecran.png"
-          width="85" height="70">
-
-        <div class="menuTextGauche" id="menuTextGauche">
-          <center><b style="text-align: left; ">MANUEL<span style="color:transparent">_</span>Gérald</b> <br> <b class="menu-Taille" id="menuTaille" style="">PortFolio</b></center>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <header>
+    <div class="containerr">
+      <nav>
+        <div class="menu-icons">
+          <i class="icon ion-md-menu"></i>
+          <i class="icon ion-md-close"></i>
         </div>
-      </a></h2>
+        <a href="index.html"> <img class="image-ecran" id="image-ecran" src="images/Ecran.png" alt="Ecran.png"
+            width="85" height="70">
 
-    <!-- <div id="sm-clean">-->
-    <!-- Sample menu definition -->
-    <ul id="main-menu" class="sm sm-clean main-menu-1">
-      <li id="marge-menu-li">
-        <div id="marge-Haut"><a href="index.html">Accueil</a></div>
-      </li>
+          <div class="menuTextGauche" id="menuTextGauche">
+            <center><b style="text-align: left; ">MANUEL<span style="color:transparent">_</span>Gérald</b> <br>
+              <b class="menu-Taille" id="menuTaille" style="">PortFolio</b>
+            </center>
+          </div>
+        </a>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="menu-ecriture">Accueil</a>
+          </li>
+          <li>
+            <a href="CV.html" class="menu-ecriture">Curriculum Vitae</a>
+          </li>
+          <li>
+            <a href="presentation.html" class="menu-ecriture">Présentation
+              <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul class="sub-menu">
 
-      <li id="marge-menu-li"><a href="CV.html">Curriculum Vitae</a>
-        <!-- <ul>
-          <li><a href="http://www.smartmenus.org/about/introduction-to-smartmenus-jquery/">Introduction to SmartMenus
-              jQuery</a></li>
-          <li><a href="http://www.smartmenus.org/about/themes/">Demos + themes</a></li>
-          <li><a href="http://vadikom.com/about/#vasil-dinkov">The author</a></li>
-          <li><a href="http://www.smartmenus.org/about/vadikom/">The company</a>
-            <ul>
-              <li><a href="http://vadikom.com/about/">About Vadikom</a></li>
-              <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li>
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-1"><a
+                  href="https://geraldmanue1.github.io/index.html">Présentation BTS SIO</a></li>
+              <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;" id="espace-sous-menu-1"><a
+                  href="Assistant_Numerique.html">Présentation
+                  Assistant Numérique</a></li>
+
+              <!--
+                                    <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                    Assistant Numérique</a></li><li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                             Assistant Numérique</a></li><li style="line-height: 20px; 
+                                             padding-top:15px;
+                                             padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                      Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                      padding-top:15px;
+                                                      padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                               Assistant Numérique</a></li>
+
+                                                               <li style="line-height: 20px; 
+                                                               padding-top:15px;
+                                                               padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                        Assistant Numérique</a></li>
+                                                                        <li style="line-height: 20px; 
+                                                               padding-top:15px;
+                                                               padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                        Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                        padding-top:15px;
+                                                                        padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                 Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                 padding-top:15px;
+                                                                                 padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                          Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                          padding-top:15px;
+                                                                                          padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                   Assistant Numérique</a></li>
+                                                                                                   <li style="line-height: 20px; 
+                                                                                                   padding-top:15px;
+                                                                                                   padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                            Assistant Numérique</a></li>
+                                                                                                            <li style="line-height: 20px; 
+                                                                                                   padding-top:15px;
+                                                                                                   padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                            Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                                            padding-top:15px;
+                                                                                                            padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                                     Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                                                     padding-top:15px;
+                                                                                                                     padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                                              Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                                                              padding-top:15px;
+                                                                                                                              padding-bottom :5px;" id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                                                       Assistant Numérique</a></li>-->
             </ul>
           </li>
-        </ul> -->
-      </li>
 
 
-      <li id="marge-menu-li"><a href="presentation.html">Présentation</a>
-        <ul>
-          <li><a href="https://geraldmanue1.github.io/index.html">Présentation BTS SIO
-              </a></li>
+          <li>
+            <a href="projet.html" class="menu-ecriture menu-ecriture-2">Projet
+              <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul class="sub-menu">
 
-          <li><a href="Assistant_Numerique.html">Présentation Assistant Numérique</a></li>
-          
-         <!-- <li><a href="http://vadikom.com/about/#vasil-dinkov">Auteur</a></li>
-          
-          <li><a href="http://www.smartmenus.org/about/vadikom/">L'entreproise</a>
-            <ul>
-              <li><a href="http://vadikom.com/about/">About Vadikom</a></li>
-              <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li>
-            </ul>
-          </li> -->
-        </ul>
-      </li>
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-1">
+                <a href="https://geraldmanue1.github.io/PPE.html" class="menu-ecriture-1">BTS SIO (PPE)
+                  <ion-icon name="caret-down-outline"></ion-icon>
+                </a>
+                <ul class="sub-menu">
+                  <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-2"><a
+                      href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li>
 
-      <li id="marge-menu-li"><a href="projet.html">Projet</a>
-        <ul>
-         <!--<li><a href="http://www.smartmenus.org/about/introduction-to-smartmenus-jquery/">Présentation BTS SIO
-              </a></li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"  id="espace-sous-menu-2"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#" class="menu-ecriture-1"  id="espace-sous-menu-2">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;" id="espace-sous-menu-3"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"  id="espace-sous-menu-3"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#" id="espace-sous-menu-3">Food</a></li>
+                                        </ul> 
+                            </li>
+                            <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-2"><a
+                                            href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li> -->
 
-          <li><a href="http://www.smartmenus.org/about/themes/">Présentation Assistant Numérique</a></li> -->
-          
-         <!-- <li><a href="http://vadikom.com/about/#vasil-dinkov">Auteur</a></li> -->
-          
-          <li><a href="https://geraldmanue1.github.io/PPE.html">BTS SIO (PPE)</a>
-            <ul>
-              <li><a href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li>
-              <!-- <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li> -->
-            </ul>
-          </li> 
-        </ul>
-      </li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#">Food</a></li>
+                                        </ul> -->
+                  <!-- </li>
+                            <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"  id="espace-sous-menu-2"><a
+                                            href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li> -->
 
-      <li id="marge-menu-li"><a href="stage.html">Stage</a>
-        <ul>
-          <li><a href="https://geraldmanue1.github.io/Stage-BTS-SIO.html">Stage BTS SIO
-              </a></li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#">Food</a></li>
+                                        </ul> -->
+                  <!-- </li>
+                            <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"  id="espace-sous-menu-2"><a
+                                            href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li> -->
 
-          <li><a href="stage_assistant_num.html">Stage Assistant Numérique</a></li>
-          
-         <!-- <li><a href="http://vadikom.com/about/#vasil-dinkov">Auteur</a></li>
-          
-          <li><a href="http://www.smartmenus.org/about/vadikom/">L'entreproise</a>
-            <ul>
-              <li><a href="http://vadikom.com/about/">About Vadikom</a></li>
-              <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li>
-            </ul>
-          </li> -->
-        </ul>
-      </li>
-
-      <li id="marge-menu-li"><a href="Info.html">Pourquoi Nous ?</a></li>
-      
-      <li id="marge-menu-li"><a href="Contact.html">Contact</a>
-       <!--<ul>
-          <li><a href="http://www.smartmenus.org/support/premium-support/">Premium support</a></li>
-          <li><a href="http://www.smartmenus.org/support/forums/">Forums</a></li>
-        </ul>-->
-    </li>
-    
-    <!--<li id="marge-menu-li"><a href="http://www.smartmenus.org/docs/">Docs</a></li>
-      <li id="marge-menu-li"><a href="#">Sub test</a>
-        <ul>
-          <li><a href="#">Dummy item</a></li>
-          <li><a href="#">Dummy item</a></li>
-          <li><a href="#" class="disabled">Disabled menu item</a></li>
-          <li><a href="#">Dummy item</a></li>
-          <li><a href="#">more...</a>
-            <ul>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">more...</a>
-                <ul>
-                  <li><a href="#">Dummy item</a></li>
-                  <li><a href="#" class="current">A 'current' class item</a></li>
-                  <li><a href="#">Dummy item</a></li>
-                  <li><a href="#">more...</a>
-                    <ul>
-                      <li><a href="#">subMenusMinWidth</a></li>
-                      <li><a href="#">10em</a></li>
-                      <li><a href="#">forced.</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Dummy item</a></li>
-                  <li><a href="#">Dummy item</a></li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#">Food</a></li>
+                                        </ul> 
+                            </li>-->
                 </ul>
               </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
+              <!-- <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"> <a href="#">BTS Gestion</a></li> -->
             </ul>
           </li>
-        </ul>
-      </li> -->
 
-      <!-- <li id="marge-menu-li"><a href="http://www.smartmenus.org/contact/">Contact</a></li> -->
-    </ul>
+          <li>
+            <a href="stage.html" class="menu-ecriture  menu-ecriture-2">Stage
+              <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul class="sub-menu">
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-1"><a
+                  href="https://geraldmanue1.github.io/Stage-BTS-SIO.html">Stage BTS SIO</a></li>
+              <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;" id="espace-sous-menu-1"><a href="stage_assistant_num.html">Stage
+                  Assistant
+                  Numérique</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="Info.html" class="menu-ecriture  menu-ecriture-2">Pourquoi Nous ?</a>
+          </li>
+          <li>
+            <a href="Contact.html" class="menu-ecriture">Contact</a>
+          </li>
+          <!-- <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li> -->
+          <!-- <li class="move-right btn">
+                        <a href="#">Book a table</a>
+                    </li> -->
+        </ul>
+      </nav>
     </div>
-  </nav>
-  <script src="js/menu-1-1.js"></script>
+  </header>
+
+  <!--End nav-->
+  <!--Hero-->
+  <!-- <section class="hero">
+      
+  </section> -->
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   <script src="js/menu.js"></script>
 
-  <div class="espace-haut-dessous-menu" id="espace-haut-dessous-menu" style="padding-bottom: 100px; max-width: 100%; max-height: 100%;"></div> 
+  <div style="padding-bottom: 125px; max-width: 100%; max-height: 100%;"></div>
 
 
-  <ul class="breadcrumb">
+  <ul class="breadcrumb" id="#">
     <li><span class="lien"><a href="index.html">Accueil</span></a></li>
     <li class="breadcrum-espace">Pourquoi Nous ?</li>
   </ul>
@@ -264,7 +294,7 @@
         title="Utilisation de recherche et de formation" alt="moteurs-recherche-alternatifs.png">
       <!-- <span class="tooltiptext-container-1" id="tooltiptext-container-1">Utilisation de recherche et de formation</span> -->
     </span>
-    <div>Utilisation de recherche et de formation
+    <div> <span class="paragraphe-taille" id="paragraphe-taille">Utilisation de recherche et de formation
       <br><br>
       <span style="line-height:27px;">J'ai utilisé <span class="lien"><a href="https://www.google.com/"
             alt="https://www.google.com/" target="_blank">google</a></span> pour faire une recherche au cas de
@@ -273,7 +303,7 @@
         En ce moment j'apprends plusieurs cours étape par étape si j'ai le temps sur l'internet sur le domaine
         informatique dans les
         différents sites, ça dépend de la matière que j'ai cherchée, car je veux connaître tous pour enrichir mes
-        expériences et compétence.</span>
+        expériences et compétence.</span></span>
     </div>
   </div>
 
@@ -283,16 +313,16 @@
   <!-- tooltip pour le containeur-2 de tooltip-container-2 + tooltiptext-container-2 -->
 
   <div class="flex-container-image-info-1">
-    <div>Utilisation du logiciel PAO
+    <div> <span class="paragraphe-taille" id="paragraphe-taille">Utilisation du logiciel PAO
       <br><br>
       <span style="line-height:27px;">Pour commencer, PAO signifie <b>Publication Assistée par Ordinateur</b>.
         Le PAO m'aide en ce moment pour poste des bons affichages sur les réseaux sociaux avec une bonne qualité ou fait
         une bonne esthétique sur les images sur le site web pour attirer des clients.
-        C'est pour ça dans la formation en <span class="lien"><a href="Assistant_Numerique.html#programme-formation"
-            target="_self">Assistant Numérique</a></span>, je fais la formation pour apprendre à utiliser les logiciels
+        C'est pour ça dans la formation en <span class="lien"><a href="Assistant_Numerique.html#programme-formation">
+          Assistant Numérique</a></span>, je fais la formation pour apprendre à utiliser les logiciels
         PAO comme Photoshop, Photopea, etc.
         J'ai appris quelques bases et la suite je fais chez moi pour enrichir.
-        Dans le <span class="lien"><a href="Assistant_Numerique.html#module-3" target="_self">Module 3</a></span> la
+        Dans le <span class="lien"><a href="Assistant_Numerique.html#module-3">Module 3</a></span> la
         formation dans le titre
         "Création de contenu web et multimédia (textes, photos, vidéos)". Le formateur à nous montrer un peu comment
         utiliser Photoshop,
@@ -300,7 +330,7 @@
         avoir plus d'abonné et aime
         et sur Facebook pour attirer les gens avec des textes et des montages images, mais pour le moment, j'ai utilisé
         Photopea et Paint,
-        c'est un logiciel gratuit par rapport aux autres logiciels PAO.</span>
+        c'est un logiciel gratuit par rapport aux autres logiciels PAO.</span></span>
     </div>
     <span class="tooltip-container-2" id="tooltip-container-2"><img src="images/info/dtp-pao.png"
         title="Utilisation du logiciel PAO (en cours de réalisation)" alt="dtp-pao.png">
@@ -319,14 +349,15 @@
         title="Animation des réseaux de communication" alt="AdobeStock_reseaux-sociaux.jpeg">
       <!--<span class="tooltiptext-container-3" id="tooltiptext-container-3">Animation des réseaux de communication</span>-->
     </span>
-    <div>Animation des réseaux de communication
+    <div><span class="paragraphe-taille" id="paragraphe-taille">Animation des réseaux de communication
       <br><br>
       <span style="line-height:27px;">
-        Dans la formation <span class="lien"><a href="Assistant_Numerique.html#programme-formation"
-            target="_self">Assistant Numérique</a></span>, il nous montre plusieurs méthodes pour attirer le monde vers
+        Dans la formation <span class="lien"><a href="Assistant_Numerique.html#programme-formation">
+          Assistant Numérique</a></span>, il nous montre plusieurs méthodes pour attirer le monde vers
         les réseaux sociaux
         et site web dans les cours marketing traditionnel et marketing Digital dans différentes applications.</span>
-    </div>
+    
+    </span>  </div>
   </div>
 
   <!-- Fin tooltip pour le containeur-3 de tooltip-container-3 + tooltiptext-container-3 -->
@@ -336,14 +367,14 @@
   <!-- tooltip pour le containeur-4 de tooltip-container-4 + tooltiptext-container-4 -->
 
   <div class="flex-container-image-info-1">
-    <div>Échange, partage et transmettre des informatons.
-      <br><br> <span style="line-height:27px;"></span>Dans la formation que j'ai apprise en <span class="lien"><a
-          href="Assistant_Numerique.html#programme-formation" target="_self">Assistant Numérique</a></span> en échange
+    <div> <span class="paragraphe-taille" id="paragraphe-taille">Échange, partage et transmettre des informatons.
+      <br><br> <span style="line-height:27px;">Dans la formation que j'ai apprise en <span class="lien"><a
+          href="Assistant_Numerique.html#programme-formation">Assistant Numérique</a></span> en échange
       beaucoup
       dans les réseaux sociaux pour avoir plus de clients avec des affiches, des meilleurs textes et de bonnes polices
       avec des jolies couleurs,
       des publications sur le site internet, des cookies, des référencements gratuits SEO et payant SEA, des newspapers,
-      des publicités partout dans la page web.</span>
+      des publicités partout dans la page web.</span></span>
     </div>
     <span class="tooltip-container-4" id="tooltip-container-4"><img src="images/info/echange_partage_126790022-1.png"
         title="Echange, partage transmettre des informations" alt="echange_partage_126790022-1.png">
@@ -361,7 +392,7 @@
     <span class="tooltip-container-5" id="tooltip-container-5"><img src="images/info/organisation-planification-SM.png"
         title="Planification et organisation sur les réseaux sociaux" alt="organisation-planification-SM.png">
       <!-- <span class="tooltiptext-container-5" id="tooltiptext-container-5">Planification et organisation sur les réseaux sociaux</span>--></span>
-    <div>Planification et organisation sur les réseaux sociaux (à revoir)
+    <div> <span class="paragraphe-taille" id="paragraphe-taille">Planification et organisation sur les réseaux sociaux (à revoir)
       <br><br>
       <span style="line-height:27px;"> Mettre en ordre dans le dossier chaque format avant de publier ou mettre en place
         un format sur Trello avec des courants avant de publier en ligne sur Facebook devant le public.
@@ -374,7 +405,7 @@
         un
         outil comme Trello. Le format est dans la publication, story, carrousel, diaporama, etc ...
         <br><br>
-        Mettre en place : Gestion de temps, Gestion Planning, les blogs pour organiser bien.</span>
+        Mettre en place : Gestion de temps, Gestion Planning, les blogs pour organiser bien.</span></span>
     </div>
   </div>
 
@@ -385,11 +416,11 @@
   <!-- tooltip pour le containeur-6 de tooltip-container-6 + tooltiptext-container-6 -->
 
   <div class="flex-container-image-info-1">
-    <div>Design du contenu sur le site
+    <div> <span class="paragraphe-taille" id="paragraphe-taille">Design du contenu sur le site
       <br><br>
       <span style="line-height:27px;">Lorsque l'on parle de web design, on fait référence au look général d'un site web.
         C'est le processus de planification et de construction des éléments de votre site internet,
-        de la structure à la mise en page, en passant par les couleurs, les polices et les images.</span>
+        de la structure à la mise en page, en passant par les couleurs, les polices et les images.</span></span>
     </div>
     <span class="tooltip-container-6" id="tooltip-container-6"><img
         src="images/info/Création-site-internet-professionnel-design-contenu.jpg" title="Design du contenu sur le site"
@@ -410,14 +441,14 @@
     <span class="tooltip-container-7" id="tooltip-container-7"><img src="images/info/social-network-426454_1920_0.jpg"
         title="Création du contenu et multimédia (Texte, Photo)" alt="social-network-426454_1920_0.jpg">
       <!-- <span class="tooltiptext-container-7" id="tooltiptext-container-7">Création du contenu et multimédia (Texte, Photo)</span>--></span>
-    <div>Création du contenu et multimédia (Texte, Photo)
+    <div> <span class="paragraphe-taille" id="paragraphe-taille">Création du contenu et multimédia (Texte, Photo)
       <br><br>
       <span style="line-height:27px;">La création de contenu, c'est quoi ? Il s'agit de produire du contenu qui attire
         et
         retient l'attention d'une cible.
         La création de contenu permet à une marque de se distinguer à l'aide de textes, de vidéos, de photos et
         d'infographies,
-        entre autres, qui ont une valeur pour cette cible.</span>
+        entre autres, qui ont une valeur pour cette cible.</span></span>
     </div>
   </div>
   <!-- Fin tooltip pour le containeur-7 de tooltip-container-7 + tooltiptext-container-7 -->
@@ -426,7 +457,7 @@
   <!-- tooltip pour le containeur-8 de tooltip-container-8 + tooltiptext-container-8 -->
 
   <div class="flex-container-image-info-1">
-    <div>Création du site web : HTML, CSS, CMS
+    <div><span class="paragraphe-taille" id="paragraphe-taille">Création du site web : HTML, CSS, CMS
       <br><br>
       <span style="line-height:27px;">Les HTML et CSS sont des langages de base indispensable qui composent toutes les
         pages web,
@@ -454,8 +485,8 @@
         j'ai appris toutes seules avec un ami à l'école qu'en j'étais au stage dans mes parcours professionnelles du BTS
         SIO et dans
         la formation Assistant Numérique qu'en revoie dans le <span class="lien"><a
-            href="Assistant_Numerique.html#module-3" target="_self">Module 4</a></span>
-        qui nomme "Production de contenu Web"..</span>
+            href="Assistant_Numerique.html#module-3">Module 4</a></span>
+        qui nomme "Production de contenu Web"..</span></span>
     </div>
     <span class="tooltip-container-8" id="tooltip-container-8"><img src="images/info/cms-html-css.jpg"
         title="Création du site web : HTML, CSS, CMS" alt="cms-html-css.jpg">
@@ -475,16 +506,16 @@
         alt="corrections-des-erreurs-en-urgence.png">
       <!-- <span class="tooltiptext-container-9" id="tooltiptext-container-9">Corriger l'erreur du site avec une CMS</span>--></span>
 
-    <div>Corriger l'erreur du site avec une CMS
-      <br><br> <span style="line-height:27px;"></span>Dans la formation <span class="lien"><a
-          href="Assistant_Numerique.html#programme-formation" target="_self">Assistant Numérique</a></span> en a
+    <div> <span class="paragraphe-taille" id="paragraphe-taille">Corriger l'erreur du site avec une CMS
+      <br><br> <span style="line-height:27px;">Dans la formation <span class="lien"><a
+          href="Assistant_Numerique.html#programme-formation">Assistant Numérique</a></span> en a
       corrigé quelque erreur comme le site
       Decatlhon et certain décoration image sur Facebook et Instagram.
       Dans Decatlhon c'est-à-dire problème de lien, menu mal fait et structure de page à revoir, il y a trop de
       publicité sur le site de la réunion.
       Facebook et Instagram pour d'autre site E-commerce, par exemple revoir la décoration image, manque de publicité,
       la
-      taille de police mal fait, manque de tuto sur leur chaîne YouTube ou ailleurs.</span>
+      taille de police mal fait, manque de tuto sur leur chaîne YouTube ou ailleurs.</span></span>
     </div>
   </div>
   <!-- Fin tooltip pour le containeur-9 de tooltip-container-9 + tooltiptext-container-9 -->
@@ -493,14 +524,14 @@
   <!-- tooltip pour le containeur-10 de tooltip-container-10 + tooltiptext-container-10 -->
 
   <div class="flex-container-image-info-1">
-    <div>Optimisation du site
+    <div> <span class="paragraphe-taille" id="paragraphe-taille">Optimisation du site
       <br><br>
       <span style="line-height:27px;">Notre formateur dans <span class="lien"><a
-            href="Assistant_Numerique.html#programme-formation" target="_self">Assistant Numérique</a></span> nous a
+            href="Assistant_Numerique.html#programme-formation">Assistant Numérique</a> nous a
         montrée
         ce quoi les différentes optimisations sur site sur l'outil SEO et SEA dans les différentes plates forme :
         Google Trends, Générateur de mots clé, Google outil, Google Ads, Google Maps, Google de fiches d'établissement,
-        barre de recherche dans le <span class="lien"><a href="Assistant_Numerique.html#module-4" target="_self">Module
+        barre de recherche dans le <span class="lien"><a href="Assistant_Numerique.html#module-4">Module
             4</a></span> : Production de contenus pour le web</span>
       <br><br>
 
@@ -515,7 +546,7 @@
       SEA (Search Engine Adversing) signifie en français :<b>Publicité sur les moteurs de recherche</b>
       <br>
       Le référencement payant, en anglais search engine advertising, est une discipline proche de l'optimisation pour
-      les moteurs de recherche et du marketing des moteurs de recherche, qui lui sont généralement associées.</span>
+      les moteurs de recherche et du marketing des moteurs de recherche, qui lui sont généralement associées.</span></span>
     </div>
     <span class="tooltip-container-10" id="tooltip-container-10"><img src="images/info/SEO-vs-SEA-600x300.jpg"
         title="Optimisation du site" alt="SEO-vs-SEA-600x300.jpg">
@@ -534,13 +565,13 @@
         title="Collaboration et travail autonome" alt="collaboration-individue.png">
       <!--<span class="tooltiptext-container-11" id="tooltiptext-container-11">Collaboration et travail autonome</span>-->
     </span>
-    <div>Collaboration et travail autonome
+    <div> <span class="paragraphe-taille" id="paragraphe-taille">Collaboration et travail autonome
       <br><br> <span style="line-height:27px;">J'aime travail toutes seules deux fois, car les groupes sont compliqués
         pour moi.
         <!--,c'est pour ça j'ai enlevé dans ma compétence de CV -->
         <br><br> Mais le groupe sa permis de travailler ensemble pour enrichir mes connaissances si à d'autre matière
-        que je n'ai pas maîtrisé.</spMais le groupe sa permis de travailler ensemble pour enrichir mes connaissances si
-          à d'autre matière que je n'ai pas maîtrisé.<span>
+        que je n'ai pas maîtrisé. Mais le groupe sa permis de travailler ensemble pour enrichir mes connaissances si
+          à d'autre matière que je n'ai pas maîtrisé.<span></span>
     </div>
   </div>
   </div>

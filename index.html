@@ -2,740 +2,773 @@
 <html>
 
 <head>
-  <title>Portfolio | MANUEL Gérald</title>
-  <meta charset="UTF-8">
-  <meta name="author" content="MANUEL Gérald">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/menu-1-4.css">
-  <link rel="stylesheet" href="css/menu-1-3.css">
-
-  <link rel="stylesheet" href="css/breadcrumb&lien.css">
-  <link rel="stylesheet" href="css/scrol_down.css">
-  <link rel="stylesheet" href="css/CV.css">
-  <link rel="stylesheet" href="css/grille_gallerie_portfolio.css">
-  <link rel="stylesheet" href="css/grille_gallerie_portfolio_1.css">
-  <link rel="stylesheet" href="css/opacity_box.css">
-  <link rel="stylesheet" href="css/page.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.0.1/jquery.smartmenus.min.js"></script>
-  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-
-
-
-  <link rel="icon" type="image/x-icon" href="images/Logo_Gérald_2022-07-01_124502.png">
+    <title>Portfolio | MANUEL Gérald</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="MANUEL Gérald">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/breadcrumb&lien.css">
+    <link rel="stylesheet" href="css/scrol_down.css">
+    <link rel="stylesheet" href="css/CV.css">
+    <link rel="stylesheet" href="css/grille_gallerie_portfolio.css">
+    <link rel="stylesheet" href="css/grille_gallerie_portfolio_1.css">
+    <link rel="stylesheet" href="css/opacity_box.css">
+    <link rel="stylesheet" href="css/page.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
 </head>
 
+</style>
+
 <body>
-  <nav class="main-nav menu-bare" role="navigation">
-
-
-    <!-- Mobile menu toggle button (hamburger/x icon) -->
-    <input id="main-menu-state" type="checkbox" />
-
-    <!-- <label class="main-menu-btn" for="main-menu-state"> -->
-    <label for="main-menu-state">
-      <div class="menu-icons">
-        <i class="icon ion-md-menu"></i>
-        <i class="icon ion-md-close"></i>
-      </div>
-      <!--<span class="main-menu-btn-icon"></span> Toggle main menu visibility-->
-    </label>
-
-    <h2 class="nav-brand"><a href="index.html"><img class="image-ecran" id="image-ecran" src="images/Ecran.png" alt="Ecran.png"
-          width="85" height="70">
-
-        <div class="menuTextGauche" id="menuTextGauche">
-          <center><b style="text-align: left; ">MANUEL<span style="color:transparent">_</span>Gérald</b> <br> <b class="menu-Taille" id="menuTaille" style="">PortFolio</b></center>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <header>
+    <div class="containerr">
+      <nav>
+        <div class="menu-icons">
+          <i class="icon ion-md-menu"></i>
+          <i class="icon ion-md-close"></i>
         </div>
-      </a></h2>
+        <a href="index.html"> <img class="image-ecran" id="image-ecran" src="images/Ecran.png" alt="Ecran.png"
+            width="85" height="70">
 
-    <!-- <div id="sm-clean">-->
-    <!-- Sample menu definition -->
-    <ul id="main-menu" class="sm sm-clean main-menu-1">
-      <li id="marge-menu-li">
-        <div id="marge-Haut"><a href="index.html">Accueil</a></div>
-      </li>
+          <div class="menuTextGauche" id="menuTextGauche">
+            <center><b style="text-align: left; ">MANUEL<span style="color:transparent">_</span>Gérald</b> <br>
+              <b class="menu-Taille" id="menuTaille" style="">PortFolio</b>
+            </center>
+          </div>
+        </a>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="menu-ecriture">Accueil</a>
+          </li>
+          <li>
+            <a href="CV.html" class="menu-ecriture">Curriculum Vitae</a>
+          </li>
+          <li>
+            <a href="presentation.html" class="menu-ecriture">Présentation
+              <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul class="sub-menu">
 
-      <li id="marge-menu-li"><a href="CV.html">Curriculum Vitae</a>
-        <!-- <ul>
-          <li><a href="http://www.smartmenus.org/about/introduction-to-smartmenus-jquery/">Introduction to SmartMenus
-              jQuery</a></li>
-          <li><a href="http://www.smartmenus.org/about/themes/">Demos + themes</a></li>
-          <li><a href="http://vadikom.com/about/#vasil-dinkov">The author</a></li>
-          <li><a href="http://www.smartmenus.org/about/vadikom/">The company</a>
-            <ul>
-              <li><a href="http://vadikom.com/about/">About Vadikom</a></li>
-              <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li>
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-1"><a
+                  href="https://geraldmanue1.github.io/index.html">Présentation BTS SIO</a></li>
+              <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;" id="espace-sous-menu-1"><a
+                  href="Assistant_Numerique.html">Présentation
+                  Assistant Numérique</a></li>
+
+              <!--
+                                    <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                    Assistant Numérique</a></li><li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                             Assistant Numérique</a></li><li style="line-height: 20px; 
+                                             padding-top:15px;
+                                             padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                      Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                      padding-top:15px;
+                                                      padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                               Assistant Numérique</a></li>
+
+                                                               <li style="line-height: 20px; 
+                                                               padding-top:15px;
+                                                               padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                        Assistant Numérique</a></li>
+                                                                        <li style="line-height: 20px; 
+                                                               padding-top:15px;
+                                                               padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                        Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                        padding-top:15px;
+                                                                        padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                 Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                 padding-top:15px;
+                                                                                 padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                          Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                          padding-top:15px;
+                                                                                          padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                   Assistant Numérique</a></li>
+                                                                                                   <li style="line-height: 20px; 
+                                                                                                   padding-top:15px;
+                                                                                                   padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                            Assistant Numérique</a></li>
+                                                                                                            <li style="line-height: 20px; 
+                                                                                                   padding-top:15px;
+                                                                                                   padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                            Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                                            padding-top:15px;
+                                                                                                            padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                                     Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                                                     padding-top:15px;
+                                                                                                                     padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                                              Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                                                              padding-top:15px;
+                                                                                                                              padding-bottom :5px;" id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                                                       Assistant Numérique</a></li>-->
             </ul>
           </li>
-        </ul> -->
-      </li>
 
 
-      <li id="marge-menu-li"><a href="presentation.html">Présentation</a>
-        <ul>
-          <li><a href="https://geraldmanue1.github.io/index.html">Présentation BTS SIO
-              </a></li>
+          <li>
+            <a href="projet.html" class="menu-ecriture menu-ecriture-2">Projet
+              <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul class="sub-menu">
 
-          <li><a href="Assistant_Numerique.html">Présentation Assistant Numérique</a></li>
-          
-         <!-- <li><a href="http://vadikom.com/about/#vasil-dinkov">Auteur</a></li>
-          
-          <li><a href="http://www.smartmenus.org/about/vadikom/">L'entreproise</a>
-            <ul>
-              <li><a href="http://vadikom.com/about/">About Vadikom</a></li>
-              <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li>
-            </ul>
-          </li> -->
-        </ul>
-      </li>
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-1">
+                <a href="https://geraldmanue1.github.io/PPE.html" class="menu-ecriture-1">BTS SIO (PPE)
+                  <ion-icon name="caret-down-outline"></ion-icon>
+                </a>
+                <ul class="sub-menu">
+                  <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-2"><a
+                      href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li>
 
-      <li id="marge-menu-li"><a href="projet.html">Projet</a>
-        <ul>
-         <!--<li><a href="http://www.smartmenus.org/about/introduction-to-smartmenus-jquery/">Présentation BTS SIO
-              </a></li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"  id="espace-sous-menu-2"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#" class="menu-ecriture-1"  id="espace-sous-menu-2">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;" id="espace-sous-menu-3"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"  id="espace-sous-menu-3"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#" id="espace-sous-menu-3">Food</a></li>
+                                        </ul> 
+                            </li>
+                            <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-2"><a
+                                            href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li> -->
 
-          <li><a href="http://www.smartmenus.org/about/themes/">Présentation Assistant Numérique</a></li> -->
-          
-         <!-- <li><a href="http://vadikom.com/about/#vasil-dinkov">Auteur</a></li> -->
-          
-          <li><a href="https://geraldmanue1.github.io/PPE.html">BTS SIO (PPE)</a>
-            <ul>
-              <li><a href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li>
-              <!-- <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li> -->
-            </ul>
-          </li> 
-        </ul>
-      </li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#">Food</a></li>
+                                        </ul> -->
+                  <!-- </li>
+                            <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"  id="espace-sous-menu-2"><a
+                                            href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li> -->
 
-      <li id="marge-menu-li"><a href="stage.html">Stage</a>
-        <ul>
-          <li><a href="https://geraldmanue1.github.io/Stage-BTS-SIO.html">Stage BTS SIO
-              </a></li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#">Food</a></li>
+                                        </ul> -->
+                  <!-- </li>
+                            <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"  id="espace-sous-menu-2"><a
+                                            href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li> -->
 
-          <li><a href="stage_assistant_num.html">Stage Assistant Numérique</a></li>
-          
-         <!-- <li><a href="http://vadikom.com/about/#vasil-dinkov">Auteur</a></li>
-          
-          <li><a href="http://www.smartmenus.org/about/vadikom/">L'entreproise</a>
-            <ul>
-              <li><a href="http://vadikom.com/about/">About Vadikom</a></li>
-              <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li>
-            </ul>
-          </li> -->
-        </ul>
-      </li>
-
-      <li id="marge-menu-li"><a href="Info.html">Pourquoi Nous ?</a></li>
-      
-      <li id="marge-menu-li"><a href="Contact.html">Contact</a>
-       <!--<ul>
-          <li><a href="http://www.smartmenus.org/support/premium-support/">Premium support</a></li>
-          <li><a href="http://www.smartmenus.org/support/forums/">Forums</a></li>
-        </ul>-->
-    </li>
-    
-    <!--<li id="marge-menu-li"><a href="http://www.smartmenus.org/docs/">Docs</a></li>
-      <li id="marge-menu-li"><a href="#">Sub test</a>
-        <ul>
-          <li><a href="#">Dummy item</a></li>
-          <li><a href="#">Dummy item</a></li>
-          <li><a href="#" class="disabled">Disabled menu item</a></li>
-          <li><a href="#">Dummy item</a></li>
-          <li><a href="#">more...</a>
-            <ul>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">more...</a>
-                <ul>
-                  <li><a href="#">Dummy item</a></li>
-                  <li><a href="#" class="current">A 'current' class item</a></li>
-                  <li><a href="#">Dummy item</a></li>
-                  <li><a href="#">more...</a>
-                    <ul>
-                      <li><a href="#">subMenusMinWidth</a></li>
-                      <li><a href="#">10em</a></li>
-                      <li><a href="#">forced.</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Dummy item</a></li>
-                  <li><a href="#">Dummy item</a></li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#">Food</a></li>
+                                        </ul> 
+                            </li>-->
                 </ul>
               </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
+              <!-- <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"> <a href="#">BTS Gestion</a></li> -->
             </ul>
           </li>
+
+          <li>
+            <a href="stage.html" class="menu-ecriture  menu-ecriture-2">Stage
+              <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul class="sub-menu">
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-1"><a
+                  href="https://geraldmanue1.github.io/Stage-BTS-SIO.html">Stage BTS SIO</a></li>
+              <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;" id="espace-sous-menu-1"><a href="stage_assistant_num.html">Stage
+                  Assistant
+                  Numérique</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="Info.html" class="menu-ecriture  menu-ecriture-2">Pourquoi Nous ?</a>
+          </li>
+          <li>
+            <a href="Contact.html" class="menu-ecriture">Contact</a>
+          </li>
+          <!-- <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li> -->
+          <!-- <li class="move-right btn">
+                        <a href="#">Book a table</a>
+                    </li> -->
         </ul>
-      </li> -->
-
-      <!-- <li id="marge-menu-li"><a href="http://www.smartmenus.org/contact/">Contact</a></li> -->
-    </ul>
+      </nav>
     </div>
-  </nav>
-  <script src="js/menu-1-1.js"></script>
-  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-  <script src="js/menu.js"></script>
-
-  <!-- <div style="padding-bottom: 30px; max-width: 100%; max-height: 100%;"></div> -->
-  <div class="espace-haut-dessous-menu" id="espace-haut-dessous-menu" style="padding-bottom: 140px; max-width: 100%; max-height: 100%;"></div>
-
-  <center>
-      <h1>A propos de moi !</h1>
-
-
-  </center>
-
-  <div class="flex-container">
-      <div id="taille-ecriture-telephone">
-          <span style="line-height: 20px"> Je m'appelle Gérald MANUEL. Je me suis passionné pour l'informatique depuis
-              que je suis à l'école d'ingénieur première année en ESIGELEC. J'ai découvert le codage informatique
-              Java et par la suite, je me suis orienté au Brevet Technicien Supérieur 
-              Services informatiques aux Organisations (BTS SIO) dans la spécialité de Solutions Logicielles et
-              Applications Métier (SLAM).</span>
-
-          <br><br>
-          Pour savoir plus en détails mes expériences professionnelles, cliquez dessous le lien :
-
-          <div style=""><span style="padding-left: 20px; line-height: 20px;">- Présentation :</span>
-
-          </div>
-          <span style="line-height: 5px;"><span style="padding-left: 50px;">- BTS SIO :</span>
-              <span class="lien"><a href="https://geraldmanue1.github.io/index.html"
-                      alt="Présentation BTS SIO Option SLAM" target="_blank">cliquez
-                      ici</a></span>
-
-              <br> <span style="padding-left: 50px;">- Assistant Numérique :</span>
-              <span class="lien"><a href="Assistant_Numerique.html" alt="Présentation Assistant Numérique"
-                      target="_blank">cliquez
-                      ici</a></span>
-          </span>
-
-          <br><br>
-          <div id="marge-text" style="line-height: 25px;"><span style="padding-left: 20px;">- Résumer de stage
-                  :</span>
-              <span class="lien"><a href="stage.html" alt="Présentation Assistant Numérique" target="_blank">cliquez
-                      ici</a></span>
-          </div>
-
-          <!-- MAIN (site Web du Centre) -->
-          <h2>Mes Projets et Stages</h2>
-          <div class="main">
-
-              <div id="myBtnContainer">
-                  <button class="btn active" onclick="filterSelection('all')" style="font-size: 18px;">Tout</button>
-                  <button class="btn" onclick="filterSelection('projets')" style="font-size: 18px;">Projets</button>
-                  <button class="btn" onclick="filterSelection('stages')" style="font-size: 18px;">Stages</button>
-              </div>
-
-              <!-- Grille de la galerie de portfolios -->
-              <div class="row">
-                  <div class="column projets">
-                      <div class="content">
-                          <div class="container">
-                              <div class="top-left" id="top-left" style="">Projet</div>
-                              <a href="https://geraldmanue1.github.io/Application-Mobile.html" target="_blank"> <span
-                                      class="rotate"><img src="images/projets/GestSIO_2023-01-15 003958_2.png"
-                                          alt="PPE : Adaptation d'une application mobile (GestSIO)"
-                                          style="width:100%; max-width: 100%;"></span></a>
-
-                              <div class="marge-1">
-                                  <center>
-                                      <a href="https://geraldmanue1.github.io/Application-Mobile.html" target="_blank"
-                                          style="color:black">
-                                          <h4>PPE : Adaptation d'une application mobile (GestSIO)</h4>
-                                      </a>
-                                  </center>
-                                  <p>Date du projet : 04/2021 - 03/2021</p>
-                              </div>
-
-                          </div>
-                      </div>
-                  </div>
-
-
-
-                  <div class="column stages">
-                      <div class="content">
-                          <div class="container">
-                              <div class="top-left" id="top-left">Stage</div>
-
-                              <a href="https://geraldmanue1.github.io/Stage-BTS-SIO.html" target="_blank"> <span
-                                      class="rotate"><img src="images/stages/MandelaShop_2023-01-15 004349_2.png"
-                                          alt="MandelaShop : Création du site Ecommerce"
-                                          style="width:100%;"></span></a>
-                              <div class="marge-1">
-                                  <center>
-                                      <a href="https://geraldmanue1.github.io/Stage-BTS-SIO.html" target="_blank"
-                                          style="color:black">
-                                          <h4>Mandelashop : Création du site Ecommerce</h4>
-                                      </a>
-                                  </center>
-                                  <p>Date du stage : 06/03/2021 - 13/01/2021</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-
-                  <div class="column stages">
-                      <div class="content">
-                          <div class="container">
-                              <div class="top-left" id="top-left">Stage</div>
-                              <a href="stage_assistant_num.html"
-                                  target="_blank" style="color:black"><span class="rotate"><img
-                                          src="images/stages/logo_CCAS_3_2.png"
-                                          alt="CCAS : Création des ateliers et livres" style="width:100%;"></span></a>
-                              <div class="marge-1">
-                                  <center>
-                                      <a href="stage_assistant_num.html" target="_blank" style="color:black">
-                                          <h4>CCAS : Création des ateliers et livres</h4>
-                                      </a>
-                                  </center>
-                                  <p>Date du stage : 16/08/2022 - 05/09/2022</p>
-                              </div>
-
-                          </div>
-                      </div>
-                  </div>
-
-
-
-
-
-
-                  <!-- GRILLE DE FIN -->
-              </div>
-
-              <!-- FIN PRINCIPAL -->
-          </div>
-          <script src="js/grille_gallerie_portfolio.js"></script>
-
-
-          <!-- MAIN (site Web du Centre) -->
-          <h2>Mes sources d'apprentissage</h2>
-          <div class="main-1" id="main">
-
-              <!-- <div id="myBtnContainer-1">
-  <button class="btn-1 active-1" onclick="filterSelection('all-1')">Tout</button>
-  <button class="btn-1" onclick="filterSelection('tutoriels')">Tutoriels</button>
-  <button class="btn-1" onclick="filterSelection('youtubes')">Youtube</button>
-</div> -->
-
-
-              <!-- Pagination -->
-              <!--  <main class="" style="max-width:100%;">-->
-              <div class="page">
-                  <section class="posts">
-                      <arcticle class="post">
-                          <!-- Grille de la galerie de portfolios -->
-                          <div class="row-1">
-
-                              <div class="column-1 tutoriels">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">Tutoriel</div>
-                                      <a href="https://www.w3bai.com/fr" target="_blank"><img
-                                              src="images/tutoriels/w3bai_1.png" alt="W3bai" class="image" id="image"
-                                              style="width:99%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">W3bai</div>
-                                          </div>
-                                      </a>
-                                  </div>
-                              </div>
-
-
-
-                              <div class="column-1 tutoriels">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">Tutoriel</div>
-
-                                      <a href="https://www.w3schools.com/default.asp" target="_blank"><img
-                                              src="images/tutoriels/w3schools.png" alt="w3schools" class="image"
-                                              id="image" style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">w3schools</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-
-
-                              <div class="column-1 youtubes">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">YouTube</div>
-                                      <a href="https://www.youtube.com/@Gravenilvectuto/featured" target="_blank"><img
-                                              src="images/youtube/Graven_developpement.jpg"
-                                              alt="Graven_developpement.jpg" class="image" id="image"
-                                              style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">Graven</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-
-                              <!-- Début lire plus --> <!-- <span id="dots"></span><div id="more"> -->
-                              <!-- Fin lire plus -->
-
-                              <div class="column-1 youtubes">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">YouTube</div>
-                                      <a href="https://www.youtube.com/@grafikart" target="_blank"><img
-                                              src="images/youtube/Grafikart.png" alt="Grafikart.png" class="image"
-                                              id="image" style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">Grafikart</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-
-
-                              <div class="column-1 youtubes">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">YouTube</div>
-                                      <a href="https://www.youtube.com/@PierreGiraudcom/playlists"
-                                          target="_blank"><img src="images/youtube/pierre_giraud_logo.png"
-                                              alt="pierre_giraud_logo.png" class="image" id="image"
-                                              style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">Pierre Giraud</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-
-
-
-
-                              <div class="column-1 tutoriels">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">Tutoriel</div>
-                                      <a href="https://developer.mozilla.org/fr/docs/Learn" target="_blank"><img
-                                              src="images/tutoriels/MDN_Web_Docs_full_logo.svg_1.png"
-                                              alt="MDN_Web_Docs_full_logo.svg_1.png" class="image" id="image"
-                                              style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">Mmdn web docs_</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- fin premier row-->
-
-
-                          <!--Début lire plus-->
-                          <!-- <center>
-                              <div class="myBtn">
-                          <button onclick="myFunction()" id="myBtn" style="margin-bottom: 10px; padding: 10px;
-                          display: inline-block;
-                          border: 1px solid white;
-                          border-radius: 5rem;
-                          transition: background-color 650ms;">Lire plus</button></div>
-                          </center>
-
-                            <script src="js/lire-plus.js"></script>--> <!--Fin lire plus-->
-
-                      </arcticle>
-
-
-
-                      <arcticle class="post">
-                          <div class="row-1">
-
-                              <div class="column-1 tutoriels">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">Tutoriel</div>
-                                      <a href="https://www.chiny.me/cours.php" target="_blank"><img
-                                              src="images/tutoriels/chiny_1.png" alt="chiny_1.png" class="image"
-                                              id="image" style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">chiny.me</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-
-
-
-                              <div class="column-1 tutoriels">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">Tutoriel</div>
-                                      <a href="https://openclassrooms.com/fr/courses" target="_blank"><img
-                                              src="images/tutoriels/openclassrooms.png" alt="openclassrooms.png"
-                                              class="image" id="image" style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">Open Classrooms</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-
-                              </span>
-                              <div class="column-1 tutoriels">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">Tutoriel</div>
-                                      <div id="middle1"><a href="https://apprendre-a-coder.com/" target="_blank"><span
-                                                  id="middle1"><img
-                                                      src="images/tutoriels/logo2_apprendre-a-coder_2.png"
-                                                      alt="logo2_apprendre-a-coder_1.png" class="image" id="image"
-                                                      style="width: 100%;
-/* height: 302.637px; */
-/* padding-bottom: 52px;
-margin-bottom: 10px; */">
-                                                  <div class="middle" id="middle">
-                                                      <div class="text" id="text"
-                                                          style="top:-20px; position:relative;">apprendre-a-coder
-                                                      </div>
-                                                  </div></a></div>
-
-                                  </div>
-                              </div>
-
-                              <div class="column-1 tutoriels">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">Tutoriel</div>
-                                      <a href="https://www.sololearn.com/learn" target="_blank"><img
-                                              src="images/tutoriels/sololearn.png" alt="sololearn.png" class="image"
-                                              id="image" style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">sololearn</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-
-
-
-
-                              <div class="column-1 youtubes">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">YouTube</div>
-                                      <a href="https://www.youtube.com/@Emds_channel/playlists" target="_blank"><img
-                                              src="images/youtube/E_MDS.png" alt="Mountains" class="E_MDS.png"
-                                              id="image" style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">E_MDS</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-
-
-
-                              <div class="column-1 youtubes">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">YouTube</div>
-                                      <a href="https://www.youtube.com/@WPMarmite/videos" target="_blank"><img
-                                              src="images/youtube/wpMarmite.png" alt="wpMarmite.png" class="E_MDS.png"
-                                              id="image" style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">WPMarmite</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-
-
-
-
-                              <!-- GRILLE DE FIN deuxieme row-->
-                          </div>
-                      </arcticle>
-
-
-                      <arcticle class="post">
-
-                          <!-- Grille de la galerie de portfolios -->
-                          <div class="row-1">
-
-                              <div class="column-1 tutoriels">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">Tutoriel</div>
-                                      <a href="https://cours-informatique-gratuit.fr/cours/" target="_blank"><img
-                                              src="images/tutoriels/xyoos.png" alt="xyoos.png" class="image"
-                                              id="image" style="width:99%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">Xyoos</div>
-                                          </div>
-                                      </a>
-                                  </div>
-                              </div>
-
-
-
-                              <div class="column-1 tutoriels">
-                                  <div class="container-1 container-1-1">
-                                      <div class="top-left-1" id="top-left-1">Tutoriel</div>
-
-                                      <a href="https://www.premiers-clics.fr/cours-informatique/" target="_blank"><img
-                                              src="images/tutoriels/logo-premiers-clics.png"
-                                              alt="logo-premiers-clics.png" class="image" id="image"
-                                              style="width:100%;">
-                                          <div class="middle" id="middle">
-                                              <div class="text" id="text">Premier clics</div>
-                                          </div>
-                                      </a>
-
-                                  </div>
-                              </div>
-
-
-
-                              <!-- fin troisieme row-->
-                          </div>
-                      </arcticle>
-
-
-
-                  </section>
-                  <section class="pagination">
-                      <div class="prev">
-                          < </div>
-                              <div class="numbers">
-                              </div>
-                              <div class="next">
-                                  >
-                              </div>
-                  </section>
-              </div>
-
-
-              </main>
-              <script src='js/page.js'></script>
-
-
-              <!-- FIN PRINCIPAL main-->
-          </div>
-          <!-- <script src="js/grille_gallerie_portfolio_1.js"></script> -->
-
-
-          <!-- fin <div id="taille-ecriture-telephone"> -->
-      </div>
-
-      <!--Fin <div class="flex-container"> -->
-  </div>
-
-  <button onclick="topFunction()" id="myBtn-down" title="Aller en haut"><img src="images/haut.svg"
-          alt="Retourner en haut" height="32px"></button>
-  <script src="js/scrol_down.js"> </script>
-
-  <br><br><br><br>
-
-
-
-
-
-  <footer>
-      <div class="competences" style="box-shadow : 0px 0px 0px 0px black; line-height: 20px;">
-
-          <b> <span style="text-align:center; font-size: 16px; color: black;"> Copyright © 2022 Portfolio <a
-                      href="https://github.com/geraldmanue1/PortFolio" target="_blank"
-                      Style="text-decoration:none; font-size: 16px; color:rgb(123, 123, 199)">MANUEL Gerald</a> - Tous
-                  droits
-                  réservés.
-
-                  <br>
-                  <a href="mentionsLegale-conditionUtilisateur.html" target="_blank"
-                      Style="text-decoration:none; font-size: 16px; color:rgb(123, 123, 199); margin-top:5px; ">Mentions
-                      légales
-                      et Condition d'utilisateur</a> |
-                  <a href="politiqueConfidentialité-utilisationCokies.html" target="_blank"
-                      Style="text-decoration:none; font-size: 16px; color:rgb(123, 123, 199)">Poltitique de
-                      confidentialité et
-                      d'utilisation cookies</a>
-                  <!--|-->
-                  <!-- <a  href="#" target="_blank"  Style="text-decoration:none; font-size: 16px; color:rgb(123, 123, 199)" >Politique d'utilisation cookies </a> </span> </b> -->
-
-      </div>
-  </footer>
+  </header>
+
+  <!--End nav-->
+
+    <!--Hero-->
+    <!-- <section class="hero">
+        
+    </section> -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/menu.js"></script>
+
+    <div style="padding-bottom: 200px; max-width: 100%; max-height: 100%;"></div>
+    <center>
+        <span class="title-taille"><h1>A propos de moi !</h1></span>
+
+
+    </center>
+
+    <div class="flex-container">
+        <div id="taille-ecriture-telephone">
+            <span class="paragraphe-taille" id="paragraphe-taille">
+            <span class="paragraphe-taille" id="paragraphe-taille" style="line-height: 20px"> Je m'appelle Gérald MANUEL. Je me suis passionné pour l'informatique depuis
+                que je suis à l'école d'ingénieur première année en ESIGELEC. J'ai découvert le codage informatique
+                Java et par la suite je me suis orienté au Brevet Technicien Supérieur
+                Services informatiques aux Organisations (BTS SIO) dans la spécialité de Solutions Logicielles et
+                Applications Métier (SLAM).</span>
+
+            <br><br>
+            Pour savoir plus en détails mes expériences professionnelles cliquez dessous le lien :
+
+            <div style=""><span style="padding-left: 20px; line-height: 20px;">- Présentation :</span>
+
+            </div>
+            <span style="line-height: 5px;"><span style="padding-left: 50px;">- BTS SIO :</span>
+                <span class="lien"><a href="https://geraldmanue1.github.io/index.html"
+                        alt="Présentation BTS SIO Option SLAM" target="_blank">cliquez
+                        ici</a></span>
+
+                <br> <span style="padding-left: 50px;">- Assistant Numérique :</span>
+                <span class="lien"><a href="Assistant_Numerique.html" alt="Présentation Assistant Numérique"
+                        target="_blank">cliquez
+                        ici</a></span>
+            </span>
+
+            <br><br>
+            <div id="marge-text" style="line-height: 25px;"><span style="padding-left: 20px;">- Résumer de stage
+                    :</span>
+                <span class="lien"><a href="stage.html" alt="Présentation Assistant Numérique" target="_blank">cliquez
+                        ici</a></span>
+            </div>
+           </span>
+           <br><br>
+            <!-- MAIN (site Web du Centre) -->
+            <span class="sous-title-taille" id="sous-title-taille"><h2>Mes Projets et Stages</h2></span>
+            
+            <div class="main" style="margin-top:15px">
+                <span class="paragraphe-taille">
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')" style="font-size: 18px;">Tout</button>
+                    <button class="btn" onclick="filterSelection('projets')" style="font-size: 18px;">Projets</button>
+                    <button class="btn" onclick="filterSelection('stages')" style="font-size: 18px;">Stages</button>
+                </div></span>
+
+                <!-- Grille de la galerie de portfolios -->
+                <div class="row">
+                    <div class="column projets">
+                        <div class="content">
+                            <div class="container">
+                                <div class="top-left" id="top-left" style="">Projet</div>
+                                <a href="https://geraldmanue1.github.io/Application-Mobile.html" target="_blank"> <span
+                                        class="rotate"><img src="images/projets/GestSIO_2023-01-15 003958_2.png"
+                                            alt="PPE : Adaptation d'une application mobile (GestSIO)"
+                                            style="width:100%; max-width: 100%;"></span></a>
+
+                                <div class="marge-1">
+                                    <center>
+                                        <a href="https://geraldmanue1.github.io/Application-Mobile.html" target="_blank"
+                                            style="color:black; margin:10px;">
+                                            <h4>PPE : Adaptation d'une application mobile (GestSIO)</h4>
+                                        </a>
+                                    </center>
+                                    <p>Date du projet : 04/2021 - 03/2021</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="column stages">
+                        <div class="content">
+                            <div class="container">
+                                <div class="top-left" id="top-left">Stage</div>
+
+                                <a href="https://geraldmanue1.github.io/Stage-BTS-SIO.html" target="_blank"> <span
+                                        class="rotate"><img src="images/stages/MandelaShop_2023-01-15 004349_2.png"
+                                            alt="MandelaShop : Création du site Ecommerce"
+                                            style="width:100%;"></span></a>
+                                <div class="marge-1">
+                                    <center>
+                                        <a href="https://geraldmanue1.github.io/Stage-BTS-SIO.html" target="_blank"
+                                            style="color:black; margin:10px;">
+                                            <h4>Mandelashop : Création du site Ecommerce</h4>
+                                        </a>
+                                    </center>
+                                    <p>Date du stage : 06/03/2021 - 13/01/2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="column stages">
+                        <div class="content">
+                            <div class="container">
+                                <div class="top-left" id="top-left">Stage</div>
+                                <a href="https://geraldmanue1.github.io/Stage-BTS-Assistant-Numerique.html"
+                                    target="_blank" style="color:black"><span class="rotate"><img
+                                            src="images/stages/logo_CCAS_3_2.png"
+                                            alt="CCAS : Création des ateliers et livres" style="width:100%;"></span></a>
+                                <div class="marge-1">
+                                    <center>
+                                        <a href="stage_assistant_num.html" target="_blank" style="color:black; margin:10px;">
+                                            <h4>CCAS : Création des ateliers et livres</h4>
+                                        </a>
+                                    </center>
+                                    <p>Date du stage : 16/08/2022 - 05/09/2022</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!-- GRILLE DE FIN -->
+                </div>
+
+                <!-- FIN PRINCIPAL -->
+            </div>
+            <script src="js/grille_gallerie_portfolio.js"></script>
+
+<br>
+            <!-- MAIN (site Web du Centre) -->
+              <span class="sous-title-taille" id="sous-title-taille"><h2>Mes sources d'apprentissage</h2></span>
+            <div class="main-1" style="padding-top: 15px;" id="main">
+
+                <!-- <div id="myBtnContainer-1">
+    <button class="btn-1 active-1" onclick="filterSelection('all-1')">Tout</button>
+    <button class="btn-1" onclick="filterSelection('tutoriels')">Tutoriels</button>
+    <button class="btn-1" onclick="filterSelection('youtubes')">Youtube</button>
+  </div> -->
+
+
+                <!-- Pagination -->
+                <!--  <main class="" style="max-width:100%;">-->
+                <div class="page">
+                    <section class="posts">
+                        <arcticle class="post">
+                            <!-- Grille de la galerie de portfolios -->
+                            <div class="row-1">
+
+                                <div class="column-1 tutoriels">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">Tutoriel</div>
+                                        <a href="https://www.w3bai.com/fr" target="_blank"><img
+                                                src="images/tutoriels/w3bai_1.png" alt="W3bai" class="image" id="image"
+                                                style="width:99%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">W3bai</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="column-1 tutoriels">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">Tutoriel</div>
+
+                                        <a href="https://www.w3schools.com/default.asp" target="_blank"><img
+                                                src="images/tutoriels/w3schools.png" alt="w3schools" class="image"
+                                                id="image" style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">w3schools</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="column-1 youtubes">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">YouTube</div>
+                                        <a href="https://www.youtube.com/@Gravenilvectuto/featured" target="_blank"><img
+                                                src="images/youtube/Graven_developpement.jpg"
+                                                alt="Graven_developpement.jpg" class="image" id="image"
+                                                style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">Graven</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                <!-- Début lire plus --> <!-- <span id="dots"></span><div id="more"> -->
+                                <!-- Fin lire plus -->
+
+                                <div class="column-1 youtubes">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">YouTube</div>
+                                        <a href="https://www.youtube.com/@grafikart" target="_blank"><img
+                                                src="images/youtube/Grafikart.png" alt="Grafikart.png" class="image"
+                                                id="image" style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">Grafikart</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="column-1 youtubes">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">YouTube</div>
+                                        <a href="https://www.youtube.com/@PierreGiraudcom/playlists"
+                                            target="_blank"><img src="images/youtube/pierre_giraud_logo.png"
+                                                alt="pierre_giraud_logo.png" class="image" id="image"
+                                                style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">Pierre Giraud</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="column-1 tutoriels">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">Tutoriel</div>
+                                        <a href="https://developer.mozilla.org/fr/docs/Learn" target="_blank"><img
+                                                src="images/tutoriels/MDN_Web_Docs_full_logo.svg_1.png"
+                                                alt="MDN_Web_Docs_full_logo.svg_1.png" class="image" id="image"
+                                                style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">Mmdn web docs_</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fin premier row-->
+
+
+                            <!--Début lire plus-->
+                            <!-- <center>
+                                <div class="myBtn">
+                            <button onclick="myFunction()" id="myBtn" style="margin-bottom: 10px; padding: 10px;
+                            display: inline-block;
+                            border: 1px solid white;
+                            border-radius: 5rem;
+                            transition: background-color 650ms;">Lire plus</button></div>
+                            </center>
+
+                              <script src="js/lire-plus.js"></script>--> <!--Fin lire plus-->
+
+                        </arcticle>
+
+
+
+                        <arcticle class="post">
+                            <div class="row-1">
+
+                                <div class="column-1 tutoriels">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">Tutoriel</div>
+                                        <a href="https://www.chiny.me/cours.php" target="_blank"><img
+                                                src="images/tutoriels/chiny_1.png" alt="chiny_1.png" class="image"
+                                                id="image" style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">chiny.me</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="column-1 tutoriels">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">Tutoriel</div>
+                                        <a href="https://openclassrooms.com/fr/courses" target="_blank"><img
+                                                src="images/tutoriels/openclassrooms.png" alt="openclassrooms.png"
+                                                class="image" id="image" style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">Open Classrooms</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                </span>
+                                <div class="column-1 tutoriels">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">Tutoriel</div>
+                                        <div id="middle1"><a href="https://apprendre-a-coder.com/" target="_blank"><span
+                                                    id="middle1"><img
+                                                        src="images/tutoriels/logo2_apprendre-a-coder_2.png"
+                                                        alt="logo2_apprendre-a-coder_1.png" class="image" id="image"
+                                                        style="width: 100%;
+  /* height: 302.637px; */
+ /* padding-bottom: 52px;
+  margin-bottom: 10px; */">
+                                                    <div class="middle" id="middle">
+                                                        <div class="text" id="text"
+                                                            style="top:-20px; position:relative;">apprendre-a-coder
+                                                        </div>
+                                                    </div></a></div>
+
+                                    </div>
+                                </div>
+
+                                <div class="column-1 tutoriels">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">Tutoriel</div>
+                                        <a href="https://www.sololearn.com/learn" target="_blank"><img
+                                                src="images/tutoriels/sololearn.png" alt="sololearn.png" class="image"
+                                                id="image" style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">sololearn</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="column-1 youtubes">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">YouTube</div>
+                                        <a href="https://www.youtube.com/@Emds_channel/playlists" target="_blank"><img
+                                                src="images/youtube/E_MDS.png" alt="Mountains" class="E_MDS.png"
+                                                id="image" style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">E_MDS</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="column-1 youtubes">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">YouTube</div>
+                                        <a href="https://www.youtube.com/@WPMarmite/videos" target="_blank"><img
+                                                src="images/youtube/wpMarmite.png" alt="wpMarmite.png" class="E_MDS.png"
+                                                id="image" style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">WPMarmite</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <!-- GRILLE DE FIN deuxieme row-->
+                            </div>
+                        </arcticle>
+
+
+                        <arcticle class="post">
+
+                            <!-- Grille de la galerie de portfolios -->
+                            <div class="row-1">
+
+                                <div class="column-1 tutoriels">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">Tutoriel</div>
+                                        <a href="https://cours-informatique-gratuit.fr/cours/" target="_blank"><img
+                                                src="images/tutoriels/xyoos.png" alt="xyoos.png" class="image"
+                                                id="image" style="width:99%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">Xyoos</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="column-1 tutoriels">
+                                    <div class="container-1 container-1-1">
+                                        <div class="top-left-1" id="top-left-1">Tutoriel</div>
+
+                                        <a href="https://www.premiers-clics.fr/cours-informatique/" target="_blank"><img
+                                                src="images/tutoriels/logo-premiers-clics.png"
+                                                alt="logo-premiers-clics.png" class="image" id="image"
+                                                style="width:100%;">
+                                            <div class="middle" id="middle">
+                                                <div class="text" id="text">Premier clics</div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+
+
+                                <!-- fin troisieme row-->
+                            </div>
+                        </arcticle>
+
+
+
+                    </section>
+                    <section class="pagination">
+                        <div class="prev">
+                            < </div>
+                                <div class="numbers">
+                                </div>
+                                <div class="next">
+                                    >
+                                </div>
+                    </section>
+                </div>
+
+
+                </main>
+                <script src='js/page.js'></script>
+
+
+                <!-- FIN PRINCIPAL main-->
+            </div>
+            <!-- <script src="js/grille_gallerie_portfolio_1.js"></script> -->
+
+
+            <!-- fin <div id="taille-ecriture-telephone"> -->
+        </div>
+
+        <!--Fin <div class="flex-container"> -->
+    </div>
+
+    <button onclick="topFunction()" id="myBtn-down" title="Aller en haut"><img src="images/haut.svg"
+            alt="Retourner en haut" height="32px"></button>
+    <script src="js/scrol_down.js"> </script>
+
+    <br><br><br><br>
+
+
+
+
+
+    <footer>
+        <div class="competences" style="box-shadow : 0px 0px 0px 0px black; line-height: 20px;">
+
+            <b> <span style="text-align:center; font-size: 16px; color: black;"> Copyright © 2022 Portfolio <a
+                        href="https://github.com/geraldmanue1/PortFolio" target="_blank"
+                        Style="text-decoration:none; font-size: 16px; color:rgb(123, 123, 199)">MANUEL Gerald</a> - Tous
+                    droits
+                    réservés.
+
+                    <br>
+                    <a href="mentionsLegale-conditionUtilisateur.html" target="_blank"
+                        Style="text-decoration:none; font-size: 16px; color:rgb(123, 123, 199); margin-top:5px; ">Mentions
+                        légales
+                        et Condition d'utilisateur</a> |
+                    <a href="politiqueConfidentialité-utilisationCokies.html" target="_blank"
+                        Style="text-decoration:none; font-size: 16px; color:rgb(123, 123, 199)">Poltitique de
+                        confidentialité et
+                        d'utilisation cookies</a>
+                    <!--|-->
+                    <!-- <a  href="#" target="_blank"  Style="text-decoration:none; font-size: 16px; color:rgb(123, 123, 199)" >Politique d'utilisation cookies </a> </span> </b> -->
+
+        </div>
+    </footer>
 
 </body>
 
+</html>

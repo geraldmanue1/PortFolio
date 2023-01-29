@@ -6,9 +6,7 @@
   <meta charset="UTF-8">
   <meta name="author" content="MANUEL Gérald">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/menu-1-4.css">
-  <link rel="stylesheet" href="css/menu-1-3.css">
-
+  <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/breadcrumb&lien.css">
   <link rel="stylesheet" href="css/scrol_down.css">
   <link rel="stylesheet" href="css/CV.css">
@@ -16,246 +14,278 @@
   <link rel="icon" type="image/x-icon" href="images/Logo_Gérald_2022-07-01_124502.png">
   <link rel="stylesheet" href="css/logo_competences.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.0.1/jquery.smartmenus.min.js"></script>
-  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-
-
-
-  <link rel="icon" type="image/x-icon" href="images/Logo_Gérald_2022-07-01_124502.png">
 </head>
 
+</style>
+
 <body>
-  <nav class="main-nav menu-bare" role="navigation">
-
-
-    <!-- Mobile menu toggle button (hamburger/x icon) -->
-    <input id="main-menu-state" type="checkbox" />
-
-    <!-- <label class="main-menu-btn" for="main-menu-state"> -->
-    <label for="main-menu-state">
-      <div class="menu-icons">
-        <i class="icon ion-md-menu"></i>
-        <i class="icon ion-md-close"></i>
-      </div>
-      <!--<span class="main-menu-btn-icon"></span> Toggle main menu visibility-->
-    </label>
-
-    <h2 class="nav-brand"><a href="index.html"><img class="image-ecran" id="image-ecran" src="images/Ecran.png" alt="Ecran.png"
-          width="85" height="70">
-
-        <div class="menuTextGauche" id="menuTextGauche">
-          <center><b style="text-align: left; ">MANUEL<span style="color:transparent">_</span>Gérald</b> <br> <b class="menu-Taille" id="menuTaille" style="">PortFolio</b></center>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <header>
+    <div class="containerr">
+      <nav>
+        <div class="menu-icons">
+          <i class="icon ion-md-menu"></i>
+          <i class="icon ion-md-close"></i>
         </div>
-      </a></h2>
+        <a href="index.html"> <img class="image-ecran" id="image-ecran" src="images/Ecran.png" alt="Ecran.png"
+            width="85" height="70">
 
-    <!-- <div id="sm-clean">-->
-    <!-- Sample menu definition -->
-    <ul id="main-menu" class="sm sm-clean main-menu-1">
-      <li id="marge-menu-li">
-        <div id="marge-Haut"><a href="index.html">Accueil</a></div>
-      </li>
+          <div class="menuTextGauche" id="menuTextGauche">
+            <center><b style="text-align: left; ">MANUEL<span style="color:transparent">_</span>Gérald</b> <br>
+              <b class="menu-Taille" id="menuTaille" style="">PortFolio</b>
+            </center>
+          </div>
+        </a>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="menu-ecriture">Accueil</a>
+          </li>
+          <li>
+            <a href="CV.html" class="menu-ecriture">Curriculum Vitae</a>
+          </li>
+          <li>
+            <a href="presentation.html" class="menu-ecriture">Présentation
+              <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul class="sub-menu">
 
-      <li id="marge-menu-li"><a href="CV.html">Curriculum Vitae</a>
-        <!-- <ul>
-          <li><a href="http://www.smartmenus.org/about/introduction-to-smartmenus-jquery/">Introduction to SmartMenus
-              jQuery</a></li>
-          <li><a href="http://www.smartmenus.org/about/themes/">Demos + themes</a></li>
-          <li><a href="http://vadikom.com/about/#vasil-dinkov">The author</a></li>
-          <li><a href="http://www.smartmenus.org/about/vadikom/">The company</a>
-            <ul>
-              <li><a href="http://vadikom.com/about/">About Vadikom</a></li>
-              <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li>
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-1"><a
+                  href="https://geraldmanue1.github.io/index.html">Présentation BTS SIO</a></li>
+              <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;" id="espace-sous-menu-1"><a
+                  href="Assistant_Numerique.html">Présentation
+                  Assistant Numérique</a></li>
+
+              <!--
+                                    <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                    Assistant Numérique</a></li><li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                             Assistant Numérique</a></li><li style="line-height: 20px; 
+                                             padding-top:15px;
+                                             padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                      Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                      padding-top:15px;
+                                                      padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                               Assistant Numérique</a></li>
+
+                                                               <li style="line-height: 20px; 
+                                                               padding-top:15px;
+                                                               padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                        Assistant Numérique</a></li>
+                                                                        <li style="line-height: 20px; 
+                                                               padding-top:15px;
+                                                               padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                        Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                        padding-top:15px;
+                                                                        padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                 Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                 padding-top:15px;
+                                                                                 padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                          Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                          padding-top:15px;
+                                                                                          padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                   Assistant Numérique</a></li>
+                                                                                                   <li style="line-height: 20px; 
+                                                                                                   padding-top:15px;
+                                                                                                   padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                            Assistant Numérique</a></li>
+                                                                                                            <li style="line-height: 20px; 
+                                                                                                   padding-top:15px;
+                                                                                                   padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                            Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                                            padding-top:15px;
+                                                                                                            padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                                     Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                                                     padding-top:15px;
+                                                                                                                     padding-bottom :5px;"  id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                                              Assistant Numérique</a></li><li style="line-height: 20px; 
+                                                                                                                              padding-top:15px;
+                                                                                                                              padding-bottom :5px;" id="espace-sous-menu-1"><a href="Assistant_Numerique.html">Présentation
+                                                                                                                                       Assistant Numérique</a></li>-->
             </ul>
           </li>
-        </ul> -->
-      </li>
 
 
-      <li id="marge-menu-li"><a href="presentation.html">Présentation</a>
-        <ul>
-          <li><a href="https://geraldmanue1.github.io/index.html">Présentation BTS SIO
-              </a></li>
+          <li>
+            <a href="projet.html" class="menu-ecriture menu-ecriture-2">Projet
+              <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul class="sub-menu">
 
-          <li><a href="Assistant_Numerique.html">Présentation Assistant Numérique</a></li>
-          
-         <!-- <li><a href="http://vadikom.com/about/#vasil-dinkov">Auteur</a></li>
-          
-          <li><a href="http://www.smartmenus.org/about/vadikom/">L'entreproise</a>
-            <ul>
-              <li><a href="http://vadikom.com/about/">About Vadikom</a></li>
-              <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li>
-            </ul>
-          </li> -->
-        </ul>
-      </li>
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-1">
+                <a href="https://geraldmanue1.github.io/PPE.html" class="menu-ecriture-1">BTS SIO (PPE)
+                  <ion-icon name="caret-down-outline"></ion-icon>
+                </a>
+                <ul class="sub-menu">
+                  <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-2"><a
+                      href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li>
 
-      <li id="marge-menu-li"><a href="projet.html">Projet</a>
-        <ul>
-         <!--<li><a href="http://www.smartmenus.org/about/introduction-to-smartmenus-jquery/">Présentation BTS SIO
-              </a></li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"  id="espace-sous-menu-2"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#" class="menu-ecriture-1"  id="espace-sous-menu-2">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;" id="espace-sous-menu-3"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"  id="espace-sous-menu-3"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#" id="espace-sous-menu-3">Food</a></li>
+                                        </ul> 
+                            </li>
+                            <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-2"><a
+                                            href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li> -->
 
-          <li><a href="http://www.smartmenus.org/about/themes/">Présentation Assistant Numérique</a></li> -->
-          
-         <!-- <li><a href="http://vadikom.com/about/#vasil-dinkov">Auteur</a></li> -->
-          
-          <li><a href="https://geraldmanue1.github.io/PPE.html">BTS SIO (PPE)</a>
-            <ul>
-              <li><a href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li>
-              <!-- <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li> -->
-            </ul>
-          </li> 
-        </ul>
-      </li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#">Food</a></li>
+                                        </ul> -->
+                  <!-- </li>
+                            <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"  id="espace-sous-menu-2"><a
+                                            href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li> -->
 
-      <li id="marge-menu-li"><a href="stage.html">Stage</a>
-        <ul>
-          <li><a href="https://geraldmanue1.github.io/Stage-BTS-SIO.html">Stage BTS SIO
-              </a></li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#">Food</a></li>
+                                        </ul> -->
+                  <!-- </li>
+                            <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"  id="espace-sous-menu-2"><a
+                                            href="https://geraldmanue1.github.io/Application-Mobile.html">Application Mobile</a></li> -->
 
-          <li><a href="stage_assistant_num.html">Stage Assistant Numérique</a></li>
-          
-         <!-- <li><a href="http://vadikom.com/about/#vasil-dinkov">Auteur</a></li>
-          
-          <li><a href="http://www.smartmenus.org/about/vadikom/">L'entreproise</a>
-            <ul>
-              <li><a href="http://vadikom.com/about/">About Vadikom</a></li>
-              <li><a href="http://vadikom.com/projects/">Projects</a></li>
-              <li><a href="http://vadikom.com/services/">Services</a></li>
-              <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Privacy policy</a></li>
-            </ul>
-          </li> -->
-        </ul>
-      </li>
-
-      <li id="marge-menu-li"><a href="Info.html">Pourquoi Nous ?</a></li>
-      
-      <li id="marge-menu-li"><a href="Contact.html">Contact</a>
-       <!--<ul>
-          <li><a href="http://www.smartmenus.org/support/premium-support/">Premium support</a></li>
-          <li><a href="http://www.smartmenus.org/support/forums/">Forums</a></li>
-        </ul>-->
-    </li>
-    
-    <!--<li id="marge-menu-li"><a href="http://www.smartmenus.org/docs/">Docs</a></li>
-      <li id="marge-menu-li"><a href="#">Sub test</a>
-        <ul>
-          <li><a href="#">Dummy item</a></li>
-          <li><a href="#">Dummy item</a></li>
-          <li><a href="#" class="disabled">Disabled menu item</a></li>
-          <li><a href="#">Dummy item</a></li>
-          <li><a href="#">more...</a>
-            <ul>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">more...</a>
-                <ul>
-                  <li><a href="#">Dummy item</a></li>
-                  <li><a href="#" class="current">A 'current' class item</a></li>
-                  <li><a href="#">Dummy item</a></li>
-                  <li><a href="#">more...</a>
-                    <ul>
-                      <li><a href="#">subMenusMinWidth</a></li>
-                      <li><a href="#">10em</a></li>
-                      <li><a href="#">forced.</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Dummy item</a></li>
-                  <li><a href="#">Dummy item</a></li>
+                  <!-- <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;"><a href="#">Food</a></li>
+                                    <li style="line-height: 20px; 
+                                    padding-top:15px;
+                                    padding-bottom :5px;">
+                                        <a href="#">More...
+                                            <ion-icon name="caret-down-outline"></ion-icon>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                            <li style="line-height: 20px; 
+                                            padding-top:15px;
+                                            padding-bottom :5px;"><a href="#">Food</a></li>
+                                           <li style="line-height: 20px; 
+                                           padding-top:15px;
+                                           padding-bottom :5px;"><a href="#">Food</a></li>
+                                        </ul> 
+                            </li>-->
                 </ul>
               </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a>
-              </li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
-              <li><a href="#">Dummy item</a></li>
+              <!-- <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;"> <a href="#">BTS Gestion</a></li> -->
             </ul>
           </li>
-        </ul>
-      </li> -->
 
-      <!-- <li id="marge-menu-li"><a href="http://www.smartmenus.org/contact/">Contact</a></li> -->
-    </ul>
+          <li>
+            <a href="stage.html" class="menu-ecriture  menu-ecriture-2">Stage
+              <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul class="sub-menu">
+              <li style="line-height: 20px; 
+                            padding-top:15px;
+                            padding-bottom :5px;" id="espace-sous-menu-1"><a
+                  href="https://geraldmanue1.github.io/Stage-BTS-SIO.html">Stage BTS SIO</a></li>
+              <li style="line-height: 20px; 
+                           padding-top:15px;
+                           padding-bottom :5px;" id="espace-sous-menu-1"><a href="stage_assistant_num.html">Stage
+                  Assistant
+                  Numérique</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="Info.html" class="menu-ecriture  menu-ecriture-2">Pourquoi Nous ?</a>
+          </li>
+          <li>
+            <a href="Contact.html" class="menu-ecriture">Contact</a>
+          </li>
+          <!-- <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li> -->
+          <!-- <li class="move-right btn">
+                        <a href="#">Book a table</a>
+                    </li> -->
+        </ul>
+      </nav>
     </div>
-  </nav>
-  <script src="js/menu-1-1.js"></script>
+  </header>
+
+  <!--End nav-->
+
+  <!--Hero-->
+  <!-- <section class="hero">
+        
+    </section> -->
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   <script src="js/menu.js"></script>
 
-<div class="espace-haut-dessous-menu" id="espace-haut-dessous-menu" style="padding-bottom: 100px; max-width: 100%; max-height: 100%; border:none"></div> 
+  <div style="padding-bottom: 120px; max-width: 100%; max-height: 100%; border:none"></div>
 
 
-  <ul class="breadcrumb" id="espace-haut" style="position: absolute; border:none">
+  <ul class="breadcrumb" id="breadcrumb" style="position: absolute; border:none;">
     <li><span class="lien"><a href="index.html">Accueil</span></a></li>
     <li class="breadcrum-espace">Curriculum vitae (CV)</li>
   </ul>
@@ -268,25 +298,27 @@
         <div class="overlay" id="overlay" style="position: relative; bottom:68px;">Je m'appelle MANUEL Gérald</div>
       </div>
       <div class="containeur-profil-text-cv" style="padding-top:50px ;">
-        <u style="text-decoration: none; font-size: 25px;">MANUEL Gérald</u>
+        <span class="sous-title-taille" id="sous-title-taille"><u style="text-decoration: none; font-size: 25px; color:#182154">MANUEL
+            Gérald</u></span>
         <br>
-        <b>Assistant Numérique</b>
-        <br><br>
-        <b>Téléphone :</b>
-        <br>
-        0693 63 89 19
-        <br><br>
-        <b>Email :</b>
-        <br>
-        gerald.manuel.pro@gmail.com
-        <br><br>
-        <b>Adresse :</b>
-        <br>
-        SIDR PONAMA 81 Chemin Lagourgue St André
-        <!-- <br><br>
+        <span class="paragraphe-taille" id="paragraphe-taille"><b style="color:#182154">Assistant Numérique</b>
+          <br><br>
+          <span style="color:#182154">
+            <b>Téléphone :</b>
+            <br>
+            0693 63 89 19
+            <br><br>
+            <b>Email :</b>
+            <br>
+            gerald.manuel.pro@gmail.com
+            <br><br>
+            <b>Adresse :</b>
+            <br>
+            SIDR PONAMA 81 Chemin Lagourgue St André
+            <!-- <br><br>
               <b>Date de Naissance</b>
               <br>
-              01/07/1996 -->
+              01/07/1996 --></span></span>
       </div>
     </div>
 
@@ -294,21 +326,22 @@
       <div style="background-color:rgb(249, 247, 252)">
         <center id="accueil-symbole-media-sociaux" style="margin:0px; padding:0px;">
 
-          <span class="images-total">
-            <a href="https://www.linkedin.com/in/g%C3%A9rald-manuel-79a72a201/" target="_blank"><img class="images" 
-               src="images/LinkedIn-Symbole.png" alt="Logo-Linkedin" title="Linkedin" width="40" height="40" 
-               style="border-radius: 100%"></a>
-          </span>
-          
-              <span class="images-total">
-            <a href="https://www.facebook.com/profile.php?id=100075864884627" target="_blank"><img class="images" 
-               src="images/facebook-logo.png" alt="Logo-Facebook" title="Facebook" width="40" height="40" 
-               style="border-radius: 100%"></a>
-          </span>
-          
-            <!-- <ul class="social-icons icon-circle list-unstyled list-inline"> 
-                  <i class="fa fa-linkedin"></i> -->
 
+          <span class="images-total">
+            <a href="https://www.linkedin.com/in/g%C3%A9rald-manuel-79a72a201/" target="_blank"><img class="images"
+                src="images/LinkedIn-Symbole.png" alt="Logo-LinkedIn" Title="Linkedin" width="40" height="40"
+                style="border-radius: 100%"> </a>
+          </span>
+
+          <span class="images-total">
+            <a href="https://www.facebook.com/profile.php?id=100075864884627" target="_blank"><img class="images"
+                src="images/facebook-logo.png" alt="Logo-Facebook" Title="Facebook" width="40" height="40"
+                style="border-radius: 100%">
+
+              <!-- <ul class="social-icons icon-circle list-unstyled list-inline"> 
+                  <i class="fa fa-linkedin"></i> -->
+            </a>
+          </span>
 
           <span class="images-total">
             <a href="https://github.com/geraldmanue1/PortFolio" target="_blank"><img class="images"
@@ -334,22 +367,25 @@
   <div style="margin-top: -370px; background-color:#eeeeee">
     <div class="flex-container-page-2-cv" style="background-color: #eeeeee;">
       <div class="Def" style="background-color: #eeeeee; margin-bottom: 20px;">
-        <center><b style="font-size: 30px;">Bonjour ! <br> Je m'appelle MANUEL Gérald</b><br><br>
-          Je suis en pôle emploi
-          <!--, -- je m’inscrit en Contrat d’Engagement de Jeune (CEJ).
+        <center> <span class="sous-title-taille"><b style="font-size:30px;">Bonjour ! <br> Je m'appelle MANUEL
+              Gérald</b></span><br><br>
+          <span class="paragraphe-taille" id="paragraphe-taille">Je suis en pôle emploi
+            <!--, -- je m’inscrit en Contrat d’Engagement de Jeune (CEJ).
                   Je suis dans un organisme de formation qui nomme IFR (Institut de Formation de la Réunion) en Assistant Numérique.-->.
-          J’aimerais intervenir en assistant création de contenu web et ré-ajustement de pages web, multimédia réseaux
-          sociaux et
-          création du site sur CMS (WordPress) ou code de basse en (HTML, CSS, JavaScript, MySQL, ... ) pour but créer
-          et développer un site web
-          et animer ou postes des pubs sur les réseaux sociaux (Facebook, Twitter, etc ...).
+            J’aimerais intervenir en assistant création de contenu web et ré-ajustement de pages web, multimédia réseaux
+            sociaux et
+            création du site sur CMS (WordPress) ou code de basse en (HTML, CSS, JavaScript, MySQL, ... ) pour but créer
+            et développer un site web
+            et animer ou postes des pubs sur les réseaux sociaux (Facebook, Twitter, etc ...).
         </center>
       </div>
     </div>
   </div>
 
-  <h1 id="experience" style="color:black; font-size: 30px; text-align:center; margin-top: 50px; margin-bottom: 50px;">
-    EXPERIENCE<br> <span></span></h1>
+  <span class="title-taille" id="title-taille">
+    <h1 id="experience" style="color:black; text-align:center; margin-top: 50px; margin-bottom: 50px;">
+      EXPERIENCE<br></h1>
+  </span>
 
   <hr>
 
@@ -366,11 +402,15 @@
         <h3><b>16/08/2022 - 05/09/2022</b></h3>
         <p style="font-size: 18px;">Stage</p>
         <h3 style="color:rgb(0, 0, 0);"><b>CCAS | Création des atéliers et livrets</b></h3>
-        <p style="color:black">Missions : dans le stage Assistant Numérique, j’ai réalisé des maquettes (Flyers pour les
-          ateliers
-          du centre fayard, annuaire des associations, etc ...)
-          <br><br>
-          Société : CCAS de Fayard du centre social (Saint-André)
+        <span class="paragraphe-taille" id="paragraphe-taille">
+          <p style="color:black">Missions : dans le stage Assistant Numérique, j’ai réalisé des maquettes (Flyers pour
+            les
+            ateliers
+            du centre fayard, annuaire des associations, etc ...)
+            <br><br>
+            Société : CCAS de Fayard du centre social (Saint-André)
+          </p>
+        </span>
         </p>
       </div>
     </div>
@@ -386,12 +426,14 @@
         <h3><b>06/03/2021 - 13/01/2021</b></h3>
         <p style="font-size: 18px;">Stage</p>
         <h3 style="color:rgb(0, 0, 0);"><b>MANDELASHOP | Création Site Ecommerce</b></h3>
-        <p style="color:black">Missions : création du site web MandelaShop, Choix CMS, rédaction des documents pour le
-          nouveau client,
-          déploiement du site MandelaShop sur le serveur Proxmox
-          <br><br>
-          Société : Association de Nelson Mandela (Saint Benoît), Boutique solidaire
-        </p>
+        <span class="paragraphe-taille" id="paragraphe-taille">
+          <p style="color:black">Missions : création du site web MandelaShop, Choix CMS, rédaction des documents pour le
+            nouveau client,
+            déploiement du site MandelaShop sur le serveur Proxmox
+            <br><br>
+            Société : Association de Nelson Mandela (Saint Benoît), Boutique solidaire
+          </p>
+        </span>
 
       </div>
     </div>
@@ -415,12 +457,14 @@
         <h3><b>04/2021 - 03/2021</b></h3>
         <p style="font-size: 18px;">Contexte Professionnel</p>
         <h3 style="color:rgb(0, 0, 0);"><b>BTS SIO - Projets Personnels Encadrés (PPE)</b></h3>
-        <p style="color:black">Missions : développement d’une application Android Studio permettait aux clients de
-          voir les appréciations des élèves à distance sur l’application mobile
-          <br><br>
+        <span class="paragraphe-taille" id="paragraphe-taille">
+          <p style="color:black">Missions : développement d’une application Android Studio permettait aux clients de
+            voir les appréciations des élèves à distance sur l’application mobile
+            <br><br>
 
-          Société : Nelson Mandela (Saint Benoît)
-        </p>
+            Société : Nelson Mandela (Saint Benoît)
+          </p>
+        </span>
 
       </div>
     </div>
@@ -444,10 +488,12 @@
   <hr>
   <!--Formation Diplôme-->
 
-  <h1 id="education" style="color:black; font-size: 30px; text-align:center; margin-top: 50px; margin-bottom: 50px;">
-    EDUCATION
-    <br> <span></span>
-  </h1>
+  <span class="title-taille" id="title-taille">
+    <h1 id="education" style="color:black; text-align:center; margin-top: 50px; margin-bottom: 50px;">
+      EDUCATION
+      <br>
+    </h1>
+  </span>
 
   <hr>
 
@@ -604,7 +650,7 @@
   </div>
   <hr style="margin-bottom:80px;">
   <div class="flex-container-competences-titre photo-cv-competences-titre"><b
-      style="text-align:center; margin-left: 42%; font-size: 30px;"> Compétences</b></div>
+      style="text-align:center; margin-left: 42%; font-size: 30px;">Compétences</b></div>
   <div class="flex-container-competences" id="flex-container-competences"
     style="margin-left: 50px; margin-right: 50px;">
     <div class="photo-cv-competences">
@@ -708,12 +754,12 @@
     </div>
   </div>
   <div class="flex-container-competences-plus photo-cv-competences-plus" style="margin-bottom: 100px;"><b
-      style="text-align:left; margin-left: 1%; font-size: 16px;"> Pour savoir plus :</b><span
-      style="padding-left: 20px;padding-top: 20px;" class="porfolio-devellopeur-web" id="porfolio-devellopeur-web">-
-      Portfolio quand j'ai été en BTS SIO Informatique<!-- à été mise à jour --> : 
-        <span class="lien"><a
+      style="text-align:left; margin-left: 1%; font-size: 18px;"> Pour savoir plus :</b><span
+      style="padding-left: 20px;padding-top: 20px;" class="porfolio-devellopeur-web paragraphe-taille"
+      id="porfolio-devellopeur-web">-
+      Portfolio quand j'ai été en BTS SIO Informatique<!-- à été mise à jour --> : <span class="lien"><a
           href="https://geraldmanue1.github.io/" alt="Portfolio quand j'ai été en BTS SIO Informatique"
-          target="_blank" class="lien"><!-- Pour les entreprises de développement Web dans le futur -->cliquez ici
+          target="_blank"><!-- Pour les entreprises de développement Web dans le futur -->cliquez ici
 
         </a></span></span> </div>
 
