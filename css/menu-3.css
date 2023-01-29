@@ -1,0 +1,918 @@
+/* Mobile first layout SmartMenus Core CSS (il n'est pas recommandé de modifier ces règles)
+   Vous en avez besoin une fois par page, quel que soit le nombre d'arborescences de menus ou de thèmes différents que vous utilisez.
+-------------------------------------------------- ------------------------------------------*/
+
+  
+ 
+  
+ 
+ 
+  
+  .nav-list {
+    background: #f1f1f1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .nav-list a,
+  .nav-list a:hover,
+  .nav-list a:focus,
+  .nav-list a:active {
+    padding: 13px 20px;
+    /* faire de la place pour le bouton bascule (indicateur secondaire) */
+    padding-right: 58px;
+    color: #555555;
+    /* font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 304px;
+    font-weight: normal;
+    line-height: 17px;
+    text-decoration: none;
+    margin-left: 20px;
+  
+  }
+  
+  .nav-list a:hover {
+    /* taille menu téléphone */
+    color: red;
+    font-size: 25px;
+  }
+  
+  
+  .nav-list a.current {
+    color: #d23600;
+  }
+  
+  .nav-list a.disabled {
+    color: #bbbbbb;
+  }
+  
+  
+  
+  .nav-list a span.sub-arrow {
+    /* forme autour de + dans menu téléphone */
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    margin-right: 5px;
+    left: auto;
+    right: 4px;
+    width: 65px;
+    height: 47px;
+    overflow: hidden;
+    font: bold 80px/40px monospace !important;
+    /* aggrandir le + et - */
+    text-align: center;
+    text-shadow: none;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  
+  }
+  
+  
+  
+  .nav-list a.highlighted span.sub-arrow:before {
+    display: block;
+    content: '-';
+    margin-top: 0px;
+    height: 200px;
+  
+  }
+  
+  @media screen and (max-width: 1000px) {
+  
+    .nav-list a,
+    .nav-list a:hover,
+    .nav-list a:focus,
+    .nav-list a:active {
+      padding: 13px 20px;
+      /* faire de la place pour le bouton bascule (indicateur secondaire) */
+      padding-right: 58px;
+      color: #555555;
+      /* font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;*/
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 34px;
+      font-weight: normal;
+      line-height: 17px;
+      text-decoration: none;
+      margin-left: 20px;
+  
+  
+    }
+  
+    
+    .nav-list a:hover {
+      /* taille menu téléphone */
+      color: red;
+      font-size: 50px;
+    }
+  
+  
+    .nav-list a.current {
+      color: #d23600;
+    }
+  
+    .nav-list a.disabled {
+      color: #bbbbbb;
+    }
+  
+    .nav-list a span.sub-arrow {
+      /* forme autour de + dans menu téléphone */
+      position: absolute;
+      top: 50%;
+      margin-top: -75px;
+      padding-top: 8px;
+      margin-right: -300px;
+      left: auto;
+      right: 4px;
+      width: 55px;
+      height: 60px;
+      overflow: hidden;
+      font: bold 80px/40px monospace !important;
+      text-align: center;
+      text-shadow: none;
+      background: rgba(255, 255, 255, 0.5);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+  
+    }
+  
+  
+  
+    .nav-list a.highlighted span.sub-arrow:before {
+      display: block;
+      content: '-';
+      margin-top: 3px;
+      height: 200px;
+  
+    }
+  }
+  
+  .nav-list>li:first-child>a,
+  .nav-list>li:first-child> :not(ul) a {
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    border-radius: 0px 0px 0 0;
+  }
+  
+  @media (max-width: 1000px) {
+  
+    .nav-list>li>a:focus,
+    .nav-list>li> :not(ul) a:focus {
+      color: blue;
+      /* couleur rouge dans tous menu qu'en cliquez */
+    }
+  
+  }
+  
+  
+  
+  .nav-list>li:last-child>a,
+  .nav-list>li:last-child>*:not(ul) a,
+  .nav-list>li:last-child>ul,
+  .nav-list>li:last-child>ul>li:last-child>a,
+  .nav-list>li:last-child>ul>li:last-child>*:not(ul) a,
+  .nav-list>li:last-child>ul>li:last-child>ul,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>a,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul {
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .nav-list>li:last-child>a.highlighted,
+  .nav-list>li:last-child>*:not(ul) a.highlighted,
+  .nav-list>li:last-child>ul>li:last-child>a.highlighted,
+  .nav-list>li:last-child>ul>li:last-child>*:not(ul) a.highlighted,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>a.highlighted,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a.highlighted,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a.highlighted,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a.highlighted,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a.highlighted,
+  .nav-list>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a.highlighted {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+  
+  .nav-list li {
+    border-top: 0px solid rgba(0, 0, 0, 0.05);
+    /* enleve border en haut nu téléphone*/
+  }
+  
+  .nav-list>li:first-child {
+    border-top: 0;
+  }
+  
+  .nav-list ul {
+    background: rgba(162, 162, 162, 0.1); /* couleur sous-menu téléphone */
+    margin-right:-20px;
+  }
+  
+  .nav-list ul a,
+  .nav-list ul a:hover,
+  .nav-list ul a:focus,
+  .nav-list ul a:active {
+    font-size: 18px;
+    border-left: 8px solid transparent;
+  
+  }
+  
+  .nav-list ul ul a,
+  .nav-list ul ul a:hover,
+  .nav-list ul ul a:focus,
+  .nav-list ul ul a:active {
+    border-left: 16px solid transparent;
+  
+  }
+  
+  .nav-list ul ul ul a,
+  .nav-list ul ul ul a:hover,
+  .nav-list ul ul ul a:focus,
+  .nav-list ul ul ul a:active {
+    border-left: 24px solid transparent;
+  
+  }
+  
+  .nav-list ul ul ul ul a,
+  .nav-list ul ul ul ul a:hover,
+  .nav-list ul ul ul ul a:focus,
+  .nav-list ul ul ul ul a:active {
+    border-left: 32px solid transparent;
+  }
+  
+  .nav-list ul ul ul ul ul a,
+  .nav-list ul ul ul ul ul a:hover,
+  .nav-list ul ul ul ul ul a:focus,
+  .nav-list ul ul ul ul ul a:active {
+    border-left: 40px solid transparent;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media (min-width: 1000px) {
+  
+    /*menu téléphone vertical*/
+    /* Switch to desktop layout
+      -----------------------------------------------
+         These transform the menu tree from
+         collapsible to desktop (navbar + dropdowns)
+      -----------------------------------------------*/
+    /* start... (it's not recommended editing these rules) */
+    .nav-list ul {
+      position: absolute;
+      width: 12em;
+  
+    }
+  
+    .nav-list li {
+      float: left;
+  
+    }
+  
+    .nav-list.sm-rtl li {
+      float: right;
+    }
+  
+    .nav-list ul li,
+    .nav-list.sm-rtl ul li,
+    .nav-list.sm-vertical li {
+      float: none;
+    }
+  
+    .nav-list a {
+      white-space: normal;
+    }
+  
+    .nav-list ul a,
+    .nav-list.sm-vertical a {
+      white-space: normal;
+    }
+  
+    .nav-list .sm-nowrap>li>a,
+    .nav-list .sm-nowrap>li> :not(ul) a {
+      white-space: normal;
+  
+      
+    }
+  
+    /* ...end */
+    .nav-list { /* menu déplace gauche et à droite */
+      padding: 0 20px;
+      background: #f1f1f1;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      -o-border-radius: 100px;
+      border-radius: 100px;
+    }
+
+
+
+  
+    /* affiche ou pas + et - dans menu pc */
+    .nav-list a,
+    .nav-list a:hover,
+    .nav-list a:focus,
+    .nav-list a:active,
+    .nav-list a.highlighted {
+      padding: 12px 18px;
+      color: #555555;
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      -ms-border-radius: 0 !important;
+      -o-border-radius: 0 !important;
+      border-radius: 0 !important;
+    }
+  
+    .nav-list a:hover,
+    .nav-list a:focus,
+    .nav-list a:active,
+    .nav-list a.highlighted {
+      color: #d23600;
+    }
+  
+    .nav-list a.current {
+      color: #d23600;
+    }
+  
+    .nav-list a.disabled {
+      color: #bbbbbb;
+    }
+  
+    .nav-list a.has-submenu {
+      padding-right: 28px;
+    }
+  
+    .nav-list a span.sub-arrow {
+      top: 50%;
+      margin-top: -2px;
+      right: 12px;
+      width: 0;
+      height: 0;
+      border-width: 4px;
+      border-style: solid dashed dashed dashed;
+      border-color: #555555 transparent transparent transparent;
+      background: transparent;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0;
+    }
+  
+    .nav-list a.highlighted span.sub-arrow:before {
+      display: none;
+    }
+  
+    .nav-list li {
+      border-top: 0;
+    }
+  
+    .nav-list>li>ul:before,
+    .nav-list>li>ul:after {
+      content: '';
+      position: absolute;
+      top: -18px;
+      left: 30px;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      border-width: 9px;
+      border-style: dashed dashed solid dashed;
+      border-color: transparent transparent #bbbbbb transparent;
+      /* autour triangle sous-menu */
+    }
+  
+    .nav-list>li>ul:after {
+      top: -16px;
+      left: 31px;
+      border-width: 8px;
+      border-color: transparent transparent red transparent;
+      /* couleur dans triangle */
+    }
+  
+  
+  
+    .nav-list ul {
+      /* autour sous-menu */
+      border: 1px solid #bbbbbb;
+      /* bordure autour sous-menu */
+      padding: 5px 0;
+      padding-right: 2px; /* large menu ou sous-menu à gauche et à droite */
+      padding-left: 1px; /* décale écriture à droite et à gauche menu et sous-menu */
+      /* à gauche marge menu */
+      background: #f1f1f1;
+      /* couleur cadre dedans sous-menu */
+      /* -webkit-border-radius: 5px !important;
+        -moz-border-radius: 5px !important;
+        -ms-border-radius: 5px !important;
+        -o-border-radius: 5px !important;
+        
+        border-radius: 5px !important;*/
+      -webkit-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 100%;
+    }
+
+      
+  
+    .nav-list ul a,
+    .nav-list ul a:hover,
+    .nav-list ul a:focus,
+    .nav-list ul a:active,
+    .nav-list ul a.highlighted {
+      border: 0 !important;
+      padding: 10px 35px; /* décale à droite et gauche ecriture menu et sous-menu */
+      padding-right: 1px; /* large menu et sous-menu cadre */
+  
+      color: #555555;
+      /* margin-left: -5px; */
+      margin-left: -25px; /* decale à gauche et droite marge cadre menu et sous-menu */
+      
+  
+    }
+  
+    .nav-list ul a:hover,
+    .nav-list ul a:focus,
+    .nav-list ul a:active,
+    .nav-list ul a.highlighted {
+      background: none;
+      color: blue;
+      /* couleur sous-menu ordinateur */
+  
+    }
+  
+  
+    .nav-list ul a.current {
+      color: #d23600;
+    }
+  
+    .nav-list ul a.disabled {
+      background: #f1f1f1;
+      color: #cccccc;
+    }
+  
+    .nav-list ul a.has-submenu {
+      padding-right: 55px; /* decale à gauche et droite marge cadre menu et sous-menu */
+      /*margin-right:30px ; */
+      /* flèche sous-menu change de position gauche à droite */
+    
+    }
+  
+      /* affiche ou pas + et - dans menu pc */
+    .nav-list ul a span.sub-arrow {
+      right: 8px;
+      top: 50%;
+      margin-top: -5px;
+      /* flèche sous-menu change de position haut et bas */
+      border-width: 5px;
+      /* taille de flèche */
+      border-style: dashed dashed dashed solid;
+      border-color: transparent transparent transparent #555555;
+      /* couleur de flèche sous-menu */
+    }
+  
+    .nav-list span.scroll-up,
+    .nav-list span.scroll-down {
+      position: absolute;
+      display: none;
+      visibility: hidden;
+      overflow: hidden;
+      background: #f1f1f1;
+      height: 20px;
+    }
+  
+    .nav-list span.scroll-up:hover,
+    .nav-list span.scroll-down:hover {
+      background: #f1f1f1;
+    }
+  
+    .nav-list span.scroll-up:hover span.scroll-up-arrow,
+    .nav-list span.scroll-up:hover span.scroll-down-arrow {
+      border-color: transparent transparent #d23600 transparent;
+    }
+  
+    .nav-list span.scroll-down:hover span.scroll-down-arrow {
+      border-color: #d23600 transparent transparent transparent;
+    }
+  
+    .nav-list span.scroll-up-arrow,
+    .nav-list span.scroll-down-arrow {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -6px;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      border-width: 6px;
+      border-style: dashed dashed solid dashed;
+      border-color: transparent transparent #555555 transparent;
+    }
+  
+    .nav-list span.scroll-down-arrow {
+      top: 8px;
+      border-style: solid dashed dashed dashed;
+      border-color: #555555 transparent transparent transparent;
+    }
+  
+    .nav-list.sm-rtl a.has-submenu {
+      padding-right: 12px;
+      padding-left: 24px;
+    }
+  
+    .nav-list.sm-rtl a span.sub-arrow {
+      right: auto;
+      left: 12px;
+    }
+  
+    .nav-list.sm-rtl.sm-vertical a.has-submenu {
+      padding: 10px 20px;
+    }
+  
+    .nav-list.sm-rtl.sm-vertical a span.sub-arrow {
+      right: auto;
+      left: 8px;
+      border-style: dashed solid dashed dashed;
+      border-color: transparent #555555 transparent transparent;
+    }
+  
+    .nav-list.sm-rtl>li>ul:before {
+      left: auto;
+      right: 30px;
+    }
+  
+    .nav-list.sm-rtl>li>ul:after {
+      left: auto;
+      right: 31px;
+    }
+  
+    .nav-list.sm-rtl ul a.has-submenu {
+      padding: 10px 20px !important;
+    }
+  
+    .nav-list.sm-rtl ul a span.sub-arrow {
+      right: auto;
+      left: 8px;
+      border-style: dashed solid dashed dashed;
+      border-color: transparent #555555 transparent transparent;
+    }
+  
+    .nav-list.sm-vertical {
+      padding: 10px 0;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+    }
+  
+    .nav-list.sm-vertical a {
+      padding: 10px 20px;
+    }
+  
+    .nav-list.sm-vertical a:hover,
+    .nav-list.sm-vertical a:focus,
+    .nav-list.sm-vertical a:active,
+    .nav-list.sm-vertical a.highlighted {
+      background: #f1f1f1;
+    }
+  
+    .nav-list.sm-vertical a.disabled {
+      background: #f1f1f1;
+    }
+  
+    .nav-list.sm-vertical a span.sub-arrow {
+      right: 8px;
+      top: 50%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: dashed dashed dashed solid;
+      border-color: transparent transparent transparent #555555;
+    }
+  
+    .nav-list.sm-vertical>li>ul:before,
+    .nav-list.sm-vertical>li>ul:after {
+      display: none;
+    }
+  
+    .nav-list.sm-vertical ul a {
+      padding: 10px 20px;
+    }
+  
+    .nav-list.sm-vertical ul a:hover,
+    .nav-list.sm-vertical ul a:focus,
+    .nav-list.sm-vertical ul a:active,
+    .nav-list.sm-vertical ul a.highlighted {
+      background: #f1f1f1;
+    }
+  
+    .nav-list.sm-vertical ul a.disabled {
+      background: #f1f1f1;
+    }
+  
+  }
+  
+ 
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+
+  
+
+
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* hide menu state checkbox (keep it visible to screen readers) */
+  
+  #main-menu-state {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  
+  
+  /* hide the menu in mobile view */
+  
+  #main-menu-state:not(:checked)~#main-menu {
+    display: none;
+  }
+  
+  #main-menu-state:checked~#main-menu {
+    display: block;
+  }
+  
+  @media (min-width: 1000px) {
+  
+    
+    /* always show the menu in desktop view */
+    #main-menu-state:not(:checked)~#main-menu {
+      display: block;
+    }
+  
+  }
+  
+  
+  
+  @media all and (min-width: 1400px) { /* navigateur opera */
+    /* taille écriture menu sur téléphone */
+.nav-list a,
+.nav-list a:focus,
+.nav-list ul a:hover,
+.nav-list a:active {
+/* make room for the toggle button (sub indicator) */
+color: #555555;
+/* font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;*/
+font-family: 'Times New Roman', Times, serif;
+font-size: 17px;
+font-weight: normal;
+line-height: 28px;
+text-decoration: none;
+margin-left: 18px; /*marge decale tous cadre  sous-menu et menu */
+margin-top: 0px
+}
+     
+   }
+
+
+  @media all and (min-width: 1500px) { /* navigateur edge et mozilla*/
+     /* taille écriture menu sur téléphone */
+  .nav-list a,
+  .nav-list a:focus,
+  .nav-list ul a:hover,
+  .nav-list a:active {
+    /* make room for the toggle button (sub indicator) */
+    color: #555555;
+    /* font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 28px;
+    text-decoration: none;
+    margin-left: 20px; /*marge decale tous cadre en ê tes sous-menu et menu */
+    margin-top: 0px
+  }
+    }
+  
+    @media all and (min-width: 1700px) { /* navigateur chrome */
+         /* taille écriture menu sur téléphone */
+  .nav-list a,
+  .nav-list a:focus,
+  .nav-list ul a:hover,
+  .nav-list a:active {
+    /* make room for the toggle button (sub indicator) */
+    color: #555555;
+    /* font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+    text-decoration: none;
+    margin-left: 20px; /*marge decale tous cadre sous-menu et menu */
+    margin-top: 0px
+
+  }
+          
+        }
+
+     
+  @media (max-width: 1300px) {
+  
+  
+  /* taille écriture menu sur téléphone */
+  .nav-list a,
+  .nav-list a:focus,
+  .nav-list ul a:hover,
+  .nav-list a:active {
+    /* make room for the toggle button (sub indicator) */
+    color: #555555;
+    /* font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 28px;
+    text-decoration: none;
+    margin-left: 20px; /*marge decale tous cadre en ê tes sous-menu et menu */
+    margin-top: 0px
+  }
+
+
+  }
+
+
+  
+  .nav-list ul a:hover {
+    /* taille sous-menu cliquez à grandie*/
+  
+    color: red;
+    font-size: 0px;
+  
+  }
+  
+  
+  .nav-list ul a:focus {
+    color: blue;
+    font-size: 0px;
+  }
+  
+  
+  
+  .nav-list ul a,
+  .nav-list ul a:focus,
+  .nav-list ul a:active {
+    /* taille sous-menu */
+    font-size: 18px;
+    border-left: 8px solid transparent;
+  
+  }
+  
+  
+  
+  .nav-list a:focus,
+  .nav-list a:active {
+    font-size: 28px;
+  
+  
+  }
+  
+  .nav-list ul a:hover {
+    /* make room for the toggle button (sub indicator) */
+    color: #555555;
+    /* font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;*/
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .nav-list ul a:hover {
+    /* taille sous-menu cliquez à grandie*/
+    line-height: 25px;
+    color: red;
+    font-size: 18px;
+    
+  
+  
+  }
+  
+  @media (max-width: 1000px) {
+  
+    /* taille écriture menu sur téléphone */
+    .nav-list a,
+    .nav-list a:focus,
+    .nav-list ul a:hover,
+    .nav-list a:active {
+      padding: 13px 20px;
+      /* make room for the toggle button (sub indicator) */
+      padding-right: 58px;
+      color: #555555;
+      /* font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Arial, sans-serif;*/
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 50px;
+      font-weight: normal;
+      line-height: 40px;
+      text-decoration: none;
+      margin-left: 20px;
+      margin-top: 15px;
+  
+  
+  
+    }
+  
+    .nav-list ul a:hover {
+      /* taille sous-menu cliquez à grandie pc*/
+      line-height: 40px;
+      color: red;
+      font-size: 35px;
+  
+    }
+  
+  
+    .nav-list ul a:focus {
+      color: blue;
+      font-size: 50px;
+    }
+  
+  
+  
+    .nav-list ul a,
+    .nav-list ul a:focus,
+    .nav-list ul a:active {
+      /* taille sous-menu téléphone*/
+      font-size: 35px;
+      border-left: 8px solid transparent;
+  
+    }
+  
+    .nav-list ul a:hover {
+      /* taille sous-menu cliquez à grandie téléphone*/
+      line-height: 40px;
+      color: red;
+      font-size: 35px;
+  
+  
+    }
+  }
+  
+  
+  
+  
+  
