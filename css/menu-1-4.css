@@ -443,6 +443,7 @@
     border-radius: 100px;
   }
 
+  /* affiche ou pas + et - dans menu pc */
   .sm-clean a,
   .sm-clean a:hover,
   .sm-clean a:focus,
@@ -587,6 +588,7 @@
     /* flèche sous-menu change de position gauche à droite */
   }
 
+    /* affiche ou pas + et - dans menu pc */
   .sm-clean ul a span.sub-arrow {
     right: 8px;
     top: 50%;
