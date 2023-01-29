@@ -74,6 +74,7 @@ h1 {}
     outline: none;
     padding: 12px 16px;
     cursor: pointer;
+    background: none;
 
 }
 
@@ -172,7 +173,7 @@ h1 {}
     transform: rotate(-3deg);
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1210px) {
 
     #top-left-1 {
         width: 42%;

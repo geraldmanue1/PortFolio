@@ -442,7 +442,7 @@
   margin-right: 90px;
   padding-left: 90px;
   padding: 19px;
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
   font-size: 15px;
   font-weight: 700;
@@ -516,7 +516,7 @@
   max-width: 100%;
 }
 
-/*.porfolio-devellopeur-web a:hover {
+.porfolio-devellopeur-web a:hover {
   background: none;
   text-shadow: none;
   box-shadow: none;
@@ -531,7 +531,7 @@
   box-shadow: none;
   color: purple;
 
-}*/
+}
 
 
 
@@ -669,7 +669,7 @@
     margin-right: 30px;
     padding-left: 30px;
     padding: 20px;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     font-size: 20px;
     font-weight: 700;

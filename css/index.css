@@ -15,6 +15,41 @@ body {
   /* indique que l'élément est déplacé vers le bas afin de dégager les flottements à gauche et à droite */
 }
 
+.title-taille {
+font-family:'Times New Roman', Times, serif;
+font-size: 24px;
+font-style: normal;
+font-weight: normal;
+letter-spacing: normal;
+line-height: 46px;
+/*text-transform: uppercase;*/ 
+color: #000000;
+
+}
+
+.sous-title-taille {
+  font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+font-style: normal;
+font-weight: normal;
+letter-spacing: normal;
+line-height: 36px;
+text-transform: none;
+color: #000000;
+
+}
+
+.paragraphe-taille {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-transform: none;
+  color: #000000;
+
+}
 
 
 #accueil a:hover {
@@ -391,6 +426,19 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+
+   #title-taille {
+
+  }
+  
+  #sous-title-taille {
+    
+  }
+  
+  #paragraphe-taille {
+  
+  }
+
   #photo-accueil {
     padding-top: 35px;
     padding-bottom: 100px;
@@ -530,14 +578,6 @@ footer {
     width: 50%;
     box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 }
-
-
-}
-
-@media screen and (max-width: 1200px) {
-  #espace-haut {
-    padding-top:160px;
-    }
 }
 
 /* #Progres {

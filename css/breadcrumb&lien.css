@@ -148,5 +148,8 @@ ul.breadcrumb li a:hover {
     content: "\276F";
   }
 
+  #breadcrumb {
+    padding-top: 128px;
+  }
 
 }
