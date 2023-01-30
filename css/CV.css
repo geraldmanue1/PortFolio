@@ -398,7 +398,7 @@
   /* margin-right: 0px; */
   margin-top: 0px;
   margin-bottom: 50px;
-  height: 722px;
+  height: 780px;
   font-size: 18px;
   border-top: 2px solid #546eff;
   width: 100%;
@@ -533,6 +533,78 @@
 
 }
 
+
+@media all and (min-width: 1400px) {
+  /* navigateur opera */
+
+  .flex-container-competences {
+    display: flex;
+    /* background-color: DodgerBlue; */
+  }
+
+  .flex-container-competences>div {
+    background-color: #f1f1f1;
+    /* margin: 50px; */
+    /* margin-left: 0px; */
+    /* margin-right: 0px; */
+    margin-top: 0px;
+    margin-bottom: 50px;
+    height: 780px;
+    font-size: 18px;
+    border-top: 2px solid #546eff;
+    width: 100%;
+  }
+
+}
+
+
+@media all and (min-width: 1500px) {
+  /* navigateur edge et firefox mozilla*/
+
+  .flex-container-competences {
+    display: flex;
+    /* background-color: DodgerBlue; */
+  }
+
+  .flex-container-competences>div {
+    background-color: #f1f1f1;
+    /* margin: 50px; */
+    /* margin-left: 0px; */
+    /* margin-right: 0px; */
+    margin-top: 0px;
+    margin-bottom: 50px;
+    height: 790px;
+    font-size: 18px;
+    border-top: 2px solid #546eff;
+    width: 100%;
+  }
+
+
+}
+
+@media all and (min-width: 1700px) {
+  /* navigateur chrome */
+
+
+  .flex-container-competences {
+    display: flex;
+    /* background-color: DodgerBlue; */
+  }
+
+  .flex-container-competences>div {
+    background-color: #f1f1f1;
+    /* margin: 50px; */
+    /* margin-left: 0px; */
+    /* margin-right: 0px; */
+    margin-top: 0px;
+    margin-bottom: 50px;
+    height: 900px;
+    font-size: 18px;
+    border-top: 2px solid #546eff;
+    width: 100%;
+  }
+
+}
 
 
 /* fin competence *
@@ -675,8 +747,12 @@
     font-weight: 700;
     line-height: 28px;
     box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
-  
+
   }
 
 
 }
+
+/*@media screen and (max-width: 1120px) { /* dans 2 ème écran edge et firefox mozilla
+
+  }*/

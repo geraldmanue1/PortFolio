@@ -67,27 +67,27 @@
 
 @media screen and (max-width: 1200px) {
 
-  
-.espace-1 {
-  margin-left: 85px;
-  margin-right: 85px;
-  padding: 15px;
-  text-align: justify;
-  font-size: 25px;
-}
 
-.collapsible {
-  background-color: #F1F1F1;
-  color: #182153;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  border-left: 1px solid;
-  border-color: #182153;
-  text-align: left;
-  outline: none;
-  font-size: 25px;
-}
+  .espace-1 {
+    margin-left: 85px;
+    margin-right: 85px;
+    padding: 15px;
+    text-align: justify;
+    font-size: 25px;
+  }
+
+  .collapsible {
+    background-color: #F1F1F1;
+    color: #182153;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-left: 1px solid;
+    border-color: #182153;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+  }
 
 }
