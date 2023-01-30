@@ -23,7 +23,7 @@
   #myBtn-down {
     display: none;
     position: fixed;
-    bottom: 100px;
+    bottom: 145px;
     right: 35px;
     z-index: 99;
     font-size: 25px;
