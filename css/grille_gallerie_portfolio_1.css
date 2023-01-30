@@ -6,7 +6,7 @@
 
 }
 
-h1 {}
+
 
 .row-1 {
     margin: 10px -16px;
@@ -176,13 +176,14 @@ h1 {}
 @media screen and (max-width: 1210px) {
 
     #top-left-1 {
-        width: 42%;
+        width: 32%;
     }
 
     @media screen and (max-width: 1000px) {
 
     #top-left-1 {
-        width: 40%;
+        width: 42%;
     }
 
+}
 }

@@ -56,9 +56,9 @@ header {
 
 
 
-@media all and (min-width: 1400px) {
+@media all and (min-width: 1400px) {  /* navigateur opera */
 
-    /* navigateur opera */
+   
     /* taille écriture menu sur téléphone */
     .menuTextGauche {
         /* MANUEL Gérald */
@@ -98,9 +98,9 @@ header {
 }
 
 
-@media all and (min-width: 1500px) {
+@media all and (min-width: 1500px) {     /* navigateur edge et mozilla*/
 
-    /* navigateur edge et mozilla*/
+
     /* taille écriture menu sur téléphone */
     .menuTextGauche {
         /* MANUEL Gérald */
@@ -138,9 +138,9 @@ header {
 
 }
 
-@media all and (min-width: 1700px) {
+@media all and (min-width: 1700px) {   /* navigateur chrome */
 
-    /* navigateur chrome */
+  
     /* taille écriture menu sur téléphone */
     .menuTextGauche {
         /* MANUEL Gérald */
@@ -334,7 +334,7 @@ ion-icon {
 /* Positionnement du sous-menu par rapport à l'autre */
 .sub-menu li:hover>.sub-menu {
     /*top: -2.1px; /* ligne pareille */
-    top: 1.2px;
+    top: 3.0px;
     /* ligne non pareille */
     left: 100%;
 

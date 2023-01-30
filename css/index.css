@@ -17,11 +17,11 @@ body {
 
 .title-taille {
 font-family:'Times New Roman', Times, serif;
-font-size: 24px;
+font-size:24px;
 font-style: normal;
 font-weight: normal;
 letter-spacing: normal;
-line-height: 46px;
+line-height: 54px;
 /*text-transform: uppercase;*/ 
 color: #000000;
 
@@ -41,7 +41,7 @@ color: #000000;
 
 .paragraphe-taille {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -371,6 +371,8 @@ footer {
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
+  font-size: 20px;
+  line-height: 25px;
   z-index: 80000; /* A adapter au besoin */
 
 }
@@ -425,26 +427,416 @@ footer {
   }
 }
 
-@media screen and (max-width: 1200px) {
 
-   #title-taille {
 
+
+@media all and (min-width: 1400px) {  /* navigateur opera */
+
+/* collaboration */
+.photo-accueil {
+
+  height: 628px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+/* fin collaboration */
+.partage {
+
+  height: 284px;
+  width: 80%;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+  max-width: 100%;
+  max-height: 100%;
+
+}
+  .confiance {
+
+    height: 285px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  
   }
   
-  #sous-title-taille {
+  
+  .Liberte {
+   
+    height: 285px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  .Progres {
+ 
+    height: 285px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  .photo-groupe-ensemble {
+ 
+    height: 500px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+}
+
+
+@media all and (min-width: 1500px) {     /* navigateur edge et mozilla*/
+
+/* collaboration */
+.photo-accueil {
+
+  height: 648px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+/* fin collaboration */
+
+.partage {
+ 
+  height: 295px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+  .confiance {
+  
+    height: 285px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  
+  .Liberte {
+
+    height: 298px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  .Progres {
+ 
+    height: 292px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  .photo-groupe-ensemble {
+
+    height: 515px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+}
+
+@media all and (min-width: 1700px) {   /* navigateur chrome */
+
+/* collaboration */
+.photo-accueil {
+
+  height: 728px;
+  background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+/* fin collaboration */
+
+.partage {
+ 
+  height: 333px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+  .confiance {
+ 
+    height: 285px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+   
+  }
+  
+  
+  .Liberte {
+
+    height: 345px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  .Progres {
+   
+    height: 331px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  .photo-groupe-ensemble {
+
+    height: 580px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1300px) { /* dans 2 ème écran */
+
+/* collaboration */
+.photo-accueil {
+ 
+  height: 456px;
+  background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+/* fin collaboration */
+
+.partage {
+ 
+  height: 203px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+  max-width: 100%;
+  max-height: 100%;
+
+}
+  .confiance {
+   
+    height: 198px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  
+  .Liberte {
+
+    height: 202px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  .Progres {
+
+    height: 202px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  .photo-groupe-ensemble {
+
+    height: 365px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1120px) { /* dans 2 ème écran */
+/* collaboration */
+.photo-accueil {
+ 
+  height: 400px;
+  background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+/* fin collaboration */
+
+.partage {
+ 
+  height: 173px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+  max-width: 100%;
+  max-height: 100%;
+
+}
+  .confiance {
+   
+    height: 168px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  
+  .Liberte {
+
+    height: 182px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  .Progres {
+
+    height: 176px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+  
+  .photo-groupe-ensemble {
+
+    height: 320px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  }
+  /* fin collaboration */
+}
+@media screen and (max-width: 1000px) { /* sur téléphone */
+
+  #title-taille {
+    font-family:'Times New Roman', Times, serif;
+    font-size:24px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 54px;
+    /*text-transform: uppercase;*/ 
+    color: #000000;
     
-  }
-  
-  #paragraphe-taille {
-  
-  }
+    }
+    
+    #sous-title-taille {
+      font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-transform: none;
+    color: #000000;
+    
+    }
+    
+    #paragraphe-taille {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 22px;
+      text-transform: none;
+      color: #000000;
+    
+    }
+
+    #footer {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      font-size: 24px;
+      line-height: 28px;
+      padding: 1rem;
+      background-color: #efefef;
+      text-align: center;
+      z-index: 80000; /* A adapter au besoin */
+    
+    }
 
   #photo-accueil {
     padding-top: 35px;
     padding-bottom: 100px;
     margin: 80px;
     margin-top: 0px;
-    height: 530px;
+    height: 544px;
     color: #ffffff;
     font-family: Helvetica, serif;
     font-weight: 100;
@@ -523,7 +915,7 @@ footer {
     padding-top: 35px;
     padding-bottom: 100px;
     margin: 80px;
-    height: 197.5px;
+    height: 197.8px;
     color: #ffffff;
     font-family: Helvetica, serif;
     font-weight: 100;
