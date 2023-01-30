@@ -18,6 +18,7 @@ body {
 .espace-fin {
   margin-bottom: 50px;
 }
+
 .title-taille {
   font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
@@ -988,6 +989,13 @@ footer {
     box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
   }
 
+  #espace-title-taille {
+    margin-top: -30px;
+  }
+
+  #espace-title-taille-1 {
+    margin-top: 85px;
+  }
 
   #espace-fin {
 
