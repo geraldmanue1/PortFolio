@@ -15,6 +15,9 @@ body {
   /* indique que l'élément est déplacé vers le bas afin de dégager les flottements à gauche et à droite */
 }
 
+.espace-fin {
+  margin-bottom: 50px;
+}
 .title-taille {
   font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
@@ -983,6 +986,14 @@ footer {
     font-size: 25px;
     width: 50%;
     box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+  }
+
+
+  #espace-fin {
+
+    margin-bottom: 40px;
+
+
   }
 }
 
