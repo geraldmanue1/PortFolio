@@ -1,0 +1,184 @@
+/* Site web du centre */
+.main {
+    max-width: 1000px;
+    margin: auto;
+
+
+}
+
+/* h1 {
+    font-size: 50px;
+    word-break: break-all;
+} */
+
+.row {
+    margin: 10px -16px;
+
+}
+
+/* Ajouter un rembourrage ENTRE chaque colonne */
+.row,
+.row>.column {
+    padding: 8px;
+
+
+}
+
+/* Créez trois colonnes égales qui flottent les unes à côté des autres */
+.column {
+    float: left;
+    width: 33.33%;
+
+
+    display: none;
+    /* Masquer tous les éléments par déf */
+}
+
+/* Effacer les flotteurs après les lignes */
+.row:after {
+    content: "";
+    display: table;
+
+    clear: both;
+
+}
+
+/* Contenu */
+.content {
+    background-color: #bab8cf69;
+    border-radius: 20px;
+
+
+}
+
+.marge-1 {
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+
+
+}
+
+/* La classe "show" est ajoutée aux éléments filtrés */
+.show {
+    display: block;
+}
+
+/* Stylisez les boutons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    background: none;
+
+}
+
+.btn:hover {
+    color: blue;
+}
+
+.btn.active {
+
+    color: green;
+}
+
+.top-left {
+    /* position: absolute;
+    top: -1px;
+    left: 25px; */
+    background-color: rgb(211, 214, 203);
+    padding: 8px;
+    width: 20%;
+    margin-left: 30px;
+
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+
+
+}
+
+.container {
+    /* position: relative; */
+}
+
+.container-1 {
+    background-color: rgba(236, 233, 233, 1);
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.container:hover {
+    box-shadow: 1px 1px 1px 1px grey;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+/* img {
+    border-bottom-right-radius: 0px;
+
+} */
+
+
+
+.marge-1 a:link {
+    text-decoration: none;
+
+
+
+}
+
+.marge-1 a:hover {
+    background-color: none;
+    box-shadow: none;
+    text-decoration: none;
+    background: none;
+    color: blue;
+}
+
+.container a:hover {
+    background-color: none;
+    box-shadow: none;
+    text-decoration: none;
+    background: none;
+}
+
+.marge-1 a h4:hover {
+    background-color: none;
+    box-shadow: none;
+    text-decoration: none;
+    background: none;
+    color: blue;
+}
+
+.rotate img {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.rotate img:hover {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+
+@media screen and (max-width: 1210px) {
+
+    #top-left {
+        width: 23%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    #top-left {
+        width: 33%;
+    }
+
+}

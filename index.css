@@ -1,0 +1,1034 @@
+* {
+  box-sizing: border-box;
+  /* définit la façon dont la hauteur et la largeur totale d'un élément */
+}
+
+/* contenu html dedans : texte, image, vidéo, audio */
+body {
+  margin: 0;
+}
+
+/* fin contenu html dedans : texte, image, vidéo, audio */
+
+.clearfix {
+  clear: both;
+  /* indique que l'élément est déplacé vers le bas afin de dégager les flottements à gauche et à droite */
+}
+
+.espace-fin {
+  margin-bottom: 50px;
+}
+.title-taille {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 54px;
+  /*text-transform: uppercase;*/
+  color: #000000;
+
+}
+
+.sous-title-taille {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  text-transform: none;
+  color: #000000;
+
+}
+
+.paragraphe-taille {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-transform: none;
+  color: #000000;
+
+}
+
+
+#accueil a:hover {
+  background-color: none;
+  box-shadow: none;
+  border: none;
+  color: none;
+  background: none;
+}
+
+/* collaboration */
+.photo-accueil {
+  padding-top: 35px;
+  padding-bottom: 100px;
+  margin: 80px;
+  margin-top: 0px;
+  height: 648px;
+  color: #ffffff;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  --fill-layer-background-media-position: fixed;
+  background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment:fixed; */
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+/* fin collaboration */
+
+
+/* deux block signifie SLAM et Numérique */
+.flex-container {
+  display: flex;
+
+  /*background-color: DodgerBlue;*/
+}
+
+.flex-container>div {
+  background-color: #f1f1f1;
+  margin: 50px;
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+}
+
+/* fin deux block signifie SLAM et Numérique */
+
+
+.partage {
+  padding-top: 35px;
+  padding-bottom: 100px;
+  margin: 80px;
+  height: 285px;
+  color: #ffffff;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  /*--fill-layer-background-media-position: fixed;*/
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment:fixed; */
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+/* deux block image */
+.flex-container-image-1 {
+  display: flex;
+
+  /*background-color: DodgerBlue;*/
+}
+
+.flex-container-image-1>div {
+  background-color: #f1f1f1;
+  margin: 60px;
+  padding: 15px;
+  font-size: 18px;
+  width: 50%;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+
+}
+
+/* fin deux block image */
+
+.confiance {
+  padding-top: 35px;
+  padding-bottom: 100px;
+  margin: 80px;
+  height: 285px;
+  color: #ffffff;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  /*--fill-layer-background-media-position: fixed;*/
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment:fixed; */
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+
+.Liberte {
+  padding-top: 35px;
+  padding-bottom: 100px;
+  margin: 80px;
+  height: 285px;
+  color: #ffffff;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  /*--fill-layer-background-media-position: fixed;*/
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/libre.png"), url("/images/libre.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment:fixed; */
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.Progres {
+  padding-top: 35px;
+  padding-bottom: 100px;
+  margin: 80px;
+  height: 292px;
+  color: #ffffff;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  /*--fill-layer-background-media-position: fixed;*/
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment:fixed; */
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.photo-groupe-ensemble {
+  padding-top: 35px;
+  padding-bottom: 100px;
+  margin: 80px;
+  margin-top: 10px;
+  height: 540px;
+  color: #ffffff;
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  /* --fill-layer-background-media-position: fixed; */
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+
+  background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment:fixed; */
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* module assistant numerique */
+
+.flex-container-module-titre {
+  display: flex;
+  /* background-color: DodgerBlue; */
+  text-align: center;
+}
+
+.flex-container-module-titre>div {
+  background-color: #f1f1f1;
+  margin: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 450px;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+
+
+}
+
+.photo-accueil-module-titre {
+  text-align: center;
+  margin-bottom: 38px;
+  /* padding-bottom:100px; */
+  /* margin: 80px; */
+  height: 100px;
+
+  font-family: Helvetica, serif;
+  font-weight: 100;
+  /* --fill-layer-background-media-position: fixed; */
+  /* background-image:url("../images/reseaux-sociaux-2-1920x832.jpeg"), url("/images/reseaux-sociaux-2-1920x832.jpeg"); */
+  /* background-color: #182153; */
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-attachment:fixed; */
+  background-size: cover;
+  /* width: 1500px; */
+  width: 100%;
+  max-width: 100%;
+}
+
+.flex-container-module {
+  display: flex;
+  /* background-color: DodgerBlue; */
+}
+
+.flex-container-module>div {
+  background-color: #f1f1f1;
+  padding: 15px;
+  font-size: 18px;
+  font-size: 18px;
+  width: 100%;
+  margin: 50px;
+  margin-top: 0px;
+  font-size: 18px;
+
+}
+
+.espace-tirer-module {
+  padding-left: 8px;
+  margin: 8px;
+}
+
+/*.photo-accueil-module {
+  padding-top:35px;
+  height: 618px;
+  color:#ffffff;
+  font-family:Helvetica, serif;
+  font-weight:100;
+ background-image:url("../images/mailler-730x223.jpg"), url("/images/mailler-730x223.jpg");
+  background-color:rgb(28, 28, 70);
+  background-repeat:no-repeat;
+  background-position:right center;
+  background-size:cover;
+  width: 100%;
+  max-width: 100%;
+}*/
+
+.flex-container-module-1 {
+  display: flex;
+  margin-right: 0px;
+  padding-left: 0px;
+  margin-left: 90px;
+
+
+
+
+  /*background-color: DodgerBlue;*/
+}
+
+.flex-container-module-1>div {
+  background-color: rgb(15 16 24 / 8%);
+  color: rgb(0, 0, 0, 1);
+  margin: 8px;
+  margin-right: 80px;
+  padding-left: 80px;
+  padding: 13px;
+  font-size: 11px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  font-size: 17px;
+
+}
+
+/* .flex-container-module-image-1 {
+  padding-top:35px;
+  padding-bottom:100px;
+  margin: 80px;
+  height: 250px;
+  width: 25%;
+  color:#ffffff;
+  font-family:Helvetica, serif;
+  font-weight:100;
+ 
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  background-image:url("../images/formation-partage-pratiques-experience.jpg"), url("/images/formation-partage-pratiques-experience.jpg");
+  background-repeat:no-repeat;
+  background-position:right center;
+
+  background-size:cover;
+  max-width: 100%;
+
+}*/
+
+/* fin module */
+
+/* pied */
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  font-size: 20px;
+  line-height: 25px;
+  z-index: 80000;
+  /* A adapter au besoin */
+
+}
+
+
+
+.competences a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+.competences a:link {
+  color: blue;
+
+}
+
+.competences a:visited {
+  color: purple;
+
+}
+
+.competences a:focus,
+.competences a:hover {
+  border-bottom: 1px solid;
+
+}
+
+.competences a:active {
+  color: red;
+}
+
+.competences a:hover {
+  background-color: none;
+  box-shadow: none;
+  text-decoration: none;
+  background: none;
+  color: none;
+}
+
+/*fin pied*/
+@media screen and (max-width: 800px) {
+
+  #taille-ecriture-telephone {
+    font-size: 8.8px;
+    line-height: none;
+  }
+
+  #taille-ecriture-telephone-module {
+    font-size: 14px;
+    line-height: none;
+  }
+}
+
+
+
+
+@media all and (min-width: 1400px) {
+  /* navigateur opera */
+
+  /* collaboration */
+  .photo-accueil {
+
+    height: 628px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  /* fin collaboration */
+  .partage {
+
+    height: 284px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .confiance {
+
+    height: 285px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+
+  .Liberte {
+
+    height: 285px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .Progres {
+
+    height: 285px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .photo-groupe-ensemble {
+
+    height: 500px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+}
+
+
+@media all and (min-width: 1500px) {
+  /* navigateur edge et firefox mozilla*/
+
+  /* collaboration */
+  .photo-accueil {
+
+    height: 648px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  /* fin collaboration */
+
+  .partage {
+
+    height: 295px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .confiance {
+
+    height: 285px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+
+  .Liberte {
+
+    height: 298px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .Progres {
+
+    height: 292px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .photo-groupe-ensemble {
+
+    height: 515px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+}
+
+@media all and (min-width: 1700px) {
+  /* navigateur chrome */
+
+  /* collaboration */
+  .photo-accueil {
+
+    height: 728px;
+    background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  /* fin collaboration */
+
+  .partage {
+
+    height: 333px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .confiance {
+
+    height: 285px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+
+  .Liberte {
+
+    height: 345px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .Progres {
+
+    height: 331px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .photo-groupe-ensemble {
+
+    height: 580px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1300px) {
+  /* dans 2 ème écran */
+
+  /* collaboration */
+  .photo-accueil {
+
+    height: 456px;
+    background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  /* fin collaboration */
+
+  .partage {
+
+    height: 203px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .confiance {
+
+    height: 198px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+
+  .Liberte {
+
+    height: 202px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .Progres {
+
+    height: 202px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .photo-groupe-ensemble {
+
+    height: 365px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1120px) {
+
+  /* dans 2 ème écran edge et firefox mozilla*/
+  /* collaboration */
+  .photo-accueil {
+
+    height: 400px;
+    background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  /* fin collaboration */
+
+  .partage {
+
+    height: 173px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .confiance {
+
+    height: 168px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+
+  .Liberte {
+
+    height: 182px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .Progres {
+
+    height: 176px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .photo-groupe-ensemble {
+
+    height: 320px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* sur téléphone */
+
+  #title-taille {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 60px;
+    /*text-transform: uppercase;*/
+    color: #000000;
+
+  }
+
+  #sous-title-taille {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-transform: none;
+    color: #000000;
+
+  }
+
+  #paragraphe-taille {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-transform: none;
+    color: #000000;
+
+  }
+
+  #footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    z-index: 80000;
+    /* A adapter au besoin */
+
+  }
+
+  #photo-accueil {
+    padding-top: 35px;
+    padding-bottom: 100px;
+    margin: 80px;
+    margin-top: 0px;
+    height: 544px;
+    color: #ffffff;
+    font-family: Helvetica, serif;
+    font-weight: 100;
+    --fill-layer-background-media-position: fixed;
+    background-image: url("../images/collobaration.jpg"), url("/images/collobaration.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  #partage {
+    padding-top: 35px;
+    padding-bottom: 100px;
+    margin: 80px;
+    height: 200px;
+    color: #ffffff;
+    font-family: Helvetica, serif;
+    font-weight: 100;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  #confiance {
+    padding-top: 35px;
+    padding-bottom: 100px;
+    margin: 80px;
+    height: 200px;
+    color: #ffffff;
+    font-family: Helvetica, serif;
+    font-weight: 100;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+
+  #Liberte {
+    padding-top: 35px;
+    padding-bottom: 100px;
+    margin: 80px;
+    height: 200px;
+    color: #ffffff;
+    font-family: Helvetica, serif;
+    font-weight: 100;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  #Progres {
+    padding-top: 35px;
+    padding-bottom: 100px;
+    margin: 80px;
+    height: 197.8px;
+    color: #ffffff;
+    font-family: Helvetica, serif;
+    font-weight: 100;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  #photo-groupe-ensemble {
+    padding-top: 35px;
+    padding-bottom: 100px;
+    margin: 80px;
+    margin-top: 10px;
+    height: 310px;
+    color: #ffffff;
+    font-family: Helvetica, serif;
+    font-weight: 100;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #marge-text {
+    padding-top: 20px;
+
+  }
+
+  .flex-container>div {
+    background-color: #f1f1f1;
+    margin: 50px;
+    padding: 15px;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .flex-container-image-1>div {
+    background-color: #f1f1f1;
+    margin: 60px;
+    padding: 15px;
+    font-size: 25px;
+    width: 50%;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+  }
+
+
+  #espace-fin {
+
+    margin-bottom: 40px;
+
+
+  }
+}
+
+/* #Progres {
+    padding-top:35px;
+    padding-bottom:100px;
+    margin: 80px;
+    height: 244px;
+    color:#ffffff;
+    font-family:Helvetica, serif;
+    font-weight:100;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size:cover;
+    max-width: 100%;
+    background-image:url("../images/top-team-mentor-character-flat-illustration-vector.jpg"), url("/images/top-team-mentor-character-flat-illustration-vector.jpg");
+
+  } */
+/*#photo-accueil {
+
+
+  color:#ffffff;
+  font-family:Helvetica, serif;
+  font-weight:100;
+  background-image:url("../images/collobaration.jpg"), url("/images/collobaration.jpg");
+  background-repeat:no-repeat;
+  background-position:left center;
+  background-size:1400px;
+  height: 1000px;
+  max-width: 100%;
+  } 
+
+
+
+}*/
