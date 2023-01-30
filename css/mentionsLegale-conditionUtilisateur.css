@@ -1,4 +1,4 @@
-.collapsible {
+.collapsible-coll {
   background-color: #F1F1F1;
   color: #182153;
   cursor: pointer;
@@ -13,19 +13,19 @@
 
 }
 
-.active,
-.collapsible:hover {
+.active.collapsible-coll,
+.collapsible-coll:hover {
   background-color: #c4bc86bf;
 }
 
-.active {
+.active.collapsible-coll {
 
   border: 2px solid;
   border-color: #182154;
   border-bottom: none;
 }
 
-.collapsible:after {
+.collapsible-coll:after {
   content: '\002B';
   color: #182153;
   font-weight: bold;
@@ -34,7 +34,7 @@
 
 }
 
-.active:after {
+.active.collapsible-coll:after {
   content: "\2212";
 }
 
@@ -76,7 +76,7 @@
     font-size: 25px;
   }
 
-  .collapsible {
+  .collapsible-coll {
     background-color: #F1F1F1;
     color: #182153;
     cursor: pointer;
@@ -88,6 +88,13 @@
     text-align: left;
     outline: none;
     font-size: 25px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  #espace-fin {
+    padding-bottom: 50px;
   }
 
 }
