@@ -1,5 +1,5 @@
 
-var coll = document.getElementsByClassName("collapsible", "content");
+var coll = document.getElementsByClassName("collapsible-coll", "content");
 var i;
 
 for (i = 0; i < coll.length; i++) {
