@@ -844,9 +844,11 @@ footer {
     font-size:24px;
     line-height: 32px;
     padding: 0rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: #efefef;
+    max-width: 100%;
+    max-heigth: 100%;
     text-align: center;
     z-index: 80000;
     /* A adapter au besoin */
