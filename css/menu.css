@@ -351,14 +351,14 @@ ion-icon {
 
 } */
 
-@media all and (min-width: 1390px) {     /* navigateur edge et mozilla*/
+/* @media all and (min-width: 1390px) {    
 
 
  
     .menuTextGauche {
-        /* MANUEL Gérald */
+  
         position: absolute;
-        /* background-color: #fff; */
+       
         border-radius: 5px;
         font-family: 'Times New Roman', Times, serif;
         width: 230px;
@@ -371,7 +371,7 @@ ion-icon {
         min-height: 30px;
         text-align: center;
         line-height: 15px;
-        /* top: -75px; */
+     
         left: 95px;
         color: #4d114f;
         font-size: 24px;
@@ -391,13 +391,13 @@ ion-icon {
 .nav-list {
     display: flex;
     width: 100%;
-    /* align-items: center; */
+ 
     margin-top: 40px;
     left: 70px;
     top: 18px;
     position: relative;
 }
-}
+}*/
  .menuTextGauche {
         /* MANUEL Gérald */
         position: absolute;
@@ -436,7 +436,7 @@ ion-icon {
     display: flex;
     width: 100%;
     /* align-items: center;*/
-    margin-top:44px;
+    margin-top:75px;
     left: 80px;
     /* tous menu déplace droite et gauche */
     position: relative;
@@ -474,7 +474,7 @@ ion-icon {
         text-align: center;
         line-height: 15px;
         /* top: -75px; */
-        left: 45px;
+        left: 110px;
         color: #4d114f;
     }
 
@@ -536,8 +536,8 @@ ion-icon {
         display: flex;
         width: 100%;
         align-items: center;
-        margin-top: 40px;
-        left: 195px;
+        margin-top: 55px;
+        left: 180px;
         /* tous menu déplace droite et gauche */
         top: 0px;
         position: relative;
