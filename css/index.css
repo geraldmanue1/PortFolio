@@ -431,6 +431,78 @@ footer {
     line-height: none;
   }
 }
+@media all and (min-width: 1396px) {
+  /* navigateur edge */
+
+  /* collaboration */
+  .photo-accueil {
+
+    height: 581px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/collobaration.png"), url("/images/collobaration.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  /* fin collaboration */
+
+  .partage {
+
+    height: 260px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/formation-partage-pratiques-experience.png"), url("/images/formation-partage-pratiques-experience.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .confiance {
+
+    height: 265px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/confiance-ensemble.png"), url("/images/confiance-ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+
+  .Liberte {
+
+    height: 270px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/libre.png"), url("/images/libre.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .Progres {
+
+    height: 264px;
+    width: 80%;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/top-team-mentor-character-flat-illustration-vector.png"), url("/images/top-team-mentor-character-flat-illustration-vector.png");
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .photo-groupe-ensemble {
+
+    height: 458px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    background-image: url("../images/ensemble.png"), url("/images/ensemble.png");
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+}
+
 
 
 
@@ -649,6 +721,8 @@ footer {
 
 
 }
+
+
 
 
 @media screen and (max-width: 1300px) {
@@ -1011,6 +1085,8 @@ footer {
 
   }
 }
+
+
 
 @media screen and (max-width: 990px) {
   #espace-fin {
