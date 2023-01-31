@@ -7,7 +7,6 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
   display: inline;
-  font-size: 18px;
   margin-right: 0px;
 
 }
@@ -77,6 +76,10 @@ ul.breadcrumb li a:hover {
   color: red;
 }
 
+.taille-breadcrum {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 1200px) {
 
   .breadcrum-espace-mention-legale {
@@ -102,7 +105,6 @@ ul.breadcrumb li a:hover {
 
   ul.breadcrumb li {
     display: inline;
-    font-size: 18px;
     margin-right: 0px;
 
   }
@@ -117,7 +119,9 @@ ul.breadcrumb li a:hover {
     color: black;
     content: "\276F";
   }
-
+  .taille-breadcrum {
+    font-size: 20px;
+  }
 
 }
 
@@ -132,7 +136,7 @@ ul.breadcrumb li a:hover {
 
   ul.breadcrumb li {
     display: inline;
-    font-size: 25px;
+    /*font-size: 25px;*/
     margin-right: 0px;
 
   }
@@ -150,6 +154,12 @@ ul.breadcrumb li a:hover {
 
   #breadcrumb {
     padding-top: 128px;
+
   }
+#taille-breadcrum {
+  font-size: 20px;
+}
+
+
 
 }
