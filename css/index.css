@@ -794,6 +794,8 @@ footer {
   }
 }
 
+
+
 @media screen and (max-width: 1000px) {
   /* sur téléphone */
 
@@ -1000,6 +1002,15 @@ footer {
   #espace-fin {
 
     margin-bottom: 40px;
+
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #espace-fin {
+
+    margin-bottom: 110px;
 
 
   }
