@@ -40,15 +40,25 @@
   transform: translate(-50%, -50%);
 }
 
-#css3 {
+/*#css3 {
   margin: 0;
   position: absolute;
   top: 73%;
-  padding-top: 46px;
   left: 18%;
+  padding-top: 46px;
+ 
   width: 15%;
   transform: translate(-50%, -50%);
   transform-origin: center center;
+} */
+#css3 {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  padding-top: 15px;
+  left: 78%;
+  width: 15%;
+  transform: translate(-50%, -50%);
 }
 
 #sass {
@@ -241,15 +251,22 @@
     transform: translate(-50%, -50%);
   }
 
-  #css3 {
+ /* #css3 {
     margin: 0;
     margin-top: 60px;
     margin-left: -0px;
     width: 20%;
     transform: translate(-50%, -50%);
     transform-origin: center center;
-  }
+  } */
 
+  #css3 {
+    margin: 0;
+    margin-top: 100px;
+    margin-left: -0px;
+    width: 20%;
+    transform: translate(-50%, -50%);
+  }
   #js {
     margin: 0;
     margin-top: 108px;
