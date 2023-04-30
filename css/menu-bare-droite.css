@@ -1,0 +1,220 @@
+/* W3.CSS 2.82 by Jan Egil and Borge Refsnes */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* Linkedin info bulle + image */
+.w3-tooltip {
+  /* padding-top: 100px;
+    margin-left: 100px;*/
+  right: 50px;
+  float: right;
+  left: 1471px;
+
+  top: 430px;
+  max-width: 100%;
+}
+
+.w3-tooltip img:hover {
+  background-color: #0085ae;
+  -webkit-box-shadow: 5px 5px 7px #333;
+  -moz-box-shadow: 5px 5px 7px #333;
+  box-shadow: 5px 5px 7px #333;
+}
+
+.w3-tooltip .w3-text {
+  display: none;
+}
+
+.w3-tooltip:hover .w3-text {
+  display: inline-block;
+}
+
+/* Fin Linkedin info bulle + image */
+
+/* Facebook info bulle + image */
+.w3-tooltip-1 {
+  right: 50px;
+  float: right;
+  left: 1471px;
+  top: 370px;
+  max-width: 100%;
+}
+
+.w3-tooltip-1 .w3-text {
+  display: none;
+}
+
+.w3-tooltip-1:hover .w3-text {
+  display: inline-block;
+}
+
+.w3-tooltip-1 img:hover {
+  background-color: #0085ae;
+  -webkit-box-shadow: 5px 5px 7px #333;
+  -moz-box-shadow: 5px 5px 7px #333;
+  box-shadow: 5px 5px 7px #333;
+}
+/* Fin Facebook info bulle + image */
+
+/* Fin Linkedin info bulle + image */
+
+/* E-mail info bulle + image */
+.w3-tooltip-2 {
+  right: 50px;
+  float: right;
+  left: 1471px;
+  top: 308px;
+  max-width: 100%;
+}
+
+.w3-tooltip-2 .w3-text {
+  display: none;
+}
+
+.w3-tooltip-2:hover .w3-text {
+  display: inline-block;
+}
+
+.w3-tooltip-2 img:hover {
+  background-color: #0085ae;
+  -webkit-box-shadow: 5px 5px 7px #333;
+  -moz-box-shadow: 5px 5px 7px #333;
+  box-shadow: 5px 5px 7px #333;
+}
+/* Fin E-mail info bulle + image */
+
+/* téléphone info bulle + image */
+.w3-tooltip-3 {
+  right: 50px;
+  float: right;
+  left: 1471px;
+  top: 245px;
+  max-width: 100%;
+}
+
+.w3-tooltip-3 .w3-text {
+  display: none;
+}
+
+.w3-tooltip-3:hover .w3-text {
+  display: inline-block;
+}
+
+.w3-tooltip-3 img:hover {
+  background-color: #0085ae;
+  -webkit-box-shadow: 5px 5px 7px #333;
+  -moz-box-shadow: 5px 5px 7px #333;
+  box-shadow: 5px 5px 7px #333;
+}
+/* Fin téléphone info bulle + image */
+
+.w3-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 200px;
+  left: -120px;
+  text-align: center;
+  top: 10px;
+}
+.w3-tag-1 {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 200px;
+  left: -124px;
+  text-align: center;
+  top: 15px;
+}
+.w3-tag-2 {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 200px;
+  left: -139px;
+  text-align: center;
+  top: 15px;
+}
+.w3-tag-3 {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 200px;
+  left: -145px;
+  text-align: center;
+  top: 15px;
+}
+
+.info-bulle-image {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 5000px) {
+  #w3-tooltip #w3-text {
+    display: none;
+  }
+
+  /* Linkedin image */
+  #w3-tooltip {
+    /*padding-top: 100px;
+        margin-left: 100px;*/
+    left: 94.5%;
+    float: right;
+    top: 425px;
+    max-width: 100%;
+  }
+  /* Fin Linkedin image */
+
+  /* Facebook image */
+  #w3-tooltip-1 {
+    /*padding-top: 100px;
+        margin-left: 100px;*/
+    left: 94.5%;
+    float: right;
+    top: 360px;
+    max-width: 100%;
+  }
+  /* Fin Facebook image */
+
+  /* E-mail image */
+  #w3-tooltip-2 {
+    /*padding-top: 100px;
+        margin-left: 100px;*/
+    float: right;
+    left: 94.5%;
+    top: 300px;
+    max-width: 100%;
+  }
+  /* Fin E-mail image */
+
+  /* télephone image */
+  #w3-tooltip-3 {
+    /*padding-top: 100px;
+        margin-left: 100px;*/
+    left: 94.5%;
+    float: right;
+    top: 240px;
+    max-width: 100%;
+  }
+}
