@@ -33,9 +33,11 @@ body {
 
 .w3-tooltip img:hover {
   background-color: #0085ae;
-  -webkit-box-shadow: 5px 5px 7px #333;
+  /*-webkit-box-shadow: 5px 5px 7px #333;
   -moz-box-shadow: 5px 5px 7px #333;
-  box-shadow: 5px 5px 7px #333;
+  /*box-shadow: 5px 5px 7px #333;*/
+  border: 3.8px solid;
+  border-color: grey;
 }
 
 .w3-tooltip .w3-text {
@@ -67,9 +69,11 @@ body {
 
 .w3-tooltip-1 img:hover {
   background-color: #0085ae;
-  -webkit-box-shadow: 5px 5px 7px #333;
+  /*-webkit-box-shadow: 5px 5px 7px #333;
   -moz-box-shadow: 5px 5px 7px #333;
-  box-shadow: 5px 5px 7px #333;
+  /*box-shadow: 5px 5px 7px #333;*/
+  border: 3.8px solid;
+  border-color: grey;
 }
 /* Fin Facebook info bulle + image */
 
@@ -94,9 +98,11 @@ body {
 
 .w3-tooltip-2 img:hover {
   background-color: #0085ae;
-  -webkit-box-shadow: 5px 5px 7px #333;
+  /*-webkit-box-shadow: 5px 5px 7px #333;
   -moz-box-shadow: 5px 5px 7px #333;
-  box-shadow: 5px 5px 7px #333;
+  /*box-shadow: 5px 5px 7px #333;*/
+  border: 3.8px solid;
+  border-color: grey;
 }
 /* Fin E-mail info bulle + image */
 
@@ -119,9 +125,11 @@ body {
 
 .w3-tooltip-3 img:hover {
   background-color: #0085ae;
-  -webkit-box-shadow: 5px 5px 7px #333;
+  /*-webkit-box-shadow: 5px 5px 7px #333;
   -moz-box-shadow: 5px 5px 7px #333;
-  box-shadow: 5px 5px 7px #333;
+  /*box-shadow: 5px 5px 7px #333;*/
+  border: 3.8px solid;
+  border-color: grey;
 }
 /* Fin téléphone info bulle + image */
 
