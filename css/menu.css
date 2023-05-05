@@ -97,8 +97,9 @@ ion-icon {
 
 
 .nav-list li {
-    line-height: 8rem;
+    line-height: 2rem;
     position: relative;
+    margin-right: -15px;
 
 }
 
