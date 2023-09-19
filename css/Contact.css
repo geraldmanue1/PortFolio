@@ -316,12 +316,20 @@ a:active {
   input[id="Nom"],
   input[id="email"],
   input[id="sujet"],
-  textarea[id="message"],
-  button[id="submit"] {
-    width: 380px;
+  textarea[id="message"]{
+    width: 100%;
 
   }
 
+
+  
+  button[id="submit"]
+  {
+    width:100%;
+  }
+
+  
+  
   @media screen and (max-width: 1000px) {
 
     #container-width {
@@ -397,17 +405,15 @@ a:active {
     
     {
       font-size: 20px;
-      width: 200px;
+      width: 100%;
     }
 
-    #button[id="submit"]
+  
+    button[id="submit"]
     {
-      width:400px;
+      width:100%;
     }
-
-    #button {
-      width:400px;
-    }
+   
     
     /*  input[id="emails"], input[id="sujet"], textarea[id="message"], button[id="submit"]{
           width: 450px;
@@ -418,7 +424,7 @@ a:active {
     #input[id="email"],
     #input[id="sujet"],
     #textarea[id="message"] {
-      width: 100px;
+      width: 100%;
     }
 
     #flex-contact-map {
