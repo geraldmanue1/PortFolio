@@ -348,17 +348,17 @@
           </div>
 
           <div class="text-sujet" id="text-sujet">
-            <label for="sujet">Sujet</label>
+            <label for="sujet">Sujet <span style="color:rgb(135, 2, 2)">*</label>
             <br />
-            <input class="sujet" id="sujet" type="text" name="sujet" placeholder="Tape votre sujet">
+            <input class="sujet" id="sujet" type="text" name="sujet" placeholder="Tape votre sujet" required>
             <br />
           </div>
 
           <div class="text-message" id="text-message">
-            <label for="message">Message</label>
+            <label for="message">Message <span style="color:rgb(135, 2, 2)">*</label>
             <br />
             <textarea class="message" id="message" name="message" placeholder="Ecrire votre formulaire ici ..."
-              style="height:200px;"></textarea>
+              style="height:200px;" required></textarea>
             <br />
           </div>
 
@@ -637,7 +637,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
     }
   </script>
   <!--fin envoyez contacte gmail -->
-  
+
   <button onclick="topFunction()" id="myBtn-down" title="Aller en haut"><img src="images/haut.svg"
       alt="Retourner en haut" height="32px"></button>
   <script src="js/scrol_down.js"> </script>
