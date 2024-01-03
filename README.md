@@ -1,2 +1,2 @@
 # PortFolio
-Réseaux et Multimédia - WordPress - Développeur Web - Web Designer
+WordPress - Développeur Web 
